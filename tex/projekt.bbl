@@ -1,0 +1,42 @@
+\begin{thebibliography}{1}
+
+\bibitem{dbus}
+{WWW stránky}.
+\newblock D-bus.
+\newblock {\tt http://www.freedesktop.org/wiki/Software/dbus}.
+
+\bibitem{TPWiki}
+{WWW stránky}.
+\newblock Telepathy wiki.
+\newblock {\tt http://telepathy.freedesktop.org/doc/book/index.html}.
+
+\bibitem{tpWikiAccountManager}
+{WWW stránky}.
+\newblock Telepathy wiki, account manager.
+\newblock {\tt
+  http://telepathy.freedesktop.org/doc/book/chapter.accounts.html}.
+
+\bibitem{tpWikiAccount}
+{WWW stránky}.
+\newblock Telepathy wiki, accounts.
+\newblock {\tt
+  http://telepathy.freedesktop.org/doc/book/sect.accounts.accounts.html}.
+
+\bibitem{tpWikiBasicTerminology}
+{WWW stránky}.
+\newblock Telepathy wiki, basic terminology.
+\newblock {\tt
+  http://telepathy.freedesktop.org/doc/book/sect.basics.terminology.html}.
+
+\bibitem{tpWikiMissionControl}
+{WWW stránky}.
+\newblock Telepathy wiki, mission control.
+\newblock {\tt http://telepathy.freedesktop.org/wiki/Mission\%20Control}.
+
+\bibitem{dbusTP}
+{WWW stránky}.
+\newblock Telepathy wiki, using d-bus.
+\newblock {\tt
+  http://telepathy.freedesktop.org/doc/book/sect.basics.dbus.html}.
+
+\end{thebibliography}

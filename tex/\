@@ -1,0 +1,115 @@
+%=========================================================================
+% (c) Vojtěch Kulička, 2010
+
+\chapter{Introduction}
+Human is a social creature and likes to chat, share feelings and ideas. At first we managed to do so by making simple sounds. Those sounds later on developed into words. Then much later the human race started to feel the need to record what we were thinking. We made up symbols and started to write. As the society grew and spread, we wanted to communicate with people from other tribes and villages. At first we would travel and use spoken words, but as the distances grew we figured we can have our thoughts delivered in writing. Mail was born. In 1844 telegraph was invented by Samuel Morse followed by telepthone in 1874 by Alexander Graham Bell. And finally in 1969 the Internet was created. All of these inventions aimed to provide means of communication to satisfy the needs of the evolving society.  
+
+In the early days of the Internet email was the main means of communication. And just like regular mail people would have their electronic mailboxes to which the emails were delivered. Email was a huge step forward for it provided a way to almost instantly deliver text from one place to another regardless of the distance for free. The main disadvantage of email is that people had to check their mailboxes read new mail and then reply. It is just neither fast nor convenient enough for team cooperation when team members are far apart. For those and other purposes like chatting Instant Messenger programs were introduced.    
+
+An IM program offers realtime communication between two people via text messages that are delivered from one user to another instantly. Instant messangers became very popular and started adding on features like multiuser chat, various games and most importantly VoIP(Voice over IP) support. VoIP capable IM like skype have become extremely popular at first for making it possible for people to call each other for free over the internet. Later video conferencing capability was added, so you could talk and see you colleague at the same time. One more thing comes in extremely handy when working in a team - a whiteboard.
+
+At this time there is no usable IM providing VoIP and shared whiteboard for GNU/Linux. This thesis aims to add VoIP support to an existing XMPP client with shared board called Makneto. Makneto was created by Jaroslav Řezník as a master's thesis in 2008. At this point it is using iris library for XMPP communication. The shared board data is also transferred over XMPP. One of the goals of this thesis is to port Makneto to telepathy, which is now a very reliable and robust library for communication for numerous protocols.  
+
+The following chapter gives a detailed description of the current version of program Makneto. Chapter number three will focus on XMPP (ro telepathy)
+Description of all thesis' chapters.
+
+
+
+\chapter{Makneto}
+
+% =========================================================================================================================
+% =========================================================================================================================
+
+\chapter{XMPP}
+
+% =========================================================================================================================
+% =========================================================================================================================
+
+\chapter{Telepathy}
+Telepathy is a modular communications framework for building real-time communication applications. It supports numerous communication protocols as plugable backends e.g XMPP/Jabber(telepathy-gabble), SIP(telepathy-sofiasip), MSN(telepathy-butterfly) etc. Each of telepathy's components runs in a separate process as desktop service and communicates via D-Bus. The components are shared by telepathy clients. For example if there are two clients using XMPP they both use the same instance of telepathy-gabble. To get a better idea of how this concept works take a look at figure ~\ref{fig:telepathyArchitecture}.\cite{TPWiki} 
+
+\begin{figure}[ht]
+\begin{center}
+	\includegraphics[width=10cm]{fig/telepathy-architecture-overview.png}
+	\caption{Telepathy architecture\cite{TPWiki}}
+	\label{fig:telepathyArchitecture}
+\end{center}
+\end{figure}
+
+
+There are several features making telepathy very useful as a communications framework.
+
+\begin{itemize}
+
+	\item {\bf Robustness} - all the components are independent. If one crashes, others will not be affected
+
+	\item {\bf Ease of development} - the components can be replaced without having to stop the service 
+
+	\item {\bf Language independence} - since telepathy components use D-Bus for communication among themselves, any language that has D-Bus binding might be used to write them
+
+	\item {\bf Desktop independence} - D-Bus is present in both main Linux window managers GNOME and KDE, so the same telepathy components could be backend for appropriate frontends.
+
+	\item {\bf Code reuse} - the client applications do not have to worry about protocol specifics, which are handled by Telepathy. The client can use more protocols by making no or small alterations to the code.
+
+	\item {\bf Connection reuse} - more than one Telepathy client can use the same connection simultaneously:
+\end{itemize}
+
+\section{Telepathy basic terminology}
+Telepathy is a very powerful framework and as such it is also complicated. To successfuly write programs using Telepathy we need to know what telepathy consists of and what it is based on. 
+
+\subsection{D-Bus}
+D-Bus is a kind of inter-process communication. It allows two applications running in different processes, written in different programming language communicate. More so these applications may communicate directly, without having to go through message bus daemon. There two types of D-Bus. First is a system bus used for events such as "USB device disconnected" or "printer out of paper." Second type is per-user-login-session bus, which is used by user applications. D-Bus low level API is represented by libdbus and it requires XML parser(libxml or expat) to work. Higher level language bindings such as Qt, GLib, Java etc. are built on top of libdbus and offer more convenient way of using D-Bus, although they add more dependencies.\cite{dbus}\cite{dbusTP} 
+
+Each process that wants to communicate over D-Bus will need to use most the following depending on it's nature: 
+\begin{itemize}
+	\item {\bf Unique name} - is an unique id(e.g. 2.1) assigned by D-Bus daemon to the client application. Unique name is similar to a public IP address.
+	\item {\bf Wellknown name} - is similar to a DNS name. If a process wants to make a service available to other processes it requsets a wellknown name. If another process wants to access the service it uses the wellknown name to do so. Wellknown name might look like this: "org.freedesktop.Telepathy.ChannelDispatcher."    
+	\item {\bf Object path} - is a path to an object that is exported by process running a service.
+	\item {\bf Interface} - is a way of requesting a service using signals or methods. Each D-Bus client must register at least one interface and each interface provides at least one method or signal. Every interface needs to have to name like a wellknown name.  
+	\item {\bf Method} - is impleneted in the object specified by object path and exposed in the interface for that object for other processes to use. 
+	\item {\bf Signal} - is a D-Bus signal client process can connect to it's callback function. If a signal is invoked the callbacked function is called.
+	\item {\bf Property} - is used for exposing D-Bus object's properties. To do so the objet must implement org.freedesktop.DBus.Properties interface.
+\end{itemize}
+
+The following figure \ref{fig:dbusArchitectureNames} shows an example of two programs connected to D-Bus to be able to communicate with each other. Program B provides a service called org.freedesktop.foo.Bar(wellknown name) and it's id is 1.3. Program A does not provide any service and thus does not need any wellknown name. It just needs an id(1.2) to use other programs' services.\cite{dbusTP}
+
+\begin{figure}[ht]
+\begin{center}
+	\includegraphics[width=11cm]{fig/dbus-architecture-names.png}
+	\caption{D-Bus id and wellknown name example\cite{dbusTP}}
+	\label{fig:dbusArchitectureNames}
+\end{center}
+\end{figure}
+
+
+The figure \ref{fig:dbusArchitecture} shows an overview of all of the terms described above in a simple diagram.
+
+\begin{figure}[ht]
+\begin{center}
+	\includegraphics[width=15cm]{fig/dbus-architecture-overview.png}
+	\caption{D-Bus architecture\cite{dbusTP}}
+	\label{fig:dbusArchitecture}
+\end{center}
+\end{figure}
+
+D-Bus is a key component of Telepathy framework. Telepathy supports many protocols all of which might provide different capabilites. For example IRC does not support avatars while XMPP does. Eventhough avatar feature is supported by XMPP protocol it might not be supported by the server we are connected to by the opposite client in case of peer-to-peer. The available features are exposed by D-Bus interfaces. If there is no interface for the feature, it is not supported by the protocol. That is an easy way of determining the protocol, server or client capabilities
+
+\section{Text Messaging}
+\section{Presence}
+
+% =========================================================================================================================
+% =========================================================================================================================
+
+\chapter{Audio and video streaming protocols}
+
+% =========================================================================================================================
+% =========================================================================================================================
+
+\chapter{Implementation}
+
+% =========================================================================================================================
+% =========================================================================================================================
+
+\chapter{Conclusion}
+Závěrečná kapitola obsahuje zhodnocení dosažených výsledků se zvlášť vyznačeným vlastním přínosem studenta. Povinně se zde objeví i zhodnocení z pohledu dalšího vývoje projektu, student uvede náměty vycházející ze zkušeností s řešeným projektem a uvede rovněž návaznosti na právě dokončené projekty.
+
