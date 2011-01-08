@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.11.11)  7 JAN 2011 23:45
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.11.11)  8 JAN 2011 16:10
 entering extended mode
  %&-line parsing enabled.
 **projekt
@@ -500,14 +500,14 @@ LaTeX Font Info:    Created by CsPsFont utility v.1.0f (C) Z. Wagner, 1998/12/2
 \@vyskartext=\skip47
 \@vyskaobr=\skip48
 
-<fig/vut-zp2.pdf, id=43, 109.40875pt x 109.40875pt>
+<fig/vut-zp2.pdf, id=39, 109.40875pt x 109.40875pt>
 File: fig/vut-zp2.pdf Graphic file (type pdf)
  <use fig/vut-zp2.pdf>
 Overfull \hbox (109.58464pt too wide) in paragraph at lines 109--109
 [][] 
  []
 
-<fig/fit-zp2.pdf, id=44, 120.45pt x 120.45pt>
+<fig/fit-zp2.pdf, id=40, 120.45pt x 120.45pt>
 File: fig/fit-zp2.pdf Graphic file (type pdf)
  <use fig/fit-zp2.pdf>
 Overfull \hbox (109.58464pt too wide) in paragraph at lines 109--109
@@ -594,7 +594,7 @@ Chapter 3.
 
 ]
 Chapter 4.
-<fig/telepathy-architecture-overview.png, id=100, 421.575pt x 222.431pt>
+<fig/telepathy-architecture-overview.png, id=95, 421.575pt x 222.431pt>
 File: fig/telepathy-architecture-overview.png Graphic file (type png)
 
 <use fig/telepathy-architecture-overview.png> [6
@@ -605,11 +605,11 @@ Overfull \hbox (79.6025pt too wide) in paragraph at lines 80--81
  a ser-vice called org.freedesktop.foo.Bar(wellknown
  []
 
-[7] <fig/dbus-architecture-names.png, id=120, 256.0767pt x 95.6373pt>
+[7] <fig/dbus-architecture-names.png, id=115, 256.0767pt x 95.6373pt>
 File: fig/dbus-architecture-names.png Graphic file (type png)
 
 <use fig/dbus-architecture-names.png>
-<fig/dbus-architecture-overview.png, id=123, 426.8748pt x 202.1151pt>
+<fig/dbus-architecture-overview.png, id=118, 426.8748pt x 202.1151pt>
 File: fig/dbus-architecture-overview.png Graphic file (type png)
 
 <use fig/dbus-architecture-overview.png> [8 <./fig/dbus-architecture-names.png>
@@ -701,28 +701,33 @@ Overfull \hbox (28.28918pt too wide) in paragraph at lines 142--162
  []
 
 [9] [10] [11]
-Overfull \hbox (104.39323pt too wide) in paragraph at lines 199--200
+Overfull \hbox (53.54672pt too wide) in paragraph at lines 197--198
+\IL2/cmr/m/n/10.95 for text mes-sag-ing will be of type Text and will im-ple-me
+nt org.freedesktop.Telepathy.ChannelType.Text
+ []
+
+
+Overfull \hbox (104.39323pt too wide) in paragraph at lines 218--219
 \IL2/cmr/m/n/10.95 in org.freedesktop.Telepathy.Client names-pace, e.g. Em-pa-t
 hy reg-is-ters org.freedesktop.Telepathy.Client.Empathy.
  []
 
-<fig/telepathy-components-dbus.png, id=169, 449.68pt x 369.38pt>
+[12] <fig/telepathy-components-dbus.png, id=170, 449.68pt x 369.38pt>
 File: fig/telepathy-components-dbus.png Graphic file (type png)
 
 <use fig/telepathy-components-dbus.png>
 
-LaTeX Warning: Citation `tpWikiClient' on page 12 undefined on input line 214.
+LaTeX Warning: Citation `tpWikiClient' on page 13 undefined on input line 233.
 
-[12] [13 <./fig/telepathy-components-dbus.png>]
+
+LaTeX Warning: Citation `empathyGnome' on page 13 undefined on input line 241.
+
+[13 <./fig/telepathy-components-dbus.png>] [14]
 Chapter 5.
-[14
-
-]
-Chapter 6.
 [15
 
 ]
-Chapter 7.
+Chapter 6.
 ) (./projekt.bbl [16
 
 ]
@@ -742,8 +747,8 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5288 strings out of 256216
- 65110 string characters out of 1917071
+ 5287 strings out of 256216
+ 65104 string characters out of 1917071
  129298 words of memory out of 1500000
  8419 multiletter control sequences out of 10000+200000
  19787 words of font info for 55 fonts, out of 1200000 for 2000
@@ -755,9 +760,9 @@ hare/texmf/fonts/type1/public/cs/csbx12.pfb></usr/share/texmf/fonts/type1/publi
 c/cs/csr10.pfb></usr/share/texmf/fonts/type1/public/cs/csti10.pfb></usr/share/t
 exmf/fonts/type1/public/cs/cstt10.pfb></usr/share/texmf/fonts/type1/urw/helveti
 c/uhvr8a.pfb>
-Output written on projekt.pdf (20 pages, 415020 bytes).
+Output written on projekt.pdf (20 pages, 416987 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 131072)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 131072)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
