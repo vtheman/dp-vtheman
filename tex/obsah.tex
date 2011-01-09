@@ -20,13 +20,30 @@ Current audio and video streaming protocols are listed and discussed in chapter 
 
 Finally the implementantion of VoIP into Makneto is in chapter six.  
 
+% =========================================================================================================================
+% =========================================================================================================================
 
 \chapter{Makneto}
+Makneto is an instant messenger with a shared board capability. It was written by Jaroslav Řezník as his master's thesis in 2008. Makneto is written in C++ using Qt version 4 and KDE 4 libraries. Qt is a application framework written in C++. Qt extends C++ and instead of callback function uses a concept of signals and slots, which is as opposed to callback functions type-safe. It runs on all major computer platforms like GNU Linux, Microsoft Windows and Mac OS X. Moreso it is supported by mobile device platforms such as Symbian and Microsoft Windows Mobile. There is also a port to Google Android called Lighthouse. Qt was developed by company named Trolltech and was available under two licenses. First was a commercial license allowing companies to write proprietory applications for a fee. Second was GNU General Public License, which was of course free. Thanks to the commercial license the Qt documentation is one of the best among any software available under GNU GPL. In june 2008 Troltech was acquired by Nokia. Nokia decided to make the source code available so that anyone could contribute. In January 2009 with the release of Qt 4.5 another licensing option was added - Lesser General Public License.\cite{wikiQt}\cite{Qt}
+
+Besides Qt Makneto utilizes functionality provide by KDE 4\cite{KDE} libraries, which makes Makneto unable to run on a different operating system than GNU Linux. KDE is a desktop environment created by Matthias Ettricht in 1996 for he felt the need for a good quality window manager for Linux. KDE is currently in version 4, which brought great features. There is a new desktop called Plasma, which allows users to display widgets called plasmoids directly on the desktop. That allows users to have a TODO list, calendar, translator, weather forecast, system monitor and much more right in front of them on their desktops without having launch any of those to get the information they need. It makes users' work eesier and more efficient. KDE and GNOME are the most common window manager in Linux. GNOME offers stable useful environment and is influenced mostly by large businesses using it. KDE is more flexible and works more with the look and feel.
+
+Makneto communicates using XMPP/Jabber protocol implemented in Qt-based C++ library called Iris. All of the Iris is primarily used by Psi instant messenger. It's development is still quite active and it supports all of Jabber's key features. Iris' downside is very poor documentation. It's wiki is very brief and all to all gives one example. The only way to find out how it works is browsing through Psi code.\cite{irisWiki}
+
+Makneto's shared whiteboard is based an official extension of XMPP SVGWB by Joonas Govenius\cite{SVGWB}. SVGWB is implemented in Psi and Makneto utilizes their code. SVGWB defines all the necessary actions like whiteboard session initianion including invitation and mainly how to send and receive information about the grahical objects using XMPP text messages. The actual graphical object representation is defined by SVG\cite{SVG}(Scalable Vector Graphics) by W3C. SVG describes graphics objects using vectors in XML format. Makneto uses just a subset of SVG called SVG Tiny\cite{SVGtiny} as it does not need all of the features of SVG. Tiny SVG describes two-dimensional vector graphics and raster graphics and multimedia. To sum up Makneto's whiteboard features, it allows you to draw lines, rectangles, elipses, circles, sketch using a paintbrush and input images in jpg and png formats. Graphical objects are resizeable, can be rotaded and copied.  
+
+Makneto runs in one window (see figure \ref{fig:makneto}). User's contact list is on a panel on the left hand side. The whiteboard and chat session are initiated through the contact list. Makneto handles more session at once each in a separate tab. Using the application is very comfortable although it from dies time to time.
+
+%TODO - pic of makneto
 
 % =========================================================================================================================
 % =========================================================================================================================
 
 \chapter{XMPP}
+%Extensible Messaging and Presence Protocol
+%XML based
+%IETF standard
+%
 
 % =========================================================================================================================
 % =========================================================================================================================
@@ -228,7 +245,7 @@ Telepathy handles represent objects like contact, roster, chatroom etc. It is a 
 
 
 \begin{figure}[ht]
-\begin{center}
+	\begin{center}
 	\includegraphics[width=10cm]{fig/telepathy-components-dbus.png}
 	\caption{Telepathy components registered with user session D-Bus.\cite{tpWikiClient}}
 	\label{fig:telepathyComponentsDbus}
@@ -245,12 +262,28 @@ The figure \ref{fig:telepathyComponentsDbus}
 \section{Empathy}
 Empathy is a multiprotocol instant messaging application based on Telepathy. In the terms described above Empathy is a Telepathy client. It is written in python using Telepathy-python bindings. Empathy registers a well-known name with D-Bus and communicates with Telepathy components to provide the communication services. Empathy supports text messaging, file transfer, voice and video calls over various protocols. Supported protocol include Google Talk, XMPP/Jabber, MSN, IRC, AIM Facebook, Yahoo!, Gau Gadu, and ICQ. For some of those protocols like Google Talk and XMPP voice and video calls implemented. The suppport of the protocols depend on Telepathy Connection managers installed. Additional functionality includes sharing users' whereabouts among themselves, automatic reconnection when internet connection is reestablished and automatic changes of presence to away and extended away.\cite{empathyGnome}
 
-The current stable version of Empathy is 2.32.2 and it is a default communication application in GNOME releases since version 2.24 instead of Pidgin. It's GUI is takes after Gossip, which is an older IM application for GNOME. 
+The current stable version of Empathy is 2.32.2 and it is a default communication application in GNOME releases since version 2.24 instead of Pidgin. Empathy also replaced Ekiga - program for voice calls and video-call. It became an ultimate free communication tool. Empathy's GUI is takes after Gossip, which is an older IM application for GNOME. 
 
 % =========================================================================================================================
 % =========================================================================================================================
 
-\chapter{Audio and video streaming protocols}
+\chapter{Audio and video streaming protocols/ existing solutions}
+\section{SIP}
+\section{RTP}
+
+%skype
+%provides voice and video calls
+%whiteboard is offerd in a form of Skype extra for money - uSeeToo, talkandwrite - basic versino free - 10 min limit, 1 to 1, WhiteBoardMeeting, Sketch Pad - free
+
+
+%brosix, voice 
+%text messaging, offline text messaging, voice and video chat, co-browsing - browsing websites on shared view of screen, co-browse session
+%whiteboard - MS-Paint like,screen sharing even with using his or her mouse and keyboard.
+
+%Wndows Live Messenger 
+% - only windows
+% additional application, only two users
+
 
 % =========================================================================================================================
 % =========================================================================================================================
