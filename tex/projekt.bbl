@@ -1,42 +1,64 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{skypeOutage}
+Terry Brock.
+\newblock Skype outage today.
+\newblock {\tt
+  http://blogs.skype.com/business/2010/12/skype\_outage\_today.html}.
+
+\bibitem{SVGWB}
+Joonas Govenius.
+\newblock Telepathy wiki, channels.
+\newblock {\tt http://xmpp.org/extensions/inbox/wb.html}, 2006-06-19.
+
+\bibitem{SVG}
+{Kolektiv autorů}.
+\newblock Scalable vector graphics(svg).
+\newblock {\tt http://www.w3.org/Graphics/SVG/}.
+
+\bibitem{SVGtiny}
+{Kolektiv autorů}.
+\newblock Svg tiny 1.2 specification.
+\newblock {\tt http://www.w3.org/TR/SVGTiny12/}.
+
+\bibitem{skype}
+Skype.com.
+\newblock Skype.
+\newblock {\tt http://www.skype.com}.
+
+\bibitem{AIM}
+{WWW stránky}.
+\newblock Aol instant messenger.
+\newblock {\tt http://www.aim.com}.
 
 \bibitem{dbus}
 {WWW stránky}.
 \newblock D-bus.
 \newblock {\tt http://www.freedesktop.org/wiki/Software/dbus}.
 
+\bibitem{KDE}
+{WWW stránky}.
+\newblock Kde.
+\newblock {\tt http://www.kde.org/}.
+
 \bibitem{TPWiki}
 {WWW stránky}.
 \newblock Telepathy wiki.
 \newblock {\tt http://telepathy.freedesktop.org/doc/book/index.html}.
 
-\bibitem{tpWikiAccountManager}
+\bibitem{wikiQt}
 {WWW stránky}.
-\newblock Telepathy wiki, account manager.
-\newblock {\tt
-  http://telepathy.freedesktop.org/doc/book/chapter.accounts.html}.
+\newblock Wikipedia - qt(framework).
+\newblock {\tt http://en.wikipedia.org/wiki/Qt\_(framework)}.
 
-\bibitem{tpWikiAccount}
+\bibitem{wikipediaSkypeProtocol}
 {WWW stránky}.
-\newblock Telepathy wiki, accounts.
-\newblock {\tt
-  http://telepathy.freedesktop.org/doc/book/sect.accounts.accounts.html}.
+\newblock Wikipedia, skype protocol.
+\newblock {\tt http://en.wikipedia.org/wiki/Skype\_Protocol}.
 
-\bibitem{tpWikiBasicTerminology}
+\bibitem{WindowsLiveMessenger}
 {WWW stránky}.
-\newblock Telepathy wiki, basic terminology.
-\newblock {\tt
-  http://telepathy.freedesktop.org/doc/book/sect.basics.terminology.html}.
-
-\bibitem{tpWikiMissionControl}
-{WWW stránky}.
-\newblock Telepathy wiki, mission control.
-\newblock {\tt http://telepathy.freedesktop.org/wiki/Mission\%20Control}.
-
-\bibitem{dbusTP}
-{WWW stránky}.
-\newblock Telepathy wiki, using d-bus.
-\newblock {\tt
-  http://telepathy.freedesktop.org/doc/book/sect.basics.dbus.html}.
+\newblock Windows live messenger 2011.
+\newblock {\tt http://explore.live.com/windows-live-messenger}.
 
 \end{thebibliography}
