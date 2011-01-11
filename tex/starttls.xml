@@ -1,0 +1,13 @@
+<stream:features>
+	<starttls 
+		xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+	<mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+		<mechanism>
+			PLAIN
+		</mechanism>
+		<mechanism>
+			DIGEST-MD5
+		</mechanism>
+	</mechanism>
+	...
+</stream:features>

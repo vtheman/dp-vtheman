@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.11.11)  10 JAN 2011 14:27
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.11.11)  11 JAN 2011 20:04
 entering extended mode
  %&-line parsing enabled.
 **projekt
@@ -385,6 +385,35 @@ File: il2cmr.fd 1997/02/06 CSLaTeX font definitions
 \Urlmuskip=\muskip11
 Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 )
+(/usr/share/texmf/tex/latex/listings/listings.sty
+\lst@mode=\count102
+\lst@gtempboxa=\box28
+\lst@token=\toks22
+\lst@length=\count103
+\lst@currlwidth=\dimen115
+\lst@column=\count104
+\lst@pos=\count105
+\lst@lostspace=\dimen116
+\lst@width=\dimen117
+\lst@newlines=\count106
+\lst@lineno=\count107
+\c@lstlisting=\count108
+\lst@maxwidth=\dimen118
+
+(/usr/share/texmf/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2004/10/17 1.3b (Carsten Heinz)
+)
+(/usr/share/texmf/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
+\c@lstnumber=\count109
+\lst@skipnumbers=\count110
+\lst@framebox=\box29
+)
+(/usr/share/texmf/tex/latex/listings/listings.cfg
+File: listings.cfg 2004/09/05 1.3 listings configuration
+))
+Package: listings 2004/10/17 1.3b (Carsten Heinz)
+
 (/usr/share/texmf/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
@@ -395,9 +424,9 @@ Package color Info: Driver file: pdftex.def on input line 130.
 )
 (/usr/share/texmf/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
-\@linkdim=\dimen115
-\Hy@linkcounter=\count102
-\Hy@pagecounter=\count103
+\@linkdim=\dimen119
+\Hy@linkcounter=\count111
+\Hy@pagecounter=\count112
 
 (/usr/share/texmf/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
@@ -430,46 +459,46 @@ Package hyperref Info: Backreferencing OFF on input line 2308.
 Implicit mode ON; LaTeX internals redefined
 Package hyperref Info: Bookmarks ON on input line 2444.
 LaTeX Info: Redefining \url on input line 2599.
-\Fld@menulength=\count104
-\Field@Width=\dimen116
-\Fld@charsize=\dimen117
-\Choice@toks=\toks22
-\Field@toks=\toks23
+\Fld@menulength=\count113
+\Field@Width=\dimen120
+\Fld@charsize=\dimen121
+\Choice@toks=\toks23
+\Field@toks=\toks24
 Package hyperref Info: Hyper figures OFF on input line 3102.
 Package hyperref Info: Link nesting OFF on input line 3107.
 Package hyperref Info: Hyper index ON on input line 3110.
 Package hyperref Info: backreferencing OFF on input line 3117.
 Package hyperref Info: Link coloring ON on input line 3120.
-\Hy@abspage=\count105
-\c@Item=\count106
-\c@Hfootnote=\count107
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
 )
 *hyperref using driver hpdftex*
 (/usr/share/texmf/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
-\Fld@listcount=\count108
+\Fld@listcount=\count117
 ) (./projekt.aux)
 \openout1 = `projekt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-Package hyperref Info: Link coloring ON on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+Package hyperref Info: Link coloring ON on input line 104.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
@@ -477,16 +506,16 @@ Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 (/usr/share/texmf/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count109
+\c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
  (./projekt.out)
 (./projekt.out)
 \@outlinefile=\write3
 \openout3 = `projekt.out'.
 
-LaTeX Font Info:    Try loading font information for IL2+phv on input line 109.
+LaTeX Font Info:    Try loading font information for IL2+phv on input line 110.
 
  (/usr/share/texmf/tex/cslatex/base/il2phv.fd
 File: il2phv.fd 1998/12/27 CS Helvetica
@@ -495,22 +524,22 @@ LaTeX Font Info:    (C) Z. Wagner,1998/12/27 on input line 3.
 LaTeX Font Info:    Created by CsPsFont utility v.1.0f (C) Z. Wagner, 1998/12/2
 7 on input line 4.
 )
-\@obrlogo=\box28
-\@rtext=\box29
+\@obrlogo=\box30
+\@rtext=\box31
 \@vyskartext=\skip47
 \@vyskaobr=\skip48
 
-<fig/vut-zp2.pdf, id=35, 109.40875pt x 109.40875pt>
+<fig/vut-zp2.pdf, id=67, 109.40875pt x 109.40875pt>
 File: fig/vut-zp2.pdf Graphic file (type pdf)
  <use fig/vut-zp2.pdf>
-Overfull \hbox (109.58464pt too wide) in paragraph at lines 109--109
+Overfull \hbox (109.58464pt too wide) in paragraph at lines 110--110
 [][] 
  []
 
-<fig/fit-zp2.pdf, id=36, 120.45pt x 120.45pt>
+<fig/fit-zp2.pdf, id=68, 120.45pt x 120.45pt>
 File: fig/fit-zp2.pdf Graphic file (type pdf)
  <use fig/fit-zp2.pdf>
-Overfull \hbox (109.58464pt too wide) in paragraph at lines 109--109
+Overfull \hbox (109.58464pt too wide) in paragraph at lines 110--110
 [][] 
  []
 
@@ -520,35 +549,35 @@ Overfull \hbox (109.58464pt too wide) in paragraph at lines 109--109
 g/fit-zp2.pdf>]
 
 LaTeX Font Warning: Font shape `IL2/cmr/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 109.
+(Font)              size <17.28> substituted on input line 110.
 
 
 LaTeX Font Warning: Font shape `IL2/cmr/bx/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 109.
+(Font)              size <17.28> substituted on input line 110.
 
 [2]
 
 LaTeX Font Warning: Font shape `IL2/cmr/m/n' in size <18> not available
-(Font)              size <17.28> substituted on input line 109.
+(Font)              size <17.28> substituted on input line 110.
 
 
 LaTeX Font Warning: Font shape `IL2/cmr/bx/n' in size <18> not available
-(Font)              size <17.28> substituted on input line 109.
+(Font)              size <17.28> substituted on input line 110.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 109.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 110.
 
 (/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
  [3] (./projekt.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
@@ -576,7 +605,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 
+l.18 
       [2
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
@@ -587,88 +616,144 @@ l.26 \chapter
              {Makneto} [3]
 Chapter 2.
 
-LaTeX Warning: Citation `Qt' on page 4 undefined on input line 27.
+LaTeX Warning: Citation `Qt' on page 4 undefined on input line 28.
 
 
-LaTeX Warning: Citation `irisWiki' on page 4 undefined on input line 31.
+LaTeX Warning: Citation `irisWiki' on page 4 undefined on input line 32.
 
 [4
 
-]
-
-LaTeX Warning: Reference `fig:makneto' on page 5 undefined on input line 35.
-
-[5]
+] [5]
 Chapter 3.
-<fig/telepathy-architecture-overview.png, id=100, 421.575pt x 222.431pt>
+
+LaTeX Warning: Citation `ICQ' on page 6 undefined on input line 62.
+
+[6
+
+] <fig/XMPP-decentralized-architecture.png, id=159, 1108.14pt x 822.07124pt>
+File: fig/XMPP-decentralized-architecture.png Graphic file (type png)
+
+<use fig/XMPP-decentralized-architecture.png>
+LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 88.
+
+
+(/usr/share/texmf/tex/latex/cslatex/il2cmtt.fd
+File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
+) [7 <./fig/XMPP-decentralized-architecture.png (PNG copy)>] (/usr/share/texmf/
+tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
+) (./client-stream.xml
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
+
+(/usr/share/texmf/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
+) (./server-stream.xml)
+(./starttls.xml) [8] (./sendmsg.xml)
+Overfull \hbox (39.52177pt too wide) in paragraph at lines 109--110
+\IL2/cmr/m/n/10.95 who the mes-sage is ad-dressed to us-ing a Jab-ber ID. Jab-b
+er ID con-sists of []\IL2/cmtt/m/n/10.95 user name @ domain name
+ []
+
+(./presence.xml) (./get-roster.xml) (./send-roster.xml [9]) [10]
+Chapter 4.
+<fig/telepathy-architecture-overview.png, id=241, 421.575pt x 222.431pt>
 File: fig/telepathy-architecture-overview.png Graphic file (type png)
 
-<use fig/telepathy-architecture-overview.png> [6
+<use fig/telepathy-architecture-overview.png> [11
 
  <./fig/telepathy-architecture-overview.png>]
-Overfull \hbox (79.6025pt too wide) in paragraph at lines 97--98
+Overfull \hbox (79.6025pt too wide) in paragraph at lines 181--182
 \IL2/cmr/m/n/10.95 able to com-mu-ni-cate with each other. Pro-gram B pro-vides
  a ser-vice called org.freedesktop.foo.Bar(wellknown
  []
 
-[7] <fig/dbus-architecture-names.png, id=119, 256.0767pt x 95.6373pt>
+[12] <fig/dbus-architecture-names.png, id=261, 256.0767pt x 95.6373pt>
 File: fig/dbus-architecture-names.png Graphic file (type png)
 
 <use fig/dbus-architecture-names.png>
-<fig/dbus-architecture-overview.png, id=122, 426.8748pt x 202.1151pt>
+<fig/dbus-architecture-overview.png, id=264, 426.8748pt x 202.1151pt>
 File: fig/dbus-architecture-overview.png Graphic file (type png)
 
-<use fig/dbus-architecture-overview.png> [8 <./fig/dbus-architecture-names.png>
- <./fig/dbus-architecture-overview.png>]
+<use fig/dbus-architecture-overview.png> [13 <./fig/dbus-architecture-names.png
+> <./fig/dbus-architecture-overview.png>]
 
-LaTeX Warning: Reference `table:configureableProperties' on page 9 undefined on
- input line 127.
-
-
-LaTeX Warning: Reference `table:nonConfigurableProperties' on page 9 undefined 
-on input line 127.
+LaTeX Warning: Reference `table:configureableProperties' on page 14 undefined o
+n input line 211.
 
 
-Overfull \hbox (154.68224pt too wide) in paragraph at lines 127--128
-\IL2/cmr/m/n/10.95 count ob-ject reg-is-ters with D-Bus and has an ob-ject path
- /org/freedesktop/Telepathy/Account/CM/PROTOCOL/ACCDN.
- []
+LaTeX Warning: Reference `table:nonConfigurableProperties' on page 14 undefined
+ on input line 211.
 
-[9]
-Overfull \hbox (53.54672pt too wide) in paragraph at lines 159--160
+[14]
+Overfull \hbox (53.54672pt too wide) in paragraph at lines 243--244
 \IL2/cmr/m/n/10.95 for text mes-sag-ing will be of type Text and will im-ple-me
 nt org.freedesktop.Telepathy.ChannelType.Text
  []
 
-[10]
-Overfull \hbox (104.39323pt too wide) in paragraph at lines 180--181
+[15]
+Overfull \hbox (104.39323pt too wide) in paragraph at lines 264--265
 \IL2/cmr/m/n/10.95 in org.freedesktop.Telepathy.Client names-pace, e.g. Em-pa-t
 hy reg-is-ters org.freedesktop.Telepathy.Client.Empathy.
  []
 
-<fig/telepathy-components-dbus.png, id=164, 449.68pt x 369.38pt>
+<fig/telepathy-components-dbus.png, id=305, 449.68pt x 369.38pt>
 File: fig/telepathy-components-dbus.png Graphic file (type png)
 
 <use fig/telepathy-components-dbus.png>
 
-LaTeX Warning: Citation `empathyGnome' on page 11 undefined on input line 208.
+LaTeX Warning: Citation `empathyGnome' on page 16 undefined on input line 292.
 
-[11] [12 <./fig/telepathy-components-dbus.png>]
-Chapter 4.
-[13
-
-] [14]
+[16] [17 <./fig/telepathy-components-dbus.png>]
 Chapter 5.
-) (./projekt.bbl [15
+
+LaTeX Warning: Citation `brosix' on page 18 undefined on input line 304.
+
+
+LaTeX Warning: Citation `yahoo' on page 18 undefined on input line 304.
+
+
+LaTeX Warning: Citation `kazaa' on page 18 undefined on input line 308.
+
+
+LaTeX Warning: Citation `STUNRFC' on page 18 undefined on input line 312.
+
+
+LaTeX Warning: Citation `STUNRFCNEW' on page 18 undefined on input line 312.
+
+[18
+
+] <fig/skype-architecture.png, id=336, 351.3125pt x 560.0925pt>
+File: fig/skype-architecture.png Graphic file (type png)
+
+<use fig/skype-architecture.png>
+
+LaTeX Warning: Citation `skypeAnalyzed' on page 19 undefined on input line 329.
+
+
+[19 <./fig/skype-architecture.png>]
+
+LaTeX Warning: Citation `wikipediaYahoo' on page 20 undefined on input line 347
+.
+
+[20] [21]
+Chapter 6.
+) (./projekt.bbl [22
 
 ]
-LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 6.
- (/usr/share/texmf/tex/latex/cslatex/il2cmtt.fd
-File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
-))
-(./prilohy.tex) [16
+Overfull \hbox (87.45538pt too wide) in paragraph at lines 42--47
+\IL2/cmtt/m/n/10.95 http://www.cs.columbia.edu/ library/TR-repository/reports/r
+eports-2004/cucs-039-04.pdf\IL2/cmr/m/n/10.95 , 
+ []
 
-] (./projekt.aux)
+[23
+
+]) (./prilohy.tex) [24] (./projekt.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
@@ -678,22 +763,24 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5293 strings out of 256216
- 65083 string characters out of 1917071
- 123335 words of memory out of 1500000
- 8423 multiletter control sequences out of 10000+200000
- 19787 words of font info for 55 fonts, out of 1200000 for 2000
+ 7175 strings out of 256216
+ 89836 string characters out of 1917071
+ 152027 words of memory out of 1500000
+ 10161 multiletter control sequences out of 10000+200000
+ 23694 words of font info for 67 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 34i,6n,36p,1465b,391s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 34i,8n,52p,1465b,1800s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8a.enc}</usr/share/texmf/fonts/type1/b
-luesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cs/csbx10.pfb></usr/s
-hare/texmf/fonts/type1/public/cs/csbx12.pfb></usr/share/texmf/fonts/type1/publi
-c/cs/csr10.pfb></usr/share/texmf/fonts/type1/public/cs/csti10.pfb></usr/share/t
-exmf/fonts/type1/public/cs/cstt10.pfb></usr/share/texmf/fonts/type1/urw/helveti
-c/uhvr8a.pfb>
-Output written on projekt.pdf (19 pages, 424536 bytes).
+luesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/
+share/texmf/fonts/type1/public/cs/csbx10.pfb></usr/share/texmf/fonts/type1/publ
+ic/cs/csbx12.pfb></usr/share/texmf/fonts/type1/public/cs/csr10.pfb></usr/share/
+texmf/fonts/type1/public/cs/csr6.pfb></usr/share/texmf/fonts/type1/public/cs/cs
+r8.pfb></usr/share/texmf/fonts/type1/public/cs/csr9.pfb></usr/share/texmf/fonts
+/type1/public/cs/csti10.pfb></usr/share/texmf/fonts/type1/public/cs/cstt10.pfb>
+</usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on projekt.pdf (27 pages, 641511 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 131072)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 439 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 131072)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

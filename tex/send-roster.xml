@@ -1,0 +1,8 @@
+<iq type="result">
+	<query xmlns="jabber:iq:roster">
+		<item jid="kuba86@jabber.cz"/>
+		<item jid="rezza@jabber.cz"/>
+		<item jid="imlich@jabber.fit.vutbr.cz"/>
+	</query>
+</iq>
+

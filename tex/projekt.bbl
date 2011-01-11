@@ -21,6 +21,30 @@ Joonas Govenius.
 \newblock Svg tiny 1.2 specification.
 \newblock {\tt http://www.w3.org/TR/SVGTiny12/}.
 
+\bibitem{xmppCoreRFC}
+Peter Saint-Andre.
+\newblock Xmpp core.
+\newblock [online]. Last modified: 30 Sep 2004. [cit. 2008-01-06]. Accessible
+  from WWW {\tt http://www.ietf.org/rfc/rfc3920.txt}.
+
+\bibitem{xmppIMRFC}
+Peter Saint-Andre.
+\newblock Xmpp im.
+\newblock [online]. Last modified: 01 Oct 2004. [cit. 2008-01-06]. Accessible
+  from WWW {\tt http://www.ietf.org/rfc/rfc3921.txt}.
+
+\bibitem{xmppBook}
+Peter Saint-Andre, Kevin Smith, and Remko Troncon.
+\newblock {\em XMPP: The Definitive Guide}.
+\newblock O'Reilly, April 2009.
+
+\bibitem{skypeProtocolAnalysis}
+Henning~Schulzrinne Salman A.~Baset.
+\newblock An analysis of the skype peer-to-peer internet telephony protocol.
+\newblock [online]. URL {\tt
+  http://www.cs.columbia.edu/~library/TR-repository/reports/reports-2004/cucs-%
+039-04.pdf}, 2004.
+
 \bibitem{skype}
 Skype.com.
 \newblock Skype.
@@ -41,6 +65,11 @@ Skype.com.
 \newblock Kde.
 \newblock {\tt http://www.kde.org/}.
 
+\bibitem{telepathy}
+{WWW stránky}.
+\newblock Telepathy.
+\newblock {\tt http://telepathy.freedesktop.org}.
+
 \bibitem{TPWiki}
 {WWW stránky}.
 \newblock Telepathy wiki.
@@ -60,5 +89,10 @@ Skype.com.
 {WWW stránky}.
 \newblock Windows live messenger 2011.
 \newblock {\tt http://explore.live.com/windows-live-messenger}.
+
+\bibitem{xmpp}
+{WWW stránky}.
+\newblock Xmpp standards foundation.
+\newblock {\tt http://xmpp.org/}.
 
 \end{thebibliography}

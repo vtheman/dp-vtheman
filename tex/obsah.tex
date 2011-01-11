@@ -24,6 +24,7 @@ Finally the implementantion of VoIP into Makneto is in chapter six.
 % =========================================================================================================================
 
 \chapter{Makneto}
+\section{Current architecture}
 Makneto is an instant messenger with a shared board capability. It was written by Jaroslav Řezník as his master's thesis in 2008. Makneto is written in C++ using Qt version 4 and KDE 4 libraries. Qt is a application framework written in C++. Qt extends C++ and instead of callback function uses a concept of signals and slots, which is as opposed to callback functions type-safe. It runs on all major computer platforms like GNU Linux, Microsoft Windows and Mac OS X. Moreso it is supported by mobile device platforms such as Symbian and Microsoft Windows Mobile. There is also a port to Google Android called Lighthouse. Qt was developed by company named Trolltech and was available under two licenses. First was a commercial license allowing companies to write proprietory applications for a fee. Second was GNU General Public License, which was of course free. Thanks to the commercial license the Qt documentation is one of the best among any software available under GNU GPL. In june 2008 Troltech was acquired by Nokia. Nokia decided to make the source code available so that anyone could contribute. In January 2009 with the release of Qt 4.5 another licensing option was added - Lesser General Public License.\cite{wikiQt}\cite{Qt}
 
 Besides Qt Makneto utilizes functionality provide by KDE 4\cite{KDE} libraries, which makes Makneto unable to run on a different operating system than GNU Linux. KDE is a desktop environment created by Matthias Ettricht in 1996 for he felt the need for a good quality window manager for Linux. KDE is currently in version 4, which brought great features. There is a new desktop called Plasma, which allows users to display widgets called plasmoids directly on the desktop. That allows users to have a TODO list, calendar, translator, weather forecast, system monitor and much more right in front of them on their desktops without having launch any of those to get the information they need. It makes users' work eesier and more efficient. KDE and GNOME are the most common window manager in Linux. GNOME offers stable useful environment and is influenced mostly by large businesses using it. KDE is more flexible and works more with the look and feel.
@@ -32,18 +33,101 @@ Makneto communicates using XMPP/Jabber protocol implemented in Qt-based C++ libr
 
 Makneto's shared whiteboard is based an official extension of XMPP SVGWB by Joonas Govenius\cite{SVGWB}. SVGWB is implemented in Psi and Makneto utilizes their code. SVGWB defines all the necessary actions like whiteboard session initianion including invitation and mainly how to send and receive information about the grahical objects using XMPP text messages. The actual graphical object representation is defined by SVG\cite{SVG}(Scalable Vector Graphics) by W3C. SVG describes graphics objects using vectors in XML format. Makneto uses just a subset of SVG called SVG Tiny\cite{SVGtiny} as it does not need all of the features of SVG. Tiny SVG describes two-dimensional vector graphics and raster graphics and multimedia. To sum up Makneto's whiteboard features, it allows you to draw lines, rectangles, elipses, circles, sketch using a paintbrush and input images in jpg and png formats. Graphical objects are resizeable, can be rotaded and copied.  
 
-Makneto runs in one window (see figure \ref{fig:makneto}). User's contact list is on a panel on the left hand side. The whiteboard and chat session are initiated through the contact list. Makneto handles more session at once each in a separate tab. Using the application is very comfortable although it from dies time to time.
 
+Makneto runs in one window. User's contact list is on a panel on the left hand side. The whiteboard and chat session are initiated through the contact list. Makneto handles more session at once each in a separate tab. Using the application is very comfortable although it from dies time to time.
+
+% (see figure \ref{fig:makneto})
 %TODO - pic of makneto
+
+
+\section{Motivation for porting and adding VoIP support}
+Makneto has a potential to become a great collaboration tool. The tasks of today are more and more dificult so the need to solve the task in teams is greater and greater. Especially in comupter science the teams are ofter from all over the world and it is important to discuss current issues. Meeting in person is not an option and that is where Makneto comes in. The shared whiteboard is very useful for sharing thinkmaps and visualising problems and solutions, but the days when people had the time and patience to write are gone. Everybody wants to talk these days.  
+
+Makneto is at this point has couple design flaws. First it uses iris library for communication in XMPP network. Iris is very poorly documented and every change in the implementation would reflect in Makneto. Second Makneto depends on KDE libraries, which at this point is not necessary. Getting rid of this dependancy will help increase Makneto's portability. 
+
+The current implemenation of Makneto is UI and backend in one large application. The goal is to separate the backend and UI. Backend will take care of communication. That means text messaging, shared whiteboard and after this thesis is finished also VoIP. Backend will use communications framework telepathy described in the following chapter. Telepathy supports various protocols as well as voice and video calls. Makneto will be able to use XMPP, ICQ, IRC, MSN etc. with one implementation of a client.
+
+Frontend shall be a subject to change based on target device. Makneto for PC will have a Qt4 frontend and Makneto for smartphones and tablets will use the Qt Quick UI. With rapidly increasing number tablets and smartphones made and sold it would be shame not to plan to support them.  
+
+
+
 
 % =========================================================================================================================
 % =========================================================================================================================
 
 \chapter{XMPP}
-%Extensible Messaging and Presence Protocol
-%XML based
-%IETF standard
-%
+This chapter talks about Extensible Messaging and Presence Protocol\cite{xmpp}, it's history, key features and usage. The information is mailny acquired from from \cite{xmppBook,xmppCoreRFC,xmppIMRFC}.
+
+\section{History}
+In 1999 Jerremie Miller created protocol called Jabber. Jabber was an open protocol based on XML as opposed to existing protocols like ICQ\cite{ICQ} or AIM\cite{AIM}, which were proprietory and owned and controlled by private companies. The first attemp to make Jabber a standard failed. The second attempt did not use the name Jabber, but eXtensible Messaging and Presence Protocol instead. IETF\footnote{Internet Engineering Task Force} approved and XMPP was standardized in 2004 in RFC 3920 and RFC 3921 called XMPP Core and XMPP IM respectively. Development of XMPP is still active as it is based on XML it is possible to add functionality without jeopardising the compatibility of existing implemenstations.      
+
+\section{XMPP protocol}
+XMPP is defined in \cite{xmppCoreRFC} and \cite{xmppIMRFC}, which describe all the key features of the protocol. Authors of XMPP aim for a scalable, extensible and in every way powerful protocol. Years later with XMPP still around and more and more popular we can safely say they succeeded. The key features of XMPP include:
+
+\begin{itemize}
+	\item \textbf{Decentralized architecture} - XMPP network does not rely on one server. The network consists of servers and clients. Every client may run his or her own server. XMPP server registers clients and communicates with other servers much like with email(see figure \ref{fig:xmpp-decentralized-architecture}). A client often wants to communicate with another client on a different server. In such case other client's server is looked up and the message forwarded. If a client is not satisfied with the server he or she registered with he or she may simply register with a different server or run his or her own. There is also no way to take the whole network out with DoS\footnote{Denial of Service} attack. There simply is not a small number of target to attack.    
+	\item  \textbf{Open nature} - XMPP is an open standard that can be used by anyone without having to pay, sign any agreement or behave by any restrictive policies. Also it's fate is not in hands of one company but rather in the hands of everyone. Anyone who wishes to contribute can do so by cooperating with XMPP Standards Foundation. 
+	\item \textbf{Extensibility} - thanks to XML based nature of XMPP it is very simple to add new features without discontinuing support of the old ones. This feature makes XMPP very flexible for it can easily add new functionality and it has been already done couple times.  
+	\item \textbf{Security} - with built-in support for TLS and SSL there is no need to worry that the messages might be read by a third person using man in the middle attack. Companies using XMPP for communication inside their network might run their server localy with no access to the outside world.  
+\end{itemize}
+
+\begin{figure}[ht]
+\begin{center}
+	\includegraphics[width=10cm]{fig/XMPP-decentralized-architecture.png}
+	\caption{XMPP decentralized architecture\cite{xmppBook}}
+	\label{fig:xmpp-decentralized-architecture}
+\end{center}
+\end{figure}
+
+Now let's look at the protocol and how to use it. 
+
+\subsection*{Client-server communication}
+XMPP is basicaly streaming XML documents. The stream is an unbounded XML document which contains another XML documents from both client and server. The XML documents enclosed in the stream tags with a depth of 1 are called stanzas. Stanza is a basic unit of communication like a packet. The following stanzas are defined:
+
+\begin{itemize}
+	\item \textbf{message} - used for getting information from one place to another in a push manner. The message stanza is not acknowleged and no answer is expected. It is used for instant messages, alerts, notifications, groupchat etc. The nature of the message is specified by \verb|type|.  
+	\item \textbf{presence} - stanza for acquiring another user's presence. XMPP honors usess' privacy and to get someone's presence status he or she need to authorize it first by adding the querier to his or her contact list. There are several types of presence just like in any other IM protocol.     
+	\item	\textbf{IQ} - is an abbreviation for Info/Query. This stanza is used for everything else. IQ works on question-answer basis. It is used for example for getting remote client's capabilities. IQ stanza must always receive a reply. 
+\end{itemize}
+
+First a TCP connection is established between client and server. Once established a stream is opened by client by sending the server \verb|<stream>| tag. There is an example of opening a stream below: 
+
+\lstinputlisting[language=xml]{client-stream.xml}
+
+Server answers with a second stream back to the client, which is shown in the piece of XML code that follows. 
+
+\lstinputlisting[language=xml]{server-stream.xml}
+
+The next step is to negotiate properties of the stream. The server sends an XML enclosed in \verb|stream:feature| tags, informing the client about features it supports. The most important property is by far encryption and authentication. Preferred encryption method is TLS, but SSL is also an option. However some servers may require usage of TLS. TLS is recommended for both client-server and server-server communication. Authentication is a key responsibility of the server. The server must ensures that users attempting to connect to it are who they say they are. The server acts as a gateway to the entire network and must not allow identity spoofing. Authentication is done via SASL\footnote{Simple Authentication and Security Layer} and options supported by the server are enclosed in \verb|mechanism| tags. The example, where server supports TLS and SASL using PLAIN text or MD5 is shown below:   
+
+\lstinputlisting[language=xml]{starttls.xml}
+
+Once stream parameters are set, client can request presence, set his or her own presence and communicate with other clients. Sending a message to a fellow user is accomplished via \verb|message| stanza and may look like this:
+
+\lstinputlisting[language=xml]{sendmsg.xml}
+
+It must include \verb|to|, \verb|from| attributes and \verb|body| opening and closing tags. The first specifis who the message is addressed to using a Jabber ID. Jabber ID consists of \verb|user name @ domain name| and many people mistake for email address. A simple Jabber ID is \verb|vtheman@jabbim.cz|. Attribute from naturaly contains a jabber ID as well, but this time an ID of the sender. The \verb|body| element contains the actual message. 
+
+Next stanza is presence and it is needed for following presence of the contacts in the users' roster. To get presence of a user he or she must approve of it. Once user has been authorized to get another users presence they have both subscribed to get each other's presence. After connecting to the server a user sends initial presence stanza: \verb|<presence/>|. From that moment on the server takes care of the presence. Whenever the user's presence changes, it sends notification to all subscribers in the user's roster. Similarly if someone else's presence changes the user gets notified by his or her server. 
+
+\lstinputlisting[language=xml]{presence.xml}
+
+Presence stanza contains elements \verb|show| and \verb|status|. \verb|show| can be either \verb|chat| meaning available and ready for chat, \verb|away| meaning the user is not at the PC at the moment, \verb|xa| indicates the user will be gone for a longer period of time and finaly \verb|dnd|, which stands for do not disturb.  
+
+The last of stanzas is Info/Query shortly IQ. IQ is very similar to HTTP in methods and in the query-answer nature. IQ queries use method \verb|get| for requesting information and method \verb|set| for making requests based on provided information. Answer to a query is IQ stanza of type \verb|result| and contains information requested by \verb|get| method or acknowledge in case of \verb|set| method. The last type of IQ is \verb|error| and is used to indicate that something went wrogn. A good example of an IQ stanza is acquiring a roster: 
+
+\lstinputlisting[language=xml]{get-roster.xml}
+
+And the server replies with:
+
+\lstinputlisting[language=xml]{send-roster.xml}
+
+The stream ends with \verb|</stream>| tag and that means end for the communication. 
+
+\section{Summary}
+XMPP is a robust, scalable, secure, open and extensible protocol that has been well tested over the years passing all of the test without any sign of trouble. It has been very well though out and altogether it is a great protocol. The description given above is in some of the parts simplified. Full description is out of the scope of this thesis.   
+
+%XMPP has been all and all very well though out. 
 
 % =========================================================================================================================
 % =========================================================================================================================
@@ -212,17 +296,25 @@ The current stable version of Empathy is 2.32.2 and it is a default communicatio
 % =========================================================================================================================
 % =========================================================================================================================
 
-\chapter{Existing solutions with whiteboard and VoIP}
+\chapter{Existing solutions}
 
 %\section{SIP}
 %\section{RTP}
 
 There is a number of existing communication applications offering voice calls and shared whiteboard. Some more popular, more advanced, more user-friendly, offering more features or better support than others. Some of those program support video call and some even conference calls. We shall go over the existing solutions that implement both shared whiteboard and voice calls. Among the described are Skype\cite{skype}, Windows Live Messenger\cite{WindowsLiveMessenger}, Brosix\cite{brosix}, Yahoo! Messenger\cite{yahoo} and AIM\cite{AIM}.
 
-\section*{skype}
-Skype is the most popular and most used common VoIP application of all. It is available for all major computer platforms (Microsoft Widnows, Mac OS X and GNU Linux) as well as mobile platforms like Android and even Apple's iOS. Although skype is available for Linux it is not well supported. The latest version of skype for Linux is 2.1.0.81 Beta while skype for Windows is of version 5.1. Finally skype is built-in on more and more TVs.
+\section{Applications with whiteboard and VoIP support}
+\subsection*{Skype}
+Skype is the most popular and most used common VoIP application of all. Skype was released in 2003 and was developed by KaZaa\cite{kazaa}. It is available for all major computer platforms (Microsoft Widnows, Mac OS X and GNU Linux) as well as mobile platforms like Android and even Apple's iOS. Although skype is available for Linux it is not well supported. The latest version of skype for Linux is 2.1.0.81 Beta while skype for Windows is of version 5.1. Finally skype is built-in on more and more TVs.
 
-Skype communicates using Skype protocol, which is proprietory. Recently much effort is being put in reverse engineering the skype protocol. The motivation for this is simple. Skype is used by tens of millions of users every day, but the support for Linux is at this point almost nonexisting. Linux users have had enough and plan to create an open source client capable of communicating with skype. The wikipedia skype protocol page\cite{wikipediaSkypeProtocol} is filling up with details. While most of IM programs utilize client-server communication scheme, skype uses peer-to-peer model. The skype network consists of nodes, supernodes and login servers(see figure\ref{fig:skypeArchitecture}). Nodes are clients. Each client keeps addresses of a number of supernodes. Supernodes are clients with good-enough bandwith and public IP address. Supernodes forward traffic to clients behind NAT, PAT or restrictive filters. This decentralized architecture seems to be working well although there was an outage on December 22nd 2010. Skype officials claim it was due to lack of supernodes\cite{skypeOutage}.  
+Skype communicates using Skype protocol, which is proprietory. Recently much effort is being put in reverse engineering the skype protocol although the first attempt dates back to 2004 and was done in \cite{skypeProtocolAnalysis}. Skype encrypts the communication end-to-end with 256 bit AES so the amount of information acquired by packet sniffers is very limited. The motivation for recent efforts are simple. Skype is used by tens of millions of users every day, but the support for Linux is at this point almost nonexisting. Linux users have had enough and plan to create an open source client capable of communicating with skype. The wikipedia skype protocol page\cite{wikipediaSkypeProtocol} is filling up with details.  
+
+While most of IM programs utilize client-server communication scheme, skype uses peer-to-peer model. The skype network consists of nodes, supernodes and login servers(see figure\ref{fig:skypeArchitecture}). Nodes are clients. Each client keeps addresses of a number of supernodes. Supernodes are clients with good-enough bandwith, public IP address and enough memmory and CPU power. Supernodes forward traffic to clients behind NAT or restrictive filters. It is believed that skype uses something like STUN. STUN helps overcome NAT and was first defined in \cite{STUNRFC} and then superseded by \cite{STUNRFCNEW}. It seems that nodes themselves determine whether they are behind NAT or firewall. If two nodes want to communicate and either of them or both is behind NAT then a supernode is used to forward traffic between them. 
+
+Skype call signalling is done via TCP and UDP is primarily used for the voice transfer. If a skype client finds out it is behind a firewall that forbids UDP, the speech is transferred using TCP. The codec used is unknown although there are couple candidates. What is almost certain is the fact that skype uses wideband codec. 
+
+The decentralized architecture seems to be working well although there was an outage on December 22nd 2010. Skype officials claim it was due to lack of supernodes\cite{skypeOutage}.  
+
 
 Features of skype include calling landlines and cell phones and sending text messageses and vice versa - SkypeOut and SkypeIn. The feature list continues with voice and video calls, multi-user chat, conference calls, voice mail and screen sharing. The newest and long expected feature of video conference was introduced in may of 2010 in skype 5.0. 
 
@@ -230,37 +322,40 @@ Though closed program, skype provides an API for developers who want to create e
 
 % TCP for signaling and TCP and UDP for transport
 % wideband codec 
-% 
 
 \begin{figure}[ht]
 	\begin{center}
-	\includegraphics[width=10cm]{fig/skype-architecture.png}
+	\includegraphics[width=8cm]{fig/skype-architecture.png}
 	\caption{Telepathy components registered with user session D-Bus.\cite{skypeAnalyzed}}
 	\label{fig:skypeArchitecture}
 \end{center}
 \end{figure}
 
-\section*{Windows Live Messenger}
+\subsection*{Windows Live Messenger}
 Windows Live Messenger was first released in July 1999 as MSN Messenger and offered just text messaging with users of AOL Instant Messenger\cite{AIM}. Due to AOL's constant effort to block Microsoft from it's network Microsoft gave in and removed the feature. Since then MSN Messenger could only connect to MSN Messenger Service. In 2001 with the release of Windows XP, MSN Messenger 4.6 came out with voice call support. The last version of MSN Messenger, version 7.5, featured video calls. Windows Live Messenger 8.0 was released in june 2006 and that was the end of the name MSN Messenger.   
 
 Windows Live Messenger utilizes client-server model and communicates using Microsoft Notification protocol over TCP. The first 7 versions of MSNP were disclosed to public, but since version 8 the details have been kept a secret. MSNP does not use encryption so eventhough MSNP's description was not published it was not hard to put it together using packet sniffers.
 
 The live Messenger is available for Windows, Mac OS X and recently was integrated into Microsoft's game console Xbox 360. It features social network integration, offline messaging, games and applications, voice and video calls and standard IM features. An interesting feature is Multiple points of presence allowing user to be connected on two devices. Shared whiteboard is available as an extra application and is not capable of multi-user session.   
 
-\section*{Brosix}
+\subsection*{Brosix}
 An award winning application first released in 2006. Brosix features voice and video chat and multi-user chat, basic IM functions and couple advanced functions. Brosix's whiteboard is an Microsoft Paint like window shared among the participants and won Best IM Feature 2009 award from about.com. Next great feature allows users share screen, including mouse and keyboard much like VNC. Finally Brosix implements co-browsing where users share a browser window. 
 
 Brosix is available for Windows, Max OS X and GNU Linux in commercial and personal(free) version. There is little known about used technologies and it is almost impossbile to reverse-engineer using packet sniffers as Brosix uses 256 bit AES encryption.
 
-\section*{Yahoo! Messenger}
+\subsection*{Yahoo! Messenger}
 Yahoo! Messenger is just like all of the above a closed program though some information has leaked\cite{wikipediaYahoo}. Yahoo! Messenger protocol(YMSG) uses TCP on port 5050 or a different one if default is unavailable. To get to clients behind firewall HTTP is utilized. Video and voice supposedly use SIP and H.323.
 
 Besides the standard set of IM functions Yahoo! Messenger can call PSTN, send SMS and handle voice conference. Whiteboard feature is called Scribbler and is plugin. Linux is missing in the list of supported platforms while Windows and Mac OS X are not.
 
-\section*{AOL Instant Messenger}
+\subsection*{AOL Instant Messenger}
 AIM is yet another IM with proprietory communication protocol. Though AIM is a bit of an exception for it supports two protocols. First is just for simple text messaging called TOC and has been disclosed to public. Second protocol that supports all of the advanced features is being kept a secret.
 
 AOL's messenger is available for Windows and Mac OS X and features voice and video calls as well as whiteboarding. Whiteboard is available as a plugin for AIM called IM Whiteboard. 
+
+\section{Multimedia streaming protocols}
+\subsection*{SIP}
+\subsection*{RTP}
 
 % =========================================================================================================================
 % =========================================================================================================================

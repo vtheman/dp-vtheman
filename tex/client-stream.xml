@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<stream:stream 
+	xmlns='jabber:client' 
+	xmlns:stream='http://etherx.jabber.org/streams' 
+	to=\"jabbim.cz\" 
+	version=\"1.0\">

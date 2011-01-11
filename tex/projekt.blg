@@ -4,46 +4,54 @@ The style file: plain.bst
 Database file #1: literatura.bib
 Warning--I didn't find a database entry for "Qt"
 Warning--I didn't find a database entry for "irisWiki"
+Warning--I didn't find a database entry for "ICQ"
 Warning--I didn't find a database entry for "empathyGnome"
-You've used 12 entries,
+Warning--I didn't find a database entry for "brosix"
+Warning--I didn't find a database entry for "yahoo"
+Warning--I didn't find a database entry for "kazaa"
+Warning--I didn't find a database entry for "STUNRFC"
+Warning--I didn't find a database entry for "STUNRFCNEW"
+Warning--I didn't find a database entry for "skypeAnalyzed"
+Warning--I didn't find a database entry for "wikipediaYahoo"
+You've used 18 entries,
             2118 wiz_defined-function locations,
-            554 strings with 5045 characters,
-and the built_in function-call counts, 2474 in all, are:
-= -- 229
-> -- 84
+            596 strings with 5974 characters,
+and the built_in function-call counts, 3784 in all, are:
+= -- 349
+> -- 137
 < -- 0
-+ -- 36
-- -- 24
-* -- 63
-:= -- 420
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 48
++ -- 59
+- -- 40
+* -- 108
+:= -- 641
+add.period$ -- 54
+call.type$ -- 18
+change.case$ -- 73
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 84
-empty$ -- 265
-format.name$ -- 24
-if$ -- 542
+cite$ -- 18
+duplicate$ -- 131
+empty$ -- 397
+format.name$ -- 40
+if$ -- 826
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 0
-newline$ -- 63
-num.names$ -- 24
-pop$ -- 96
+int.to.str$ -- 18
+missing$ -- 2
+newline$ -- 93
+num.names$ -- 36
+pop$ -- 146
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 56
 quote$ -- 0
-skip$ -- 94
+skip$ -- 139
 stack$ -- 0
-substring$ -- 60
-swap$ -- 12
+substring$ -- 91
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 70
 warning$ -- 0
-while$ -- 24
-width$ -- 14
-write$ -- 111
-(There were 3 warnings)
+while$ -- 36
+width$ -- 20
+write$ -- 167
+(There were 11 warnings)

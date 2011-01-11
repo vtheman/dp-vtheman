@@ -1,0 +1,3 @@
+<stream:features>
+	<starttls 
+		xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>

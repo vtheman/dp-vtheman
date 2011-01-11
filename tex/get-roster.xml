@@ -1,0 +1,4 @@
+<iq type="get">
+	<query xmlns="jabber:iq:roster"/>
+</iq>
+
