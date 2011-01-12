@@ -107,14 +107,14 @@ Once stream parameters are set, client can request presence, set his or her own 
 \lstinputlisting[language=xml]{sendmsg.xml}
 
 It must include \verb|to|, \verb|from| attributes and \verb|body| opening and closing tags. The first specifis who the message is addressed to using a Jabber ID. Jabber ID consists of \verb|user name @ domain name| and many people mistake for email address. A simple Jabber ID is \verb|vtheman@jabbim.cz|. Attribute from naturaly contains a jabber ID as well, but this time an ID of the sender. The \verb|body| element contains the actual message. 
-
+%TOTO JID
 Next stanza is presence and it is needed for following presence of the contacts in the users' roster. To get presence of a user he or she must approve of it. Once user has been authorized to get another users presence they have both subscribed to get each other's presence. After connecting to the server a user sends initial presence stanza: \verb|<presence/>|. From that moment on the server takes care of the presence. Whenever the user's presence changes, it sends notification to all subscribers in the user's roster. Similarly if someone else's presence changes the user gets notified by his or her server. 
 
 \lstinputlisting[language=xml]{presence.xml}
 
 Presence stanza contains elements \verb|show| and \verb|status|. \verb|show| can be either \verb|chat| meaning available and ready for chat, \verb|away| meaning the user is not at the PC at the moment, \verb|xa| indicates the user will be gone for a longer period of time and finaly \verb|dnd|, which stands for do not disturb.  
 
-The last of stanzas is Info/Query shortly IQ. IQ is very similar to HTTP in methods and in the query-answer nature. IQ queries use method \verb|get| for requesting information and method \verb|set| for making requests based on provided information. Answer to a query is IQ stanza of type \verb|result| and contains information requested by \verb|get| method or acknowledge in case of \verb|set| method. The last type of IQ is \verb|error| and is used to indicate that something went wrogn. A good example of an IQ stanza is acquiring a roster: 
+The last of stanzas is Info/Query shortly IQ. IQ is very similar to HTTP in methods and in the query-answer nature. IQ queries use method \verb|get| for requesting information and method \verb|set| for making requests based on provided information. Answer to a query is IQ stanza of type \verb|result| and contains information requested by \verb|get| method or acknowledge in case of \verb|set| method. The last type of IQ is \verb|error| and is used to indicate that something went wrong. A good example of an IQ stanza is acquiring a roster: 
 
 \lstinputlisting[language=xml]{get-roster.xml}
 
@@ -124,10 +124,13 @@ And the server replies with:
 
 The stream ends with \verb|</stream>| tag and that means end for the communication. 
 
+%\section{Jingle}
+
 \section{Summary}
 XMPP is a robust, scalable, secure, open and extensible protocol that has been well tested over the years passing all of the test without any sign of trouble. It has been very well though out and altogether it is a great protocol. The description given above is in some of the parts simplified. Full description is out of the scope of this thesis.   
 
-%XMPP has been all and all very well though out. 
+% XMPP Jingle
+% XMPP XEP
 
 % =========================================================================================================================
 % =========================================================================================================================
@@ -208,7 +211,7 @@ Mission Control is a Telepathy component that implements Account Manager and Cha
 Account Manager is responsible for handling accounts(e.g. XMPP, ICQ, MSN etc.). It is accessible by well-known name on D-Bus - org.freedesktop.Telepathy.AccountManager. A client application first creates an account using the CreateAccount() method, supplying it with ConnectionManager, protocol and display name. Account Manager creates and then as long as the account is active maintains Connection to that account. To create a Connection a Connection Manager is called. An account may be valid or invalid. Valid accounts may establish a Connection, whereas invalid can't. The list of valid and invalid accounts is accessible via ValidAccounts and InvalidAccounts properties respectively.\cite{TPWiki} 
 
 \subsection*{Account}
-When the Account Manager's CreateAccount() is called it returns an Account object. Account object registers with D-Bus and has an object path /org/freedesktop/Telepathy/Account/CM/PROTOCOL/ACCDN. CM stands for Connection Manager(e.g. gabble, salut, butterly etc.), PROTOCOL is substitution for a protocol name and ACCDN is Account Display Name. The Account object implements org.freedesktop.Telepathy.Account interface. Features supported by this interface depend on the protocol used and the server-side software. The Account settings are done via org.freedesktop.Telepathy.Properties interface. All available attributes can be obtained by calling the GetAll() method provided by the Properties Interface. The GetAll() method is very convenient for it returns all the propeties at once in signle D-Bus call. Similarly there is a method for setting all properties at once - Account interface's UpdateParameters() method. The following tables lists all properties of the Account object available. Table \ref{table:configureableProperties} shows properties that can be configured and table \ref{table:nonConfigurableProperties} shows properties just for reading. Some features are available via specified interface, e.g. avatar. Avatar used to be a property, but now it has it's own interface. The Interfaces property of the account lists all interfaces of additional features.\cite{TPWiki}
+When the Account Manager's CreateAccount() is called it returns an Account object. Account object registers with D-Bus and has an object path /org/freedesktop/Telepathy/Account/CM/PROTOCOL/ACCDN. CM stands for Connection Manager(e.g. gabble, salut, butterly etc.), PROTOCOL is substitution for a protocol name and ACCDN is Account Display Name. The Account object implements org.freedesktop.Telepathy.Account interface. Features supported by this interface depend on the protocol used and the server-side software. The Account settings are done via org.freedesktop.Telepathy.Properties interface. All available attributes can be obtained by calling the GetAll() method provided by the Properties Interface. The GetAll() method is very convenient for it returns all the propeties at once in signle D-Bus call. Similarly there is a method for setting all properties at once - Account interface's \verb|UpdateParameters()| method. Some features are available via specified interface, e.g. avatar. Avatar used to be a property, but now it has it's own interface. The Interfaces property of the account lists all interfaces of additional features.\cite{TPWiki}
 
 \subsection*{Connection Manager}
 Connection Manager supplies Account Manager with Connections. It is not directly used by the client program. Account Manager requests connection for active accounts.
@@ -258,7 +261,7 @@ Channel allows the local client to exchange various kind of data with a remote s
 
 Channels are created using two methods - CreateChannel() and EnsureChannel(). These methods are implemented by both Channel Dispatcher and Connection. When calling either of those methods on Channel Dispatcher the resulting Channel will go through the procedure of looking for handler as described above. When using directly the connection the calling application must handle the Channel itself as the Channel Dispatcher will not interfere. It is also possible to supply the Channel Dispatcher with a preferred handler and thus achieve the same effect. It is better to use the Channel Dispatcher for if the client should fail it may dispatch the Channel to another handler.\cite{TPWiki}
 
-Both CreateChannel() and EnsureChannel() methods provide a Channel. The difference between the two is that CreateChannel() creates actual new Channel whereas EnsureChannel() will attemp to reuse an existing Channel with the same properties. If there is no Channel to be reused or it is being used by a different application than it creates a new Channel, just like CreateChannel(). Typicaly CreateChannel() is used for FileTransfer and ContactSearch and EnsureChannel() for Text, StreamedMedia and ContactLists Channels.\cite{TPWiki} 
+Both CreateChannel() and EnsureChannel() methods provide a Channel. The difference between the two is that CreateChannel() creates actual new Channel whereas EnsureChannel() will attemp to reuse an existing Channel with the same properties. Typicaly CreateChannel() is used for FileTransfer and ContactSearch and EnsureChannel() for Text, StreamedMedia and ContactLists Channels.\cite{TPWiki} 
 
 \subsection*{Client}\label{subsect:tpClient}
 Client is an application that wants to use Telepathy. It needs to register a well-known name in org.freedesktop.Telepathy.Client namespace, e.g. Empathy registers org.freedesktop.Telepathy.Client.Empathy. Then it provides a .client file where purpose of which is described above. Telepathy defines three types of clients - Observer, Approver and Handler. All of these need to provide appropriate channel filter, e.g. Oberver provides ObserverChannelFilter. Based on the published filter the Channel Dispatcher dispatches an incoming Channel to the Client or not.\cite{TPWiki}  
@@ -268,10 +271,6 @@ Observers are called upon a creation of a new Channel. They monitor Channels and
 Approver is a Telepathy Client that is supposed to accept the incoming Channel and decide, which Handler it is dispatched to. The Channel Dispatcher provides Approvers with a list of possible Handlers. Approver notifies the user of a new Channel and lets him or her decide whether to accept or reject it. Similarly the user is allowed to choose which Handler will handle the Channel. Handler might also be chosen by the Approver itself. Approver does not call methods just like the Observer. Calling methods is up to the Handlers. For example if there is an incoming file transfer the Approves lets user decide whether to accept it or not, but the AcceptFile method will be called by the chosen Handler.\cite{TPWiki}  
 
 The last client is Handler. Handler does all the interaction with the Channel. A typical example of a Handler is chat-window. It displays messages and allows the user to send text messages back.\cite{TPWiki}  
-
-%\subsection*{Handle}
-%Telepathy handles represent objects like contact, roster, chatroom etc. It is a number, assigned by Connection the object is related to, that identifies the object. In addition to the numeric id handles also have a string id(e.g. chatroom could have a string id makneto@jabber-discussion.com). Depending on the protocol resource the handle represents it is of an apropriate type(Handle\_type property). Handles with different types may have the same numeric id. When comparing handles it should be always done by comparing the numeric id's, assuming we are comparing handles of the same type.\cite{TPWiki} 
-
 
 \begin{figure}[ht]
 	\begin{center}
@@ -326,7 +325,7 @@ Though closed program, skype provides an API for developers who want to create e
 \begin{figure}[ht]
 	\begin{center}
 	\includegraphics[width=8cm]{fig/skype-architecture.png}
-	\caption{Telepathy components registered with user session D-Bus.\cite{skypeAnalyzed}}
+	\caption{Telepathy components registered with user session D-Bus.\cite{skypeProtocolAnalysis}}
 	\label{fig:skypeArchitecture}
 \end{center}
 \end{figure}
@@ -355,7 +354,39 @@ AOL's messenger is available for Windows and Mac OS X and features voice and vid
 
 \section{Multimedia streaming protocols}
 \subsection*{SIP}
+Session Initiation Protocol is a standardized by IETF and was firts defined in RFC 2543. The latest definition is in RFC 3261. SIP is used in VoIP for negotiating the details of the call. The parameters of the call are described using Session Description protocol described in RFC 4566. Though designed for VoIP it can be used for establishing or terminating any kind of session whether it is between two users or it is a multiuser session. Among the features of SIP is also instant messaging, presence or any kind of event notification. SIP uses primarily UDP on port 5060, but can also use TCP on the same port and 5061 for TLS secured SIP. The syntax is similar to HTTP.
+
+SIP clients are identified by URI\footnote{Uniform Resource Identifier} which usualy looks like this: \verb|sip:username@hostname|, to be concrete \verb|sip:bob@biloxi.com|. Firts the client must register with a SIP proxy, which in Bob's case is \verb|biloxi.com|. Now let's say Alice wants to call Bob. Todo that she needs to know his URI. She sends an \verb|INVITE| to her SIP proxy, by which it is forwarded to Bob's proxy and finally delivered to Bob and his phone or computer start ringing. If he picks up an appropriate numeric code is sent to Alice. The following example\cite{SIPRFC} shows the scenario presented:    
+
+\lstinputlisting{sip-example.tex}
+
+Since SIP serves only to initiate the session it need to cooperate with a protocol that does transfer the data. That protocol is Real-time Transfer Protocol.  
+
 \subsection*{RTP}
+Real-time Transport Protocol is an IETF standard for tranporting data that need to be delivered in real-time rather than reliably. Therefore UDP is used on the transport layer. First was RTP defined in RFC 1889 in 1996 and then later updated in RFC 3550 in 2003. It is primary protocol for streaming audio and video over the internet. It is used for VoIP for transporting the voice while SIP negotioates parameters of the transport. More and more TV stations have been converting to the internet and they use RTP as means of distribution. RTP uses unicast as well as multicast when streaming to multiple subscribers.
+
+RTP is used in conjunction with Real-time Transport Control Protocol. RTCP monitors QoS\footnote{Quality of Service}, statictics of the transfer and help with synchronisation when streaming to multiple destinations. The volume of RTPC traffic should be aroung 5\% of the volume of the stream.  
+
+Unlike the circuit switched network, where the QoS is ensured by it's nature, the packet switched network does not have a way of ensuring short or not even constant delay or sufficient bandwidth. RTP defines mechanisms for making the most of the packet switched network. It is important to note that in packet switched network packet of the same stream might take different path to theis destination. That and network congestion are reason for varying delay commonly reffered to as jitter. RTP labels all the packets with sequence numbers. The implementation of RTP at the destination has a buffer to compensate fo jitter and out of sequence delivery. If the packet arrives too late it is dropped. Dropping packets to some point might not even be noticable by the user. 
+
+RTP sends and receives data on even port numbers and the associated RTCP uses the next higher odd port number. An example on an RTP packet follows. 
+
+\begin{figure}[ht]
+	\begin{center}
+	\includegraphics[width=10cm]{fig/rtp-packet.png}
+	\caption{RTP packet.\cite{rtpBook}}
+	\label{fig:rtpPacket}
+\end{center}
+\end{figure}
+
+% VoIP
+% voice quality factors - codec, echo control, packet loss, delay variation = jitter, QoS
+% some codecs may recover from loosing one packet but just one
+% delay too long = two separate conversations effect
+% jitter buffer to compensate for jitter, if the delays vary too much the buffer overflows and renders the same effect as loosing packets
+% voice activity detection and silence suppresion - the codec generates low rate "comfort noise" to make it sound like an actual backround noise from the telephone
+% delays caused by coding voice and packetization
+% 
 
 % =========================================================================================================================
 % =========================================================================================================================
@@ -366,5 +397,12 @@ AOL's messenger is available for Windows and Mac OS X and features voice and vid
 % =========================================================================================================================
 
 \chapter{Conclusion}
-Závěrečná kapitola obsahuje zhodnocení dosažených výsledků se zvlášť vyznačeným vlastním přínosem studenta. Povinně se zde objeví i zhodnocení z pohledu dalšího vývoje projektu, student uvede náměty vycházející ze zkušeností s řešeným projektem a uvede rovněž návaznosti na právě dokončené projekty.
+The world of today can be described as one enormous network, to which everyone is or soon will be connected. One of the Internet's greatest features is bringing people together. People who hundred of years ago would have to travel sometimes months to see each other or wait for reply get an opinion on an idea from a colleague. Today it is just a few clicks away.
+
+Numerous application exist featuring whiteboard and VoIP and some of them even video conferencing. All of the programs mentioned in chapter 5 unfortunately used proprietory protocols and do not provide any information about it at all. 
+
+There are several ways to implement a VoIP solution. RTP with SIP seems to be a feasible solution as it has been proven to work by numerous applications.Though after much thinking it seems the technologie to with will be XMPP Jingle. It has been implemented by Collabora and is now part of Telepathy Gabble - XMPP connection manager. Though still under development the presented result look promising.
+
+There are several tasks to be done. First is porting Makneto to Telepathy. Then a thourough examination of voice encoding must be done to decide what codec shall be used. And finally implementing VoIP support to Makneto.   
+
 

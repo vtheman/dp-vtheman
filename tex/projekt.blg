@@ -2,56 +2,44 @@ This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: projekt.aux
 The style file: plain.bst
 Database file #1: literatura.bib
-Warning--I didn't find a database entry for "Qt"
-Warning--I didn't find a database entry for "irisWiki"
-Warning--I didn't find a database entry for "ICQ"
-Warning--I didn't find a database entry for "empathyGnome"
-Warning--I didn't find a database entry for "brosix"
-Warning--I didn't find a database entry for "yahoo"
-Warning--I didn't find a database entry for "kazaa"
-Warning--I didn't find a database entry for "STUNRFC"
-Warning--I didn't find a database entry for "STUNRFCNEW"
-Warning--I didn't find a database entry for "skypeAnalyzed"
-Warning--I didn't find a database entry for "wikipediaYahoo"
-You've used 18 entries,
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            596 strings with 5974 characters,
-and the built_in function-call counts, 3784 in all, are:
-= -- 349
-> -- 137
+            659 strings with 7438 characters,
+and the built_in function-call counts, 6491 in all, are:
+= -- 632
+> -- 221
 < -- 0
-+ -- 59
-- -- 40
-* -- 108
-:= -- 641
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 73
++ -- 95
+- -- 64
+* -- 176
+:= -- 1108
+add.period$ -- 116
+call.type$ -- 30
+change.case$ -- 120
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 131
-empty$ -- 397
-format.name$ -- 40
-if$ -- 826
+cite$ -- 30
+duplicate$ -- 220
+empty$ -- 661
+format.name$ -- 64
+if$ -- 1422
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 2
-newline$ -- 93
-num.names$ -- 36
-pop$ -- 146
+int.to.str$ -- 30
+missing$ -- 4
+newline$ -- 179
+num.names$ -- 60
+pop$ -- 286
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 92
 quote$ -- 0
-skip$ -- 139
+skip$ -- 160
 stack$ -- 0
-substring$ -- 91
-swap$ -- 18
+substring$ -- 151
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 70
+type$ -- 116
 warning$ -- 0
-while$ -- 36
-width$ -- 20
-write$ -- 167
-(There were 11 warnings)
+while$ -- 60
+width$ -- 32
+write$ -- 331

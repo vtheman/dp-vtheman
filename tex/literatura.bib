@@ -6,28 +6,99 @@
 		title = {XMPP: The Definitive Guide},
 		isbn = {978-0-596-52126-4},
 	}
+
+	@BOOK{rtpBook,
+   	author = "Colin Perkins",
+		publisher = "Addison-Wesley",
+		month = "June",
+		year = "2008",
+		title = {RTP: Audio and Video for the Internet},
+		isbn = {0-672-32249-8},
+	}
 	
 	@MISC{skypeProtocolAnalysis,
 	      author = "Salman A. Baset, Henning Schulzrinne",
 	      title = "An Analysis of the Skype Peer-to-Peer Internet Telephony Protocol",
 	      publisher = "Columbia University",
 	      year = "2004",
-	      howpublished= "[online]. URL {\tt http://www.cs.columbia.edu/~library/TR-repository/reports/reports-2004/cucs-039-04.pdf}",
+	      howpublished= "{\tt http://www.cs.columbia.edu/~library/TR-repository/reports/reports-2004/cucs-039-04.pdf}",
+			note = "[online, accessed 26 Dec 2010."
 	}
- 
- 	@MISC{xmppCoreRFC,
+ 	
+	@MISC{STUNRFC,
+	   author =       "{j. Rosenberg et. al}",
+      title =        "STUN - Simple Traversal of User Datagram Protocol (UDP) Through Network Address Translators (NATs)",
+      publisher =    "IETF",
+		year =			"2003",
+		howpublished=  "{\tt http://tools.ietf.org/html/rfc3489}",
+		note = "[online]"
+	}
+	
+	@MISC{STUNRFCNEW,
+	   author =       "{J. Rosenberg et. al}",
+      title =        "Session Traversal Utilities for NAT (STUN)",
+      publisher =    "IETF",
+		year =			"2008",
+		howpublished=  "{\tt http://tools.ietf.org/html/rfc5389}",
+		note = "[online]"
+	}
+	
+	@MISC{rtpRFC,
+	   author =       "{H. Schulzrinne et. al}",
+      title =        "RTP: A Transport Protocol for Real-Time Applications",
+      publisher =    "IETF",
+		year =			"2003",
+		howpublished=  "{\tt http://www.ietf.org/rfc/rfc3550.txt}",
+		note = "[online]"
+	}
+  
+	@MISC{rtpOldRFC,
+	   author =       "{H. Schulzrinne et. al}",
+      title =        "RTP: A Transport Protocol for Real-Time Applications",
+      publisher =    "IETF",
+		year =			"1996",
+		howpublished=  "{\tt http://www.ietf.org/rfc/rfc1889.txt}",
+		note = "[online]"
+	}
+
+	@MISC{SIPRFC,
+      author = "{J. Rosenberg et al.}",
+		title = "SIP: Session Initialization Protocol",
+		publisher = "IETF",
+		year = "2002",
+		howpublished= "{\tt http://www.ietf.org/rfc/rfc3261.txt}",
+		note = "[online; Last modified June 2002]" 
+	}
+ 	
+	@MISC{xmppCoreRFC,
 		author = "Peter Saint-Andre",
 		title = "XMPP Core",
-		URL = "http://www.ietf.org/rfc/rfc3920.txt",
 		institution= "Jabber Software Foundation",
-		howpublished= "[online]. Last modified: 30 Sep 2004. [cit. 2008-01-06]. Accessible from WWW {\tt http://www.ietf.org/rfc/rfc3920.txt}",
-
+		howpublished= "{\tt http://www.ietf.org/rfc/rfc3920.txt}",
+		note = "[online, Last modified: 30 Sep 2004." 
 	}
 
 	@MISC{xmppIMRFC,
 		author = "Peter Saint-Andre",
 		title = "XMPP IM",
-		howpublished= "[online]. Last modified: 01 Oct 2004. [cit. 2008-01-06]. Accessible from WWW {\tt http://www.ietf.org/rfc/rfc3921.txt}",
+		howpublished= " {\tt http://www.ietf.org/rfc/rfc3921.txt}",
+		note = "[online, Last modified: 01 Oct 2004."
+	}
+
+	@MISC{rtp,
+   	author = "{H. Schulzrinne et al.}",
+		title = "RTP: A Transport Protocol for Real-Time Applications",
+		publisher = "IETF",
+		year = "2003",
+		howpublished="{\tt http://www.ietf.org/rfc/rfc3550.txt}",	    
+	}
+
+	@MISC{rctp_profile,
+	   author =       "{H. Schulzrinne, S. Casner}",
+		title =        "RTP Profile for Audio and Video Conferences with Minimal Control",
+		publisher =    "IETF",
+		year =         "2003",
+		howpublished=  "URL {\tt http://www.ietf.org/rfc/rfc3551.txt}",
 	}
 
 	@MasterThesis{makneto,
@@ -39,111 +110,157 @@
 	}
 	
 	@MISC{telepathy,
-      author =       "{WWW stránky}",  
+      author =       "Collabora",  
       title =        "Telepathy",
       howpublished=  "{\tt http://telepathy.freedesktop.org}",
+ 	 	note = "[online; accessed 12 Nov 2010]"
    }
 		
 	@MISC{xmpp,
-      author =       "{WWW stránky}",  
+      author =       "XMPP Standard Foundation",  
       title =        "XMPP Standards Foundation",
       howpublished=  "{\tt http://xmpp.org/}",
-   }
+ 	 	note = "[online; accessed 11 Dec 2010]"
+	}
 	
 	@MISC{TPWiki,
-      author =       "{WWW stránky}",  
+      author =       "Collabora",  
       title =        "Telepathy Wiki",
       howpublished=  "{\tt http://telepathy.freedesktop.org/doc/book/index.html}",
+ 	 	note = "[online; accessed 18 Nov 2010]"
    }
-	   
+	   	
+	@MISC{Qt,
+      author =       "Nokia",  
+      title =        "Qt - A cross-platform application and UI framework",
+      howpublished=  "{\tt http://qt.nokia.com/}",
+ 	 	note = "[online; accessed 15 Nov 2010]"
+   }
+	
+	@MISC{empathyGnome,
+      author =       "The GNOME Project",  
+      title =        "Empathy - GNOME Live!",
+      howpublished=  "{\tt http://live.gnome.org/Empathy}",
+ 	 	note = "[online; accessed 01 Dec 2010]"
+  	} 
+	
+	@MISC{irisWiki,
+      author =       "Psi",  
+      title =        "Iris Library",
+      howpublished=  "{\tt http://psi-im.org/wiki/Iris\_Library}",
+ 	 	note = "[online; accessed 17 Nov 2010]"
+   }
+	
 	@MISC{SVGWB,
       author =       "Joonas Govenius",  
-      title =        "Telepathy Wiki, Channels",
+      title =        "SVG Whiteboarding",
 		year = 			"2006-06-19",
       howpublished=  "{\tt http://xmpp.org/extensions/inbox/wb.html}",
    }	
 	
 	@MISC{KDE,
-      author =       "{WWW stránky}",  
+      author =       "KDE",  
       title =        "KDE",
       howpublished=  "{\tt http://www.kde.org/}",
-   }
+ 	 	note = "[online; accessed 3 Dec 2010]"
+  	}
 
 	@MISC{wikiQt,
-      author =       "{WWW stránky}",  
+      author =       "Wikipedia",  
       title =        "Wikipedia - Qt(framework)",
       howpublished=  "{\tt http://en.wikipedia.org/wiki/Qt\_(framework)}",
+ 	 	note = "[online; accessed 7 Dec 2010]"
    }
 
 	@MISC{SVG,
       author =       "{Kolektiv autorů}",  
       title =        "Scalable Vector Graphics(SVG)",
       howpublished=  "{\tt http://www.w3.org/Graphics/SVG/}",
+ 	 	note = "[online; accessed 18 Dec 2010]"
    }
 	
 	@MISC{SVGtiny,
       author =       "{Kolektiv autorů}",  
       title =        "SVG Tiny 1.2 Specification",
       howpublished=  "{\tt http://www.w3.org/TR/SVGTiny12/}",
+ 	 	note = "[online; accessed 18 Dec 2010]"
    }
 
+	@MISC{dbus,
+      author =       "Collabora",  
+      title =        "D-Bus",
+      howpublished=  "{\tt http://www.freedesktop.org/wiki/Software/dbus}",
+   	note = "[online; accessed 19 Nov 2010]"
+   }
+	
 	@MISC{skype,
       author =       "Skype.com",
       title =        "Skype",
       howpublished=  "{\tt http://www.skype.com}",
+   	note = "[online; accessed 26 Dec 2010]"
    }	
 	
+
+
+	@MISC{WindowsLiveMessenger,
+      author =       "Microsoft",
+      title =        "Windows Live Messenger 2011",
+      howpublished=  "{\tt http://explore.live.com/windows-live-messenger}",
+ 	 	note = "[online; accessed 4 Jan 2011]"
+   }		
+
+	@MISC{AIM,
+      author =       "America OnLine",
+      title =        "AOL Instant Messenger",
+      howpublished=  "{\tt http://www.aim.com}",
+ 	 	note = "[online; accessed 2 Jan 2011]"
+   }			
+	
+	@MISC{ICQ,
+      author =       "ICQ",
+      title =        "ICQ",
+      howpublished=  "{\tt http://www.icq.com}",
+ 	 	note = "[online; accessed 29 Dec 2010]"	
+	}				
+
+	@MISC{brosix,
+      author =       "Brosix",
+      title =        "Brosix - Seruce Corporate Instatnt Messaging for Companies",
+      howpublished=  "{\tt http://www.brosix.com}",
+ 	 	note = "[online; accessed 30 Dec 2010]"	
+	}
+
+	@MISC{yahoo,
+      author =       "Yahoo!",
+      title =        "Yahoo! Messenger",
+      howpublished=  "{\tt http://messenger.yahoo.com}",
+ 	 	note = "[online; accessed 30 Dec 2010]"	
+	}	
+
+	@MISC{kazaa,
+      author =       "KaZaA",
+      title =        "Download Music - Music Downloads and mp3 downloads from Kazaa.com",
+      howpublished=  "{\tt http://messenger.yahoo.com}",
+ 	 	note = "[online; accessed 26 Dec 2010]"	
+	}		
+
+	@MISC{wikipediaSkypeProtocol,
+      author =       "Wikipedia",  
+      title =        "Wikipedia, Skype protocol",
+      howpublished=  "{\tt http://en.wikipedia.org/wiki/Skype\_Protocol}",
+   	note = "[online; accessed 26 Dec 2010]"
+	}	
+		
+	@MISC{wikipediaYahoo,
+      author =       "Wikipedia",  
+      title =        "Wikipedia, Yahoo! Messenger",
+      howpublished=  "{\tt http://en.wikipedia.org/wiki/Yahoo!\_Messenger}",
+   	note = "[online; accessed 27 Dec 2010]"
+	}	
+
 	@MISC{skypeOutage,
       author =       "Terry Brock",  
       title =        "Skype Outage Today",
       howpublished=  "{\tt http://blogs.skype.com/business/2010/12/skype\_outage\_today.html}",
    }
-
-	@MISC{wikipediaSkypeProtocol,
-      author =       "{WWW stránky}",  
-      title =        "Wikipedia, Skype protocol",
-      howpublished=  "{\tt http://en.wikipedia.org/wiki/Skype\_Protocol}",
-   }	
 	
-	@MISC{WindowsLiveMessenger,
-      author =       "{WWW stránky}",
-      title =        "Windows Live Messenger 2011",
-      howpublished=  "{\tt http://explore.live.com/windows-live-messenger}",
-   }		
-
-	@MISC{AIM,
-      author =       "{WWW stránky}",
-      title =        "AOL Instant Messenger",
-      howpublished=  "{\tt http://www.aim.com}",
-   }			
-	
-	@MISC{dbus,
-      author =       "{WWW stránky}",  
-      title =        "D-Bus",
-      howpublished=  "{\tt http://www.freedesktop.org/wiki/Software/dbus}",
-   }
-	
-	@MISC{fitWeb,
-      author =       "Z. Rábová and P. Hanáček and P. Peringer and P. Přikryl and B. Křena",  
-      title =        "Užitečné rady pro psaní odborného textu [online]",
-      publisher =    "FIT VUT v Brně",
-      year =         "2008-11-01 [cit. 2008-11-28]",
-      howpublished=  "{\tt http://www.fit.vutbr.cz/info/statnice/psani\_textu.html}",
-   }
-   
-	@BOOK{Knuth,
-      author =       "Donald E. Knuth",
-      title =        "The {\TeX}book",
-      publisher =    "Addison-Wesley Publishing Company",
-      year =         "1996",
-      note =         "ISBN~0-201-13447-0",
-    }
-    
-	 @BOOK{Pravidla,
-      author =       "{Kolektiv autorů}",
-      title =        "Pravidla českého pravopisu",
-      publisher =    "Academia",
-      year =         "2005",
-      note =         "ISBN~80-200-1327-X",
-    }
-  
