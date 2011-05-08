@@ -18,7 +18,7 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\citation{wikiQt}
+\citation{qtBook}
 \citation{Qt}
 \citation{KDE}
 \citation{irisWiki}
@@ -44,22 +44,26 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}History}{6}{section.3.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}XMPP protocol}{6}{section.3.2}}
 \citation{xmppBook}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces XMPP decentralized architecture\cite  {xmppBook}}}{7}{figure.3.1}}
-\newlabel{fig:xmpp-decentralized-architecture}{{3.1}{7}{XMPP decentralized architecture\cite {xmppBook}\relax }{figure.3.1}{}}
-\@writefile{lol}{\contentsline {lstlisting}{client\textendash stream.xml}{8}{lstlisting.3.-1}}
-\@writefile{lol}{\contentsline {lstlisting}{server\textendash stream.xml}{8}{lstlisting.3.-2}}
-\@writefile{lol}{\contentsline {lstlisting}{starttls.xml}{8}{lstlisting.3.-3}}
-\@writefile{lol}{\contentsline {lstlisting}{sendmsg.xml}{9}{lstlisting.3.-4}}
-\@writefile{lol}{\contentsline {lstlisting}{presence.xml}{9}{lstlisting.3.-5}}
-\@writefile{lol}{\contentsline {lstlisting}{get\textendash roster.xml}{9}{lstlisting.3.-6}}
-\@writefile{lol}{\contentsline {lstlisting}{send\textendash roster.xml}{9}{lstlisting.3.-7}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Summary}{10}{section.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces XMPP decentralized architecture \cite  {xmppBook}}}{7}{figure.3.1}}
+\newlabel{fig:xmpp-decentralized-architecture}{{3.1}{7}{XMPP decentralized architecture \cite {xmppBook}\relax }{figure.3.1}{}}
+\citation{xepMUC}
+\citation{xepServiceDiscovery}
+\citation{xepCapabilitiesAdvertisement}
+\citation{xepJignle}
+\citation{googleTalk}
+\citation{xmppBook}
+\citation{xmppBook}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Jingle}{9}{section.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Data flow in media session initiation, management and termination using XMPP Jingle\cite  {xmppBook}}}{10}{figure.3.2}}
+\newlabel{fig:xmppJingleDataFlow}{{3.2}{10}{Data flow in media session initiation, management and termination using XMPP Jingle\cite {xmppBook}\relax }{figure.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Summary}{10}{section.3.4}}
 \citation{telepathy}
 \citation{TPWiki}
 \citation{TPWiki}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Telepathy}{11}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chapter:telepathy}{{4}{11}{Telepathy\relax }{chapter.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Telepathy architecture\cite  {TPWiki}}}{11}{figure.4.1}}
 \newlabel{fig:telepathyArchitecture}{{4.1}{11}{Telepathy architecture\cite {TPWiki}\relax }{figure.4.1}{}}
 \citation{dbus}
@@ -69,7 +73,6 @@
 \citation{TPWiki}
 \citation{TPWiki}
 \citation{dbus}
-\citation{TPWiki}
 \citation{TPWiki}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces D-Bus id and wellknown name example\cite  {TPWiki}}}{13}{figure.4.2}}
 \newlabel{fig:dbusArchitectureNames}{{4.2}{13}{D-Bus id and wellknown name example\cite {TPWiki}\relax }{figure.4.2}{}}
@@ -87,8 +90,9 @@
 \citation{TPWiki}
 \citation{TPWiki}
 \citation{TPWiki}
+\citation{TPWiki}
 \citation{empathyGnome}
-\newlabel{subsect:tpClient}{{4.1}{16}{Client\relax }{section*.11}{}}
+\newlabel{subsect:tpClient}{{4.1}{16}{Client\relax }{section*.12}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Empathy}{16}{section.4.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Telepathy components registered with user session D-Bus.\cite  {TPWiki}}}{17}{figure.4.4}}
 \newlabel{fig:telepathyComponentsDbus}{{4.4}{17}{Telepathy components registered with user session D-Bus.\cite {TPWiki}\relax }{figure.4.4}{}}
@@ -114,13 +118,20 @@
 \citation{wikipediaYahoo}
 \citation{SIPRFC}
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Multimedia streaming protocols}{21}{section.5.2}}
-\@writefile{lol}{\contentsline {lstlisting}{sip\textendash example.tex}{21}{lstlisting.5.-8}}
 \citation{rtpBook}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces RTP packet.\cite  {rtpBook}}}{22}{figure.5.2}}
 \newlabel{fig:rtpPacket}{{5.2}{22}{RTP packet.\cite {rtpBook}\relax }{figure.5.2}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Port to Telepathy}{23}{chapter.6}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Makneto backend class diagram}}{23}{figure.6.1}}
+\newlabel{fig:MaknetoLibClassDiagram}{{6.1}{23}{Makneto backend class diagram\relax }{figure.6.1}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}VoIP implementation}{25}{chapter.7}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
 \bibstyle{plain}
 \bibdata{literatura}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{23}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{26}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibcite{skypeOutage}{1}
@@ -129,27 +140,32 @@
 \bibcite{telepathy}{4}
 \bibcite{TPWiki}{5}
 \bibcite{xmpp}{6}
-\bibcite{SVGWB}{7}
-\bibcite{ICQ}{8}
-\bibcite{SIPRFC}{9}
-\bibcite{STUNRFC}{10}
-\bibcite{STUNRFCNEW}{11}
-\bibcite{kazaa}{12}
-\bibcite{KDE}{13}
-\bibcite{SVG}{14}
-\bibcite{SVGtiny}{15}
-\bibcite{WindowsLiveMessenger}{16}
-\bibcite{Qt}{17}
-\bibcite{AIM}{18}
-\bibcite{rtpBook}{19}
-\bibcite{empathyGnome}{20}
-\bibcite{irisWiki}{21}
-\bibcite{xmppCoreRFC}{22}
-\bibcite{xmppIMRFC}{23}
-\bibcite{xmppBook}{24}
-\bibcite{skypeProtocolAnalysis}{25}
-\bibcite{skype}{26}
-\bibcite{wikiQt}{27}
-\bibcite{wikipediaSkypeProtocol}{28}
-\bibcite{wikipediaYahoo}{29}
-\bibcite{yahoo}{30}
+\bibcite{googleTalk}{7}
+\bibcite{SVGWB}{8}
+\bibcite{ICQ}{9}
+\bibcite{SIPRFC}{10}
+\bibcite{STUNRFC}{11}
+\bibcite{STUNRFCNEW}{12}
+\bibcite{xepServiceDiscovery}{13}
+\bibcite{xepCapabilitiesAdvertisement}{14}
+\bibcite{kazaa}{15}
+\bibcite{KDE}{16}
+\bibcite{SVG}{17}
+\bibcite{SVGtiny}{18}
+\bibcite{WindowsLiveMessenger}{19}
+\bibcite{qtBook}{20}
+\bibcite{Qt}{21}
+\bibcite{AIM}{22}
+\bibcite{rtpBook}{23}
+\bibcite{empathyGnome}{24}
+\bibcite{irisWiki}{25}
+\bibcite{xepMUC}{26}
+\bibcite{xmppCoreRFC}{27}
+\bibcite{xmppIMRFC}{28}
+\bibcite{xmppBook}{29}
+\bibcite{skypeProtocolAnalysis}{30}
+\bibcite{xepJignle}{31}
+\bibcite{skype}{32}
+\bibcite{wikipediaSkypeProtocol}{33}
+\bibcite{wikipediaYahoo}{34}
+\bibcite{yahoo}{35}

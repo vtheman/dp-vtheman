@@ -2,44 +2,44 @@ This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: projekt.aux
 The style file: plain.bst
 Database file #1: literatura.bib
-You've used 30 entries,
+You've used 35 entries,
             2118 wiz_defined-function locations,
-            659 strings with 7438 characters,
-and the built_in function-call counts, 6491 in all, are:
-= -- 632
-> -- 221
+            655 strings with 6918 characters,
+and the built_in function-call counts, 7228 in all, are:
+= -- 643
+> -- 256
 < -- 0
-+ -- 95
-- -- 64
-* -- 176
-:= -- 1108
-add.period$ -- 116
-call.type$ -- 30
-change.case$ -- 120
++ -- 111
+- -- 74
+* -- 206
+:= -- 1198
+add.period$ -- 105
+call.type$ -- 35
+change.case$ -- 139
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 220
-empty$ -- 661
-format.name$ -- 64
-if$ -- 1422
+cite$ -- 35
+duplicate$ -- 260
+empty$ -- 771
+format.name$ -- 74
+if$ -- 1564
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 4
-newline$ -- 179
-num.names$ -- 60
-pop$ -- 286
+int.to.str$ -- 35
+missing$ -- 6
+newline$ -- 178
+num.names$ -- 70
+pop$ -- 368
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 107
 quote$ -- 0
-skip$ -- 160
+skip$ -- 214
 stack$ -- 0
-substring$ -- 151
-swap$ -- 30
+substring$ -- 177
+swap$ -- 35
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
+type$ -- 134
 warning$ -- 0
-while$ -- 60
-width$ -- 32
-write$ -- 331
+while$ -- 70
+width$ -- 37
+write$ -- 325

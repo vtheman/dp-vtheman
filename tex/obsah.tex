@@ -1,6 +1,6 @@
 %==========================================================================================================================
 % (c) Vojtěch Kulička, 2010
-
+\linenumbers
 \chapter{Introduction}
 Human is a social creature and likes to chat, share feelings and ideas. At first we managed to do so by making simple sounds. Those sounds later on developed into words. Then much later the human race started to feel the need to record what we were thinking. We made up symbols and started to write. As the society grew and spread, we wanted to communicate with people from other tribes and villages. At first we would travel and use spoken words, but as the distances grew we figured we can have our thoughts delivered in writing. Mail was born. In 1844 telegraph was invented by Samuel Morse followed by telepthone in 1874 by Alexander Graham Bell. And finally in 1969 the Internet was created. All of these inventions aimed to provide means of communication to satisfy the needs of the evolving society.  
 
@@ -25,11 +25,11 @@ Finally the implementantion of VoIP into Makneto is in chapter six.
 
 \chapter{Makneto}
 \section{Current architecture}
-Makneto is an instant messenger with a shared board capability. It was written by Jaroslav Řezník as his master's thesis in 2008. Makneto is written in C++ using Qt version 4 and KDE 4 libraries. Qt is a application framework written in C++. Qt extends C++ and instead of callback function uses a concept of signals and slots, which is as opposed to callback functions type-safe. It runs on all major computer platforms like GNU Linux, Microsoft Windows and Mac OS X. Moreso it is supported by mobile device platforms such as Symbian and Microsoft Windows Mobile. There is also a port to Google Android called Lighthouse. Qt was developed by company named Trolltech and was available under two licenses. First was a commercial license allowing companies to write proprietory applications for a fee. Second was GNU General Public License, which was of course free. Thanks to the commercial license the Qt documentation is one of the best among any software available under GNU GPL. In june 2008 Troltech was acquired by Nokia. Nokia decided to make the source code available so that anyone could contribute. In January 2009 with the release of Qt 4.5 another licensing option was added - Lesser General Public License.\cite{wikiQt}\cite{Qt}
+Makneto is an instant messenger with a shared board capability. It was written by Jaroslav Řezník as his master's thesis in 2008. Makneto is written in C++ using Qt version 4 and KDE 4 libraries. Qt is a application framework written in C++. Qt extends C++ and instead of callback function uses a concept of signals and slots, which is as opposed to callback functions type-safe. It runs on all major computer platforms like GNU Linux, Microsoft Windows and Mac OS X. Moreso it is supported by mobile device platforms such as Symbian and Microsoft Windows Mobile. There is also a port to Google Android called Lighthouse. Qt was developed by company named Trolltech and was available under two licenses. First was a commercial license allowing companies to write proprietory applications for a fee. Second was GNU General Public License, which was of course free. Thanks to the commercial license the Qt documentation is one of the best among any software available under GNU GPL. In june 2008 Troltech was acquired by Nokia. Nokia decided to make the source code available so that anyone could contribute. In January 2009 with the release of Qt 4.5 another licensing option was added - Lesser General Public License \cite{qtBook,Qt}.
 
 Besides Qt Makneto utilizes functionality provide by KDE 4\cite{KDE} libraries, which makes Makneto unable to run on a different operating system than GNU Linux. KDE is a desktop environment created by Matthias Ettricht in 1996 for he felt the need for a good quality window manager for Linux. KDE is currently in version 4, which brought great features. There is a new desktop called Plasma, which allows users to display widgets called plasmoids directly on the desktop. That allows users to have a TODO list, calendar, translator, weather forecast, system monitor and much more right in front of them on their desktops without having launch any of those to get the information they need. It makes users' work eesier and more efficient. KDE and GNOME are the most common window manager in Linux. GNOME offers stable useful environment and is influenced mostly by large businesses using it. KDE is more flexible and works more with the look and feel.
 
-Makneto communicates using XMPP/Jabber protocol implemented in Qt-based C++ library called Iris. All of the Iris is primarily used by Psi instant messenger. It's development is still quite active and it supports all of Jabber's key features. Iris' downside is very poor documentation. It's wiki is very brief and all to all gives one example. The only way to find out how it works is browsing through Psi code.\cite{irisWiki}
+Makneto communicates using XMPP/Jabber protocol implemented in Qt-based C++ library called Iris. All of the Iris is primarily used by Psi instant messenger. It's development is still quite active and it supports all of Jabber's key features. Iris' downside is very poor documentation. It's wiki is very brief and all to all gives one example. The only way to find out how it works is browsing through Psi code \cite{irisWiki}.
 
 Makneto's shared whiteboard is based an official extension of XMPP SVGWB by Joonas Govenius\cite{SVGWB}. SVGWB is implemented in Psi and Makneto utilizes their code. SVGWB defines all the necessary actions like whiteboard session initianion including invitation and mainly how to send and receive information about the grahical objects using XMPP text messages. The actual graphical object representation is defined by SVG\cite{SVG}(Scalable Vector Graphics) by W3C. SVG describes graphics objects using vectors in XML format. Makneto uses just a subset of SVG called SVG Tiny\cite{SVGtiny} as it does not need all of the features of SVG. Tiny SVG describes two-dimensional vector graphics and raster graphics and multimedia. To sum up Makneto's whiteboard features, it allows you to draw lines, rectangles, elipses, circles, sketch using a paintbrush and input images in jpg and png formats. Graphical objects are resizeable, can be rotaded and copied.  
 
@@ -51,21 +51,20 @@ Frontend shall be a subject to change based on target device. Makneto for PC wil
 
 
 
-
 % =========================================================================================================================
 % =========================================================================================================================
 
 \chapter{XMPP}
-This chapter talks about Extensible Messaging and Presence Protocol\cite{xmpp}, it's history, key features and usage. The information is mailny acquired from from \cite{xmppBook,xmppCoreRFC,xmppIMRFC}.
+This chapter talks about Extensible Messaging and Presence Protocol \cite{xmpp}, it's history, key features and usage. The information is mailny acquired from \cite{xmppBook,xmppCoreRFC,xmppIMRFC}.
 
 \section{History}
-In 1999 Jerremie Miller created protocol called Jabber. Jabber was an open protocol based on XML as opposed to existing protocols like ICQ\cite{ICQ} or AIM\cite{AIM}, which were proprietory and owned and controlled by private companies. The first attemp to make Jabber a standard failed. The second attempt did not use the name Jabber, but eXtensible Messaging and Presence Protocol instead. IETF\footnote{Internet Engineering Task Force} approved and XMPP was standardized in 2004 in RFC 3920 and RFC 3921 called XMPP Core and XMPP IM respectively. Development of XMPP is still active as it is based on XML it is possible to add functionality without jeopardising the compatibility of existing implemenstations.      
+In 1999 Jerremie Miller created protocol called Jabber. Jabber was an open protocol based on XML as opposed to existing protocols like ICQ \cite{ICQ} or AIM \cite{AIM}, which were proprietory and owned and controlled by private companies. The first attemp to make Jabber a standard failed. The second attempt did not use the name Jabber, but eXtensible Messaging and Presence Protocol instead. IETF\footnote{Internet Engineering Task Force} approved and XMPP was standardized in 2004 in RFC 3920 and RFC 3921 called XMPP Core and XMPP IM respectively. Development of XMPP is still active as it is based on XML it is possible to add functionality without jeopardising the compatibility of existing implemenstations.      
 
 \section{XMPP protocol}
 XMPP is defined in \cite{xmppCoreRFC} and \cite{xmppIMRFC}, which describe all the key features of the protocol. Authors of XMPP aim for a scalable, extensible and in every way powerful protocol. Years later with XMPP still around and more and more popular we can safely say they succeeded. The key features of XMPP include:
 
 \begin{itemize}
-	\item \textbf{Decentralized architecture} - XMPP network does not rely on one server. The network consists of servers and clients. Every client may run his or her own server. XMPP server registers clients and communicates with other servers much like with email(see figure \ref{fig:xmpp-decentralized-architecture}). A client often wants to communicate with another client on a different server. In such case other client's server is looked up and the message forwarded. If a client is not satisfied with the server he or she registered with he or she may simply register with a different server or run his or her own. There is also no way to take the whole network out with DoS\footnote{Denial of Service} attack. There simply is not a small number of target to attack.    
+	\item \textbf{Decentralized architecture} - XMPP network does not rely on one server. The network consists of servers and clients. Every client may run his or her own server. XMPP server registers clients and communicates with other servers much like with email(see figure \ref{fig:xmpp-decentralized-architecture}). A client often wants to communicate with another client on a different server. In such case other client's server is looked up and the message forwarded. If a client is not satisfied with the server he or she registered with he or she may simply register with a different server or run his or her own. There is also no way to take the whole network out with DoS\footnote{Denial of Service} or DDoS\footnote{Distributed Denial of Service} attack. There simply is not a small number of target to attack.    
 	\item  \textbf{Open nature} - XMPP is an open standard that can be used by anyone without having to pay, sign any agreement or behave by any restrictive policies. Also it's fate is not in hands of one company but rather in the hands of everyone. Anyone who wishes to contribute can do so by cooperating with XMPP Standards Foundation. 
 	\item \textbf{Extensibility} - thanks to XML based nature of XMPP it is very simple to add new features without discontinuing support of the old ones. This feature makes XMPP very flexible for it can easily add new functionality and it has been already done couple times.  
 	\item \textbf{Security} - with built-in support for TLS and SSL there is no need to worry that the messages might be read by a third person using man in the middle attack. Companies using XMPP for communication inside their network might run their server localy with no access to the outside world.  
@@ -74,7 +73,7 @@ XMPP is defined in \cite{xmppCoreRFC} and \cite{xmppIMRFC}, which describe all t
 \begin{figure}[ht]
 \begin{center}
 	\includegraphics[width=10cm]{fig/XMPP-decentralized-architecture.png}
-	\caption{XMPP decentralized architecture\cite{xmppBook}}
+	\caption{XMPP decentralized architecture \cite{xmppBook}}
 	\label{fig:xmpp-decentralized-architecture}
 \end{center}
 \end{figure}
@@ -92,50 +91,82 @@ XMPP is basicaly streaming XML documents. The stream is an unbounded XML documen
 
 First a TCP connection is established between client and server. Once established a stream is opened by client by sending the server \verb|<stream>| tag. There is an example of opening a stream below: 
 
-\lstinputlisting[language=xml]{client-stream.xml}
+%\begin{figure}[h]
+%\lstset{language=XML ,caption={Opening communication with server}, label=lstXmppBeginCommunication}
+%\begin{lstlisting}
+%<?xml version='1.0' encoding='UTF-8'?>
+%<stream:stream 
+%	xmlns='jabber:client' 
+%	xmlns:stream='http://etherx.jabber.org/streams' 
+%	to=\"jabbim.cz\" 
+%	version=\"1.0\">
+%\end{lstlisting}
+%\end{figure}
+
+%\lstinputlisting[language=XML]{client-stream.xml}
 
 Server answers with a second stream back to the client, which is shown in the piece of XML code that follows. 
 
-\lstinputlisting[language=xml]{server-stream.xml}
+%\lstinputlisting[language=xml]{server-stream.xml}
 
 The next step is to negotiate properties of the stream. The server sends an XML enclosed in \verb|stream:feature| tags, informing the client about features it supports. The most important property is by far encryption and authentication. Preferred encryption method is TLS, but SSL is also an option. However some servers may require usage of TLS. TLS is recommended for both client-server and server-server communication. Authentication is a key responsibility of the server. The server must ensures that users attempting to connect to it are who they say they are. The server acts as a gateway to the entire network and must not allow identity spoofing. Authentication is done via SASL\footnote{Simple Authentication and Security Layer} and options supported by the server are enclosed in \verb|mechanism| tags. The example, where server supports TLS and SASL using PLAIN text or MD5 is shown below:   
 
-\lstinputlisting[language=xml]{starttls.xml}
+%\lstinputlisting[language=xml]{starttls.xml}
 
 Once stream parameters are set, client can request presence, set his or her own presence and communicate with other clients. Sending a message to a fellow user is accomplished via \verb|message| stanza and may look like this:
 
-\lstinputlisting[language=xml]{sendmsg.xml}
+%\lstinputlisting[language=xml]{sendmsg.xml}
 
 It must include \verb|to|, \verb|from| attributes and \verb|body| opening and closing tags. The first specifis who the message is addressed to using a Jabber ID. Jabber ID consists of \verb|user name @ domain name| and many people mistake for email address. A simple Jabber ID is \verb|vtheman@jabbim.cz|. Attribute from naturaly contains a jabber ID as well, but this time an ID of the sender. The \verb|body| element contains the actual message. 
-%TOTO JID
+%TODO JID
 Next stanza is presence and it is needed for following presence of the contacts in the users' roster. To get presence of a user he or she must approve of it. Once user has been authorized to get another users presence they have both subscribed to get each other's presence. After connecting to the server a user sends initial presence stanza: \verb|<presence/>|. From that moment on the server takes care of the presence. Whenever the user's presence changes, it sends notification to all subscribers in the user's roster. Similarly if someone else's presence changes the user gets notified by his or her server. 
 
-\lstinputlisting[language=xml]{presence.xml}
+%\lstinputlisting[language=xml]{presence.xml}
 
 Presence stanza contains elements \verb|show| and \verb|status|. \verb|show| can be either \verb|chat| meaning available and ready for chat, \verb|away| meaning the user is not at the PC at the moment, \verb|xa| indicates the user will be gone for a longer period of time and finaly \verb|dnd|, which stands for do not disturb.  
 
 The last of stanzas is Info/Query shortly IQ. IQ is very similar to HTTP in methods and in the query-answer nature. IQ queries use method \verb|get| for requesting information and method \verb|set| for making requests based on provided information. Answer to a query is IQ stanza of type \verb|result| and contains information requested by \verb|get| method or acknowledge in case of \verb|set| method. The last type of IQ is \verb|error| and is used to indicate that something went wrong. A good example of an IQ stanza is acquiring a roster: 
 
-\lstinputlisting[language=xml]{get-roster.xml}
+%\lstinputlisting[language=xml]{get-roster.xml}
 
 And the server replies with:
 
-\lstinputlisting[language=xml]{send-roster.xml}
+%\lstinputlisting[language=xml]{send-roster.xml}
 
 The stream ends with \verb|</stream>| tag and that means end for the communication. 
 
-%\section{Jingle}
+\subsection*{XMPP Extensions}
+As mentioned earlier XMPP is easily extensible due to it's XML based architecture. XMPP extensions are published by XSF as XEP\footnote{XMPP Extension Protocol}. Basic XMPP functionality is defined in the RFC 3920 and RFC 3921 and every XMPP server and client ought to implement it. Functionality described in XEP however is optional. These are the most popular extensions:
+\begin{itemize}
+	\item{\bf Multi-User Chat} defined in XEP-0045 \cite{xepMUC} allows users to create virtual rooms just like in IRC, invite their contacts to join the room and thus communicate with multiple people.
+	\item{\bf Service Discovery} registered as XEP-0030 \cite{xepServiceDiscovery} defines a way of findit out what capabilities have one's contacts.
+	\item{\bf Entity Capabilities} defined in XEP-0115 \cite{xepCapabilitiesAdvertisement} adds client's capabilities to presence information, so that if a XEP-0115 capable client requests presence it receives a list of supported features as well.
+\end{itemize}
+
+There are tens of extensions either standardized of waiting for becoming a standard defining various handy features.
+
+\section{Jingle}
+XMPP Extension defined in XEP-0166 \cite{xepJignle} known as Jingle is a signaling protocol that initiates, manages and terminates media sessions via XMPP. Jingle was first used in Google Talk \cite{googleTalk} for Voice call signaling in 2005. The idea was to use an existing XMPP comunication channel to setup a peer-to-peer media session that uses a diferrent means of transporting data, e.g RTP\footnote{Real-time Transport Protocol} for voice or video and TCP for file transfer. 
+
+Session initiation starts when the initiator sends \verb|session-initiate| with Application type, e.g voice call, and Transport method, e.g UDP are described. Jingle uses an IQ stanza so the initiator immediately receives a IQ result acknowledging the invitation reception from the responder. Next all the necessary application type and transport type parameters of the session are negotiated. In case of voice call the application type paraneters might be audio codec and sampling frequency. Transport type parameters include the peers' IP addresses and ports and transport method. When all the parameters have been setup the responder either accepts or declines the invitation. If accepted the data start flowing between the two peers just as it was agreed during the initiation phase. Jingle can also be used to adjust parameters of an existing session if necessary. And finaly one of the peers sends the other \verb|session-terminate| to end the session. Figure \ref{fig:xmppJingleDataFlow} shows the entire procedure:
+
+\begin{figure}[ht]
+\begin{center}
+	\includegraphics[width=10cm]{fig/xmpp-jingle-flow.png}
+	\caption{Data flow in media session initiation, management and termination using XMPP Jingle\cite{xmppBook}}
+	\label{fig:xmppJingleDataFlow}
+\end{center}
+\end{figure}
 
 \section{Summary}
 XMPP is a robust, scalable, secure, open and extensible protocol that has been well tested over the years passing all of the test without any sign of trouble. It has been very well though out and altogether it is a great protocol. The description given above is in some of the parts simplified. Full description is out of the scope of this thesis.   
 
 % XMPP Jingle
-% XMPP XEP
 
 % =========================================================================================================================
 % =========================================================================================================================
 
-\chapter{Telepathy}
+\chapter{Telepathy}\label{chapter:telepathy}
 Telepathy\cite{telepathy} is a modular communications framework for building real-time communication applications. It supports numerous communication protocols as plugable backends e.g XMPP/Jabber(telepathy-gabble), SIP(telepathy-sofiasip), MSN(telepathy-butterfly) etc. Each of telepathy's components runs in a separate process as desktop service and communicates via D-Bus. The components are shared by telepathy clients. For example if there are two clients using XMPP they both use the same instance of telepathy-gabble. To get a better idea of how this concept works take a look at figure ~\ref{fig:telepathyArchitecture}.\cite{TPWiki} 
 
 \begin{figure}[ht]
@@ -297,9 +328,6 @@ The current stable version of Empathy is 2.32.2 and it is a default communicatio
 
 \chapter{Existing solutions}
 
-%\section{SIP}
-%\section{RTP}
-
 There is a number of existing communication applications offering voice calls and shared whiteboard. Some more popular, more advanced, more user-friendly, offering more features or better support than others. Some of those program support video call and some even conference calls. We shall go over the existing solutions that implement both shared whiteboard and voice calls. Among the described are Skype\cite{skype}, Windows Live Messenger\cite{WindowsLiveMessenger}, Brosix\cite{brosix}, Yahoo! Messenger\cite{yahoo} and AIM\cite{AIM}.
 
 \section{Applications with whiteboard and VoIP support}
@@ -356,9 +384,9 @@ AOL's messenger is available for Windows and Mac OS X and features voice and vid
 \subsection*{SIP}
 Session Initiation Protocol is a standardized by IETF and was firts defined in RFC 2543. The latest definition is in RFC 3261. SIP is used in VoIP for negotiating the details of the call. The parameters of the call are described using Session Description protocol described in RFC 4566. Though designed for VoIP it can be used for establishing or terminating any kind of session whether it is between two users or it is a multiuser session. Among the features of SIP is also instant messaging, presence or any kind of event notification. SIP uses primarily UDP on port 5060, but can also use TCP on the same port and 5061 for TLS secured SIP. The syntax is similar to HTTP.
 
-SIP clients are identified by URI\footnote{Uniform Resource Identifier} which usualy looks like this: \verb|sip:username@hostname|, to be concrete \verb|sip:bob@biloxi.com|. Firts the client must register with a SIP proxy, which in Bob's case is \verb|biloxi.com|. Now let's say Alice wants to call Bob. Todo that she needs to know his URI. She sends an \verb|INVITE| to her SIP proxy, by which it is forwarded to Bob's proxy and finally delivered to Bob and his phone or computer start ringing. If he picks up an appropriate numeric code is sent to Alice. The following example\cite{SIPRFC} shows the scenario presented:    
+SIP clients are identified by URI which usualy looks like this: \verb|sip:username@hostname|, to be concrete \verb|sip:bob@biloxi.com|. Firts the client must register with a SIP proxy, which in Bob's case is \verb|biloxi.com|. Now let's say Alice wants to call Bob. Todo that she needs to know his URI. She sends an \verb|INVITE| to her SIP proxy, by which it is forwarded to Bob's proxy and finally delivered to Bob and his phone or computer start ringing. If he picks up an appropriate numeric code is sent to Alice. The following example\cite{SIPRFC} shows the scenario presented:    
 
-\lstinputlisting{sip-example.tex}
+%\lstinputlisting{sip-example.tex}
 
 Since SIP serves only to initiate the session it need to cooperate with a protocol that does transfer the data. That protocol is Real-time Transfer Protocol.  
 
@@ -391,7 +419,33 @@ RTP sends and receives data on even port numbers and the associated RTCP uses th
 % =========================================================================================================================
 % =========================================================================================================================
 
-%\chapter{Implementation}
+\chapter{Port to Telepathy}
+Telepathy communication framework described in detail in chapter~\ref{chapter:telepathy} is a logical choice of communication architecture if one wishes to create a powerful and easily maintainable IM application. A proof that porting to telepathy is a step in the right direction is for example a new client that is being developed by the KDE community and is supposed to become a default KDE IM application. At that point both main linux window managers KDE and Gnome (Empathy) will have their default IM program based on telepathy. That fact alone promises great and lasting support of this architecture. This chapter talks about the port of Makneto from iris library to telepathy and explains the design of the application and the reasoning behind it.
+
+The first important change in the architecture of makneto is separation of user interface from the communication backend. There were several reasons supporting this decision. First is that since Telepathy is quite complicated and takes time to get familiar with it would be best if user interface used a simplified abstaction. And that is where the communication backend comes in. Moreso the backend is the only piece of code that will have to be adjusted should Telepathy undergo any design changes or adjustments. The plan is to make the backend a portable as possible so it could run on more platforms and then make the user interface - frontend - specificaly for the platform if neccessary. With that in mind it makes sense to separate backend and frontend. For instead of adjusting user interfaces for all the platforms to the changes the backend will absorb it and frontends will stay the same. 
+
+One of the aims of this work is to strip the current application of the iris library and implement the backend based on Telepathy. I chose to use Qt4 bindings for Telepathy simply because the rest of the application was implemented using Qt4 and it overall very convenient to use with high level of abstraction.	The folowing figure~\ref{fig:MaknetoLibClassDiagram} shows a class diagram of the Makneto backend. 
+
+\begin{figure}[ht]
+	\begin{center}
+%	\includegraphics[width=10cm]{fig/makneto-lib-class-diagram.png}
+	\caption{Makneto backend class diagram}
+	\label{fig:MaknetoLibClassDiagram}
+\end{center}
+\end{figure}
+
+As mentioned earlier Telepathy communicates over D-Bus, which means that if the application has to have a D-Bus well-known name in order for Telepathy to be able to address it.	Namely the backend needs to implement \verb|Client Handler| interface by subclassing \verb|AbstractClientHandler| and register with D-Bus. When registered if a channel comes that matches the type the application has registered for it can be dispatched to it for handling. Makneto backend is a Telepathy handler and at this point is able to handle text chat, multiuser chat and audio. It is also prepared for video calls, which is functionality outside of the scope of this thesis. Whiteboarding at this point is not supported by Gabble, connection manager for XMPP. Makneto itself the feature supports for it is Makneto's main feature. Until a plugin for whiteboard support is written for Gabble, the whiteboard messages will be tunneled through text messages. The main problem was sending SVG data to clients that would simply display the data to the user. Luckily XMPP offers resource parameter, which is used to check if the contact on the other side is using Makneto and thus can interpret the data correctly. Unfortunately this meant loosing the ability to whiteboard with clients implementing SVGWB by Joonas Govenius, though the JEP has not yet been approved. Whiteboard classes belong to the backend and once the functionality is added to Gabble it will be a simple task to make use of it. 
+
+Makneto's contact list has been ported to telepathy and utilizes Qt model/view architecture. The model is a part of the backend and the view then is a part of the user interface. The contact list model is based on a model from Telepathy-Qt4-Yell project. 
+
+% =========================================================================================================================
+% =========================================================================================================================
+
+\chapter{VoIP implementation}
+
+%gstreamer
+%phonon
+%telepathy streamedMediaCall
 
 % =========================================================================================================================
 % =========================================================================================================================
@@ -404,5 +458,6 @@ Numerous application exist featuring whiteboard and VoIP and some of them even v
 There are several ways to implement a VoIP solution. RTP with SIP seems to be a feasible solution as it has been proven to work by numerous applications.Though after much thinking it seems the technologie to with will be XMPP Jingle. It has been implemented by Collabora and is now part of Telepathy Gabble - XMPP connection manager. Though still under development the presented result look promising.
 
 There are several tasks to be done. First is porting Makneto to Telepathy. Then a thourough examination of voice encoding must be done to decide what codec shall be used. And finally implementing VoIP support to Makneto.   
+
 
 

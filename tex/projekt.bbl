@@ -3,109 +3,112 @@
 \bibitem{skypeOutage}
 Terry Brock.
 \newblock Skype outage today.
-\newblock {\tt
-  http://blogs.skype.com/business/2010/12/skype\_outage\_today.html}.
+\newblock [online; accessed 27 Dec 2010].
 
 \bibitem{brosix}
 Brosix.
 \newblock Brosix - seruce corporate instatnt messaging for companies.
-\newblock {\tt http://www.brosix.com}.
 \newblock [online; accessed 30 Dec 2010].
 
 \bibitem{dbus}
 Collabora.
 \newblock D-bus.
-\newblock {\tt http://www.freedesktop.org/wiki/Software/dbus}.
 \newblock [online; accessed 19 Nov 2010].
 
 \bibitem{telepathy}
 Collabora.
 \newblock Telepathy.
-\newblock {\tt http://telepathy.freedesktop.org}.
 \newblock [online; accessed 12 Nov 2010].
 
 \bibitem{TPWiki}
 Collabora.
 \newblock Telepathy wiki.
-\newblock {\tt http://telepathy.freedesktop.org/doc/book/index.html}.
 \newblock [online; accessed 18 Nov 2010].
 
 \bibitem{xmpp}
 XMPP~Standard Foundation.
 \newblock Xmpp standards foundation.
-\newblock {\tt http://xmpp.org/}.
 \newblock [online; accessed 11 Dec 2010].
+
+\bibitem{googleTalk}
+Google.
+\newblock Google talk.
+\newblock [online; accessed 12 January 2011].
 
 \bibitem{SVGWB}
 Joonas Govenius.
-\newblock Svg whiteboarding.
-\newblock {\tt http://xmpp.org/extensions/inbox/wb.html}, 2006-06-19.
+\newblock Svg whiteboarding, 2006-06-19.
+\newblock [online; accessed 11 December 2010].
 
 \bibitem{ICQ}
 ICQ.
 \newblock Icq.
-\newblock {\tt http://www.icq.com}.
 \newblock [online; accessed 29 Dec 2010].
 
 \bibitem{SIPRFC}
 {J. Rosenberg et al.}
-\newblock Sip: Session initialization protocol.
-\newblock {\tt http://www.ietf.org/rfc/rfc3261.txt}, 2002.
-\newblock [online; Last modified June 2002].
+\newblock Sip: Session initialization protocol, 2002.
+\newblock [online; accessed 7 January 2011].
 
 \bibitem{STUNRFC}
 {j. Rosenberg et. al}.
 \newblock Stun - simple traversal of user datagram protocol (udp) through
-  network address translators (nats).
-\newblock {\tt http://tools.ietf.org/html/rfc3489}, 2003.
-\newblock [online].
+  network address translators (nats), 2003.
+\newblock [online; accessed 6 January 2011].
 
 \bibitem{STUNRFCNEW}
 {J. Rosenberg et. al}.
-\newblock Session traversal utilities for nat (stun).
-\newblock {\tt http://tools.ietf.org/html/rfc5389}, 2008.
-\newblock [online].
+\newblock Session traversal utilities for nat (stun), 2008.
+\newblock [online; accessed 6 January 2011].
+
+\bibitem{xepServiceDiscovery}
+{Joe Hildebrand, Peter Millard, Ryan Eatmon, Peter Saint-Andre}.
+\newblock Xep-0045: Multi-user chat.
+\newblock [online; accessed 21 January 2011].
+
+\bibitem{xepCapabilitiesAdvertisement}
+{Joe Hildebrand, Peter Saint-Andre, Remko Tronçon, Jacek Konieczny}.
+\newblock Xep-0115: Capabilities advertisement.
+\newblock [online; accessed 23 January 2011].
 
 \bibitem{kazaa}
 KaZaA.
 \newblock Download music - music downloads and mp3 downloads from kazaa.com.
-\newblock {\tt http://messenger.yahoo.com}.
 \newblock [online; accessed 26 Dec 2010].
 
 \bibitem{KDE}
 KDE.
 \newblock Kde.
-\newblock {\tt http://www.kde.org/}.
 \newblock [online; accessed 3 Dec 2010].
 
 \bibitem{SVG}
 {Kolektiv autorů}.
 \newblock Scalable vector graphics(svg).
-\newblock {\tt http://www.w3.org/Graphics/SVG/}.
 \newblock [online; accessed 18 Dec 2010].
 
 \bibitem{SVGtiny}
 {Kolektiv autorů}.
 \newblock Svg tiny 1.2 specification.
-\newblock {\tt http://www.w3.org/TR/SVGTiny12/}.
 \newblock [online; accessed 18 Dec 2010].
 
 \bibitem{WindowsLiveMessenger}
 Microsoft.
 \newblock Windows live messenger 2011.
-\newblock {\tt http://explore.live.com/windows-live-messenger}.
 \newblock [online; accessed 4 Jan 2011].
+
+\bibitem{qtBook}
+Daniel Molkentin.
+\newblock {\em The Book of Qt 4}.
+\newblock O'Reilly, July 2007.
 
 \bibitem{Qt}
 Nokia.
 \newblock Qt - a cross-platform application and ui framework.
-\newblock {\tt http://qt.nokia.com/}.
 \newblock [online; accessed 15 Nov 2010].
 
 \bibitem{AIM}
 America OnLine.
 \newblock Aol instant messenger.
-\newblock {\tt http://www.aim.com}.
 \newblock [online; accessed 2 Jan 2011].
 
 \bibitem{rtpBook}
@@ -116,26 +119,27 @@ Colin Perkins.
 \bibitem{empathyGnome}
 The~GNOME Project.
 \newblock Empathy - gnome live!
-\newblock {\tt http://live.gnome.org/Empathy}.
 \newblock [online; accessed 01 Dec 2010].
 
 \bibitem{irisWiki}
 Psi.
 \newblock Iris library.
-\newblock {\tt http://psi-im.org/wiki/Iris\_Library}.
 \newblock [online; accessed 17 Nov 2010].
+
+\bibitem{xepMUC}
+Peter Saint-Andre.
+\newblock Xep-0045: Multi-user chat.
+\newblock [online; accessed 21 January 2011].
 
 \bibitem{xmppCoreRFC}
 Peter Saint-Andre.
-\newblock Xmpp core.
-\newblock {\tt http://www.ietf.org/rfc/rfc3920.txt}.
-\newblock [online, Last modified: 30 Sep 2004.
+\newblock {XMPP Core}.
+\newblock [online; accessed 27 December 2010].
 
 \bibitem{xmppIMRFC}
 Peter Saint-Andre.
-\newblock Xmpp im.
-\newblock {\tt http://www.ietf.org/rfc/rfc3921.txt}.
-\newblock [online, Last modified: 01 Oct 2004.
+\newblock {XMPP IM}.
+\newblock [online; accessed 27 December 2010].
 
 \bibitem{xmppBook}
 Peter Saint-Andre, Kevin Smith, and Remko Troncon.
@@ -144,40 +148,34 @@ Peter Saint-Andre, Kevin Smith, and Remko Troncon.
 
 \bibitem{skypeProtocolAnalysis}
 Henning~Schulzrinne Salman A.~Baset.
-\newblock An analysis of the skype peer-to-peer internet telephony protocol.
-\newblock {\tt
-  http://www.cs.columbia.edu/~library/TR-repository/reports/reports-2004/cucs-%
-039-04.pdf}, 2004.
+\newblock An analysis of the skype peer-to-peer internet telephony protocol,
+  2004.
 \newblock [online, accessed 26 Dec 2010.
+
+\bibitem{xepJignle}
+{Scott Ludwig, Joe Beda, Peter Saint-Andre, Robert McQueen, Sean Egan, Joe
+  Hildebrand}.
+\newblock Xep-0166: Jingle.
+\newblock [online; accessed 25 January 2011].
 
 \bibitem{skype}
 Skype.com.
 \newblock Skype.
-\newblock {\tt http://www.skype.com}.
 \newblock [online; accessed 26 Dec 2010].
-
-\bibitem{wikiQt}
-Wikipedia.
-\newblock Wikipedia - qt(framework).
-\newblock {\tt http://en.wikipedia.org/wiki/Qt\_(framework)}.
-\newblock [online; accessed 7 Dec 2010].
 
 \bibitem{wikipediaSkypeProtocol}
 Wikipedia.
 \newblock Wikipedia, skype protocol.
-\newblock {\tt http://en.wikipedia.org/wiki/Skype\_Protocol}.
 \newblock [online; accessed 26 Dec 2010].
 
 \bibitem{wikipediaYahoo}
 Wikipedia.
 \newblock Wikipedia, yahoo! messenger.
-\newblock {\tt http://en.wikipedia.org/wiki/Yahoo!\_Messenger}.
 \newblock [online; accessed 27 Dec 2010].
 
 \bibitem{yahoo}
 Yahoo!
 \newblock Yahoo! messenger.
-\newblock {\tt http://messenger.yahoo.com}.
 \newblock [online; accessed 30 Dec 2010].
 
 \end{thebibliography}
