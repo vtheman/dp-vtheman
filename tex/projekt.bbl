@@ -30,6 +30,10 @@ XMPP~Standard Foundation.
 \newblock Xmpp standards foundation.
 \newblock [online; accessed 11 Dec 2010].
 
+\bibitem{voipPaper}
+Bur Goode.
+\newblock Voice over internet protocol, 2002.
+
 \bibitem{googleTalk}
 Google.
 \newblock Google talk.
@@ -90,6 +94,11 @@ KDE.
 {Kolektiv autorů}.
 \newblock Svg tiny 1.2 specification.
 \newblock [online; accessed 18 Dec 2010].
+
+\bibitem{digitalSpeechBook}
+A.~M. Kondoz.
+\newblock {\em Digital Speech}.
+\newblock John Wiley \& Sons Inc., 2004.
 
 \bibitem{WindowsLiveMessenger}
 Microsoft.
@@ -177,5 +186,10 @@ Wikipedia.
 Yahoo!
 \newblock Yahoo! messenger.
 \newblock [online; accessed 30 Dec 2010].
+
+\bibitem{makneto}
+Jaroslav řezník.
+\newblock Sdílená tabule.
+\newblock Master thesis, 2008.
 
 \end{thebibliography}

@@ -2,44 +2,49 @@ This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: projekt.aux
 The style file: plain.bst
 Database file #1: literatura.bib
-You've used 35 entries,
+Warning--entry type for "makneto" isn't style-file defined
+--line 158 of file literatura.bib
+Warning--I didn't find a database entry for "sampling-theorem"
+Warning--I didn't find a database entry for "voiceCodecs"
+You've used 38 entries,
             2118 wiz_defined-function locations,
-            655 strings with 6918 characters,
-and the built_in function-call counts, 7228 in all, are:
-= -- 643
-> -- 256
+            673 strings with 7189 characters,
+and the built_in function-call counts, 7848 in all, are:
+= -- 699
+> -- 277
 < -- 0
-+ -- 111
-- -- 74
-* -- 206
-:= -- 1198
-add.period$ -- 105
-call.type$ -- 35
-change.case$ -- 139
++ -- 120
+- -- 80
+* -- 226
+:= -- 1303
+add.period$ -- 113
+call.type$ -- 38
+change.case$ -- 150
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 260
-empty$ -- 771
-format.name$ -- 74
-if$ -- 1564
+cite$ -- 38
+duplicate$ -- 286
+empty$ -- 837
+format.name$ -- 80
+if$ -- 1699
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 6
-newline$ -- 178
-num.names$ -- 70
-pop$ -- 368
+int.to.str$ -- 38
+missing$ -- 8
+newline$ -- 192
+num.names$ -- 76
+pop$ -- 393
 preamble$ -- 1
-purify$ -- 107
+purify$ -- 116
 quote$ -- 0
-skip$ -- 214
+skip$ -- 235
 stack$ -- 0
-substring$ -- 177
-swap$ -- 35
+substring$ -- 192
+swap$ -- 38
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 134
+type$ -- 144
 warning$ -- 0
-while$ -- 70
-width$ -- 37
-write$ -- 325
+while$ -- 76
+width$ -- 40
+write$ -- 353
+(There were 3 warnings)
