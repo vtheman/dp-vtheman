@@ -19,6 +19,6 @@
 \contentsline {section}{\numberline {6.3}Contact list}{33}{section.6.3}
 \contentsline {chapter}{\numberline {7}VoIP implementation}{35}{chapter.7}
 \contentsline {section}{\numberline {7.1}GStreamer}{35}{section.7.1}
-\contentsline {section}{\numberline {7.2}Phonon}{35}{section.7.2}
-\contentsline {section}{\numberline {7.3}Farsight}{35}{section.7.3}
-\contentsline {chapter}{\numberline {8}Conclusion}{36}{chapter.8}
+\contentsline {section}{\numberline {7.2}Phonon}{37}{section.7.2}
+\contentsline {section}{\numberline {7.3}Farsight}{37}{section.7.3}
+\contentsline {chapter}{\numberline {8}Conclusion}{38}{chapter.8}

@@ -7,45 +7,48 @@ Warning--entry type for "makneto" isn't style-file defined
 Warning--I didn't find a database entry for "sampling-theorem"
 Warning--I didn't find a database entry for "voiceCodecs"
 Warning--I didn't find a database entry for "telepathy-qt4-yell"
-You've used 39 entries,
+Warning--I didn't find a database entry for "phonon"
+Warning--I didn't find a database entry for "farsight"
+Warning--to sort, need author or key in gstreamer
+You've used 40 entries,
             2118 wiz_defined-function locations,
-            679 strings with 7315 characters,
-and the built_in function-call counts, 8050 in all, are:
-= -- 717
-> -- 284
+            684 strings with 7406 characters,
+and the built_in function-call counts, 8211 in all, are:
+= -- 732
+> -- 285
 < -- 0
-+ -- 123
++ -- 124
 - -- 82
-* -- 231
-:= -- 1336
-add.period$ -- 116
-call.type$ -- 39
-change.case$ -- 154
+* -- 237
+:= -- 1353
+add.period$ -- 118
+call.type$ -- 40
+change.case$ -- 157
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 293
-empty$ -- 859
+cite$ -- 41
+duplicate$ -- 300
+empty$ -- 882
 format.name$ -- 82
-if$ -- 1743
+if$ -- 1783
 int.to.chr$ -- 0
-int.to.str$ -- 39
+int.to.str$ -- 40
 missing$ -- 8
-newline$ -- 197
+newline$ -- 201
 num.names$ -- 78
-pop$ -- 404
+pop$ -- 413
 preamble$ -- 1
-purify$ -- 119
+purify$ -- 121
 quote$ -- 0
-skip$ -- 241
+skip$ -- 248
 stack$ -- 0
-substring$ -- 197
-swap$ -- 39
+substring$ -- 202
+swap$ -- 40
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
-warning$ -- 0
+type$ -- 152
+warning$ -- 1
 while$ -- 78
-width$ -- 41
-write$ -- 362
-(There were 4 warnings)
+width$ -- 42
+write$ -- 370
+(There were 7 warnings)

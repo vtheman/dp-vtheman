@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{gstreamer}
+Gstreamer 0.10 core reference manual, 2008.
+\newblock [online; accessed 10 March 2011].
+
 \bibitem{skypeOutage}
 Terry Brock.
 \newblock Skype outage today.

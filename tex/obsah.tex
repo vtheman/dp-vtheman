@@ -554,7 +554,7 @@ Once the speech is digitized and encoded it needs to be sent over the network. S
 Last and largest portion of the total delay is time of network delivery. We need to account for switching and routing delays, link transmission delays and also for jitter buffer delays. The routing protocols work based on destination address which may, and often does, result in packets of one conversation taking different routes to the caller. Different routes mean different delays - jitter. Jitter buffer is used to accumulate arriving packets and presenting them to the user in the correct order. Since RTP uses sequence numbers it is an easy task to reorder packets. The problem is when packets are delivered too long apart. In that case the missing packet is assumed to be lost for the resulting delay would have a worse effect than the missing packet. Network administrators may influence the network transmission delay using QoS mechanisms such as DiffServ\footnote{Differentiated Services}. DiffServ allows the administrators to give the interactive data like voice and video a higher priority than traffic like emails or HTTP. In order to do so the traffic must be classified and then marked. IPv4 provides means for marking traffic and thus allows using QoS throughout the internet. The edge router through which the traffic enters the autonomous system either trusts the marking of data from a neighboring network or (re)marks the traffic itself. Altough most of the networks utilize QoS there are still some that either don't or have incorrect setup.  
 
 \subsection*{Overcoming NAT and firewalls}
-First what is Network Address Translation (NAT) and what is it good for. The internet is based on Internet Protocol version 4. The IPv4 was designed in 1981, when internet was just a pack of machines mostly owned by universities and noone could imagine IPv4 address space\footnote{IPv4 address is a 32 bit number - 4,294,967,296 ($2^{32}$) addresses} could ever be used up. The enormous expansion of the internet cause that the IPv4 addresses were all used up in Februrary of 2011\cite{ianaAddressSpaceReport}. This is where IPv6 comes in offering using 128 bit address and thus offering $3.4x10^{38}$ cardinality of address space allowing anyone to have public IP address. The transition from IPv4 to IPv6 is however costly and complex due to the decentralized nature of the internet.  
+First what is Network Address Translation (NAT) and what is it good for. The internet is based on Internet Protocol version 4. The IPv4 was designed in 1981, when internet was just a pack of machines mostly owned by universities and noone could imagine IPv4 address space\footnote{IPv4 address is a 32 bit number - 4,294,967,296 ($2^{32}$) addresses} could ever be used up. The enormous expansion of the internet cause that the IPv4 addresses were all used up in Februrary of 2011\cite{ianaAddressSpaceReport}. This is where IPv6 comes in offering using 128 bit address and thus offering $3.4\cdot10^{38}$ cardinality of address space allowing anyone to have public IP address. The transition from IPv4 to IPv6 is however costly and complex due to the decentralized nature of the internet.  
 
 To connect new devices to the internet without having to wait for/transition to IPv6 NAT is used. It basically ``hides'' an entire network behind one IP address. This solves the problem problem with insufficient amount of addresses, but creates another problem. The devices behind NAT obtain a private address and can not be connected to directly from the internet. The only device that is directly visible from the internet is one with public IP address. Figure~\ref{fig:nat-diagram} shows the typical home network setup. 
 
@@ -621,7 +621,7 @@ Makneto's contact list has been ported to telepathy and utilizes Qt model/view a
 
 One of the greatest benefits of telepathy - multi protocol support - is now present in Makneto. The new contact list model has two types of nodes (items) as shown in the class diagram in figure\ref{fig:contactListClassDiag}. Since it is a tree model I will start from the nodes. Nodes are individual accounts registered with telepathy. These accounts may used in other applications built on telepathy. Leaves are items representing contacts under each account. Although whiteboarding is supported only through XMPP, the other of the features like text chatting or file transfer are available over the other protocols. It must be of course supported by the client of the peer.
 
-As you can see from the class diagram the \verb|TelepathyClient| has an instance of the contact list model. This is useful for requesting sessions with contacts from the frontend - \verb|RosterWidget|. It simply specifies the contact or account by sending index in the model. Any other way would require implementing special Makneto classes for contact and account in order to keep the frontend indenpendent on telepathy   
+As you can see from the class diagram the \verb|TelepathyClient| has an instance of the contact list model. This is useful for requesting sessions with contacts from the frontend - \verb|RosterWidget|. It simply specifies the contact or account by sending index of currently selected item of the model. Any other way would require implementing special Makneto classes for contact and account in order to keep the frontend indenpendent on telepathy   
 
 \begin{figure}[ht]
 	\begin{center}
@@ -637,8 +637,39 @@ The user interface was kept almost the same eventhough both of the communication
 % =========================================================================================================================
 
 \chapter{VoIP implementation}\label{chapter:voip-implementation}
+The final chapter of this work contains details about implementation of VoIP into the application Makneto. Frameworks used for handling multimedia are listed with short description. And finally I talk about the implementation itself. Information in this chapter were found at \cite{gstreamer, phonon, farsight} 
+
+Implementing an application handling multimedia means working with devices like sound card, camera, etc. There are several ways of doing so. First would be low-level access, which is platform and device specific. In GNU/Linux it requires using either Open Sound System (OSS) or Advanced Linux Sound Architecture (ALSA). Both of those offer abstraction of hardware beneath, but very low and work only on UNIX like systems and GNU/Linux respectively. Since I am aiming at portability they are not a good choice. Next is using a multimedia framework with higher level of abstraction supported on multiple platforms such as Gstreamer \cite{gstreamer} or Phonon \cite{phonon}.  
 
 \section{GStreamer}
+GStreamer is a multimedia framework for writing streaming multimedia applications. It is based on GLib 2.0 and offers API for writing plugins and thus extending it's functionality. Programmers use API for creating applications handling audio, video or both. Recently a stable bindings for Qt have been released making the development even more convenient. Have a look at figure~\ref{fig:gstreamerArchitecture} to get an idea of what the framework consists of.  
+
+\begin{figure}[ht]
+	\begin{center}
+	\includegraphics[width=8cm]{fig/gstreamer-architecture.png}
+	\caption{GStreamer architecture}
+	\label{fig:gstreamerArchitecture}
+\end{center}
+\end{figure}
+
+Building an application using GStreamer is done by chaining the basic objects - elements. Each element performs a specific function like encoding audio stream, displaying video on the screen on reading from a network stream. It has data inputs and outputs called pads. Depending on the element it might have just an output pad called source\footnote{Source because it is a source from the next element's point of view}. That might be for example one representing an audio file. If it contains just an input pad - sink, then it might be a sound card or screen. Elements containg two pads are filters, encoders, decoders, etc. and more than two would be muxers, demuxers, etc.
+
+Chaining elements to perform certain function means connecting their sources and sinks. The chain is called pipeline and there is an example of one in figure~\ref{fig:gstreamerPipeline}. There are several elements linked together starting with the file-source. The file contains both audio and video and thus a demuxer is used with two sources, one for each stream. Next there is decoding and presenting the result to the user. With a large number of plugins supporting most of known codecs and devices this framework becomes a very powerful tool. 
+
+\begin{figure}[ht]
+	\begin{center}
+	\includegraphics[width=10cm]{fig/gstreamer-pipeline.png}
+	\caption{Example of a GStreamer pipeline}
+	\label{fig:gstreamerPipeline}
+\end{center}
+\end{figure}
+
+Pipeline is a special case of bin, which is a collection of elements. Since bin is also an element the programmer can create a pipeline consisting of serveral elements and performing certain function and use it as element in a larger and more complex pipeline. This design allows abstraction on a very high level. When linking elements together the media type that one produces and the other consumes must be compatible. That is determined through elements' capabilities in a process called ``caps negotiation''. GStreamer provides a way of automatic linking of elements called autoplugging based on capabilities. 
+
+When an element is created and linked there is no data flowing until it's state changed to play. The default state in which no recources are allocated is null. Next state is ready, when the element has all of it's resources allocated, but the stream is not opened yet. It is during this phase when the user finds out that the resource is unavailable or incompatible. From ready the elements go to paused by opening the stream a buffering it's contents. At this point the elements should be ready to switch state play instantly. Finally the play state is same as paused, but the data is actually flowing. 
+
+GStream is designed for high performance. Data between elements are copied only when absolutely neccessary, otherwise pointer dereference is used. Moreso the stream processing is running in separate threads.  
+
 \section{Phonon}
 \section{Farsight}
 %telepathy streamedMediaCall
