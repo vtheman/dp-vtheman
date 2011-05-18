@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="690.5"
+   height="400.25"
+   version="1.2"
+   id="svg4325"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="contact-list-class-diag.svg">
+  <metadata
+     id="metadata4567">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1060"
+     id="namedview4565"
+     showgrid="false"
+     inkscape:zoom="1.5733612"
+     inkscape:cx="391.21457"
+     inkscape:cy="261.46071"
+     inkscape:window-x="1437"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4325" />
+  <title
+     id="title4327">Qt Svg Document</title>
+  <desc
+     id="desc4329">Generated with Qt</desc>
+  <defs
+     id="defs4331" />
+  <g
+     id="g4333"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+     transform="translate(2.5423278,20.184416)">
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4335"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="871,448 871,396 "
+         id="polyline4337"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="785,285 785,336 "
+         id="polyline4339"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="717,447 717,396 "
+         id="polyline4341"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="632,178 632,239 "
+         id="polyline4343"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="922,178 922,239 "
+         id="polyline4345"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4347"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 871,396 -7,11 14,0 -7,-11"
+         id="path4349"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4351"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 785,285 -4,10 4,12 4,-12 -4,-10"
+         id="path4353"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4355"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 717,396 -7,11 14,0 -7,-11"
+         id="path4357"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4359"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 632,178 -4,10 4,12 4,-12 -4,-10"
+         id="path4361"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4363"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 922,178 -4,10 4,12 4,-12 -4,-10"
+         id="path4365"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4367"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="632,200 636,188 "
+         id="polyline4369"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="922,178 918,188 "
+         id="polyline4371"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="871,396 878,407 "
+         id="polyline4373"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="864,407 878,407 "
+         id="polyline4375"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="710,407 724,407 "
+         id="polyline4377"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="717,396 724,407 "
+         id="polyline4379"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="926,188 922,178 "
+         id="polyline4381"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="785,307 789,295 "
+         id="polyline4383"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="922,200 926,188 "
+         id="polyline4385"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="632,178 628,188 "
+         id="polyline4387"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="785,285 781,295 "
+         id="polyline4389"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="871,396 864,407 "
+         id="polyline4391"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="918,188 922,200 "
+         id="polyline4393"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="628,188 632,200 "
+         id="polyline4395"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="781,295 785,307 "
+         id="polyline4397"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="789,295 785,285 "
+         id="polyline4399"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="717,396 710,407 "
+         id="polyline4401"
+         style="fill:none" />
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="636,188 632,178 "
+         id="polyline4403"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4405"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 463,133 288,0 0,45 -288,0 0,-45"
+         id="path4407"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4409"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4411"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="499"
+         y="142"
+         font-size="10"
+         font-weight="700"
+         font-style="normal"
+         id="text4413"
+         style="font-size:10px;font-style:normal;font-weight:700;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">MaknetoBackend::TelepathyClient</text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4415"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4417"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="463,145 750,145 "
+         id="polyline4419"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4421"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4423"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="468"
+         y="154"
+         font-size="10"
+         font-weight="400"
+         font-style="normal"
+         id="text4425"
+         style="font-size:10px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">- m_accountsModel : </text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4427"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4429"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="463,157 750,157 "
+         id="polyline4431"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4433"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 658,336 251,0 0,60 -251,0 0,-60"
+         id="path4435"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4437"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4439"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="694.5"
+         y="345"
+         font-size="10"
+         font-weight="700"
+         font-style="normal"
+         id="text4441"
+         style="font-size:10px;font-style:normal;font-weight:700;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">MaknetoBackend::TreeNode</text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4443"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4445"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="658,348 908,348 "
+         id="polyline4447"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4449"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4451"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="663"
+         y="357"
+         font-size="10"
+         font-weight="400"
+         font-style="normal"
+         id="text4453"
+         style="font-size:10px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">- m_children : </text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4455"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4457"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4459"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="663"
+         y="369"
+         font-size="10"
+         font-weight="400"
+         font-style="normal"
+         id="text4461"
+         style="font-size:10px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">- m_parent : </text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4463"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4465"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="658,372 908,372 "
+         id="polyline4467"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4469"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 632,239 290,0 0,46 -290,0 0,-46"
+         id="path4471"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4473"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4475"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="671"
+         y="248"
+         font-size="10"
+         font-weight="700"
+         font-style="normal"
+         id="text4477"
+         style="font-size:10px;font-style:normal;font-weight:700;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">MaknetoBackend::AccountsModel</text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4479"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4481"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="632,251 921,251 "
+         id="polyline4483"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4485"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4487"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="637"
+         y="260"
+         font-size="10"
+         font-weight="400"
+         font-style="normal"
+         id="text4489"
+         style="font-size:10px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">- m_tree : </text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4491"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4493"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="632,263 921,263 "
+         id="polyline4495"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4497"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 790,448 315,0 0,45 -315,0 0,-45"
+         id="path4499"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4501"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4503"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="832"
+         y="457"
+         font-size="10"
+         font-weight="700"
+         font-style="normal"
+         id="text4505"
+         style="font-size:10px;font-style:normal;font-weight:700;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">MaknetoBackend::ContactModelItem</text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4507"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4509"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="790,460 1104,460 "
+         id="polyline4511"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4513"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="790,466 1104,466 "
+         id="polyline4515"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4517"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 819,132 206,0 0,46 -206,0 0,-46"
+         id="path4519"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4521"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4523"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="878"
+         y="141"
+         font-size="10"
+         font-weight="700"
+         font-style="normal"
+         id="text4525"
+         style="font-size:10px;font-style:normal;font-weight:700;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">RosterWidget</text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4527"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4529"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="819,144 1024,144 "
+         id="polyline4531"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4533"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4535"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="824"
+         y="153"
+         font-size="10"
+         font-weight="400"
+         font-style="normal"
+         id="text4537"
+         style="font-size:10px;font-style:normal;font-weight:400;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">- m_accountsModel : </text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4539"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4541"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="819,156 1024,156 "
+         id="polyline4543"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4545"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <path
+         vector-effect="non-scaling-stroke"
+         d="m 419,447 329,0 0,45 -329,0 0,-45"
+         id="path4547"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4549"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4551"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <text
+         xml:space="preserve"
+         x="467"
+         y="456"
+         font-size="10"
+         font-weight="700"
+         font-style="normal"
+         id="text4553"
+         style="font-size:10px;font-style:normal;font-weight:700;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Serif">MaknetoBackend::AccountModelItem</text>
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4555"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif" />
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="700"
+       font-style="normal"
+       id="g4557"
+       style="font-size:10px;font-style:normal;font-weight:700;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="419,459 747,459 "
+         id="polyline4559"
+         style="fill:none" />
+    </g>
+    <g
+       transform="translate(-419,-132)"
+       font-size="10"
+       font-weight="400"
+       font-style="normal"
+       id="g4561"
+       style="font-size:10px;font-style:normal;font-weight:400;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Sans Serif">
+      <polyline
+         vector-effect="non-scaling-stroke"
+         points="419,465 747,465 "
+         id="polyline4563"
+         style="fill:none" />
+    </g>
+  </g>
+</svg>
