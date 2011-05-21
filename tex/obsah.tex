@@ -672,7 +672,19 @@ GStream is designed for high performance. Data between elements are copied only 
 
 \section{Phonon}
 \section{Farsight}
-%telepathy streamedMediaCall
+Farsight2 \cite{farsight} is library implemented in C GLib based on GStreamer architecture. It eases transporting multimedia over the internet. It is meant to be used instant messenger application for audio and video calls. Farsight is used by Telepathy via telepathy-farsight library for which there are even Qt bindings. Empathy utilizes farsight for it's audio and video calls and so does for example Nokia Internet Tablets.
+
+This library provides GStreamer elements for multimedia streaming protocols. The supported protocols are UDP, RTP and MSN. One of the farsight's features is NAT and firewall overcoming ability. It implements ICE for reaching into private networks and HTTP tunneling for breaching restrictive filters. Moreover farsight supports dynamic codec negotiation and switching. It also makes it possible to bridge incompatible protocols and conference with for example a GTalk and Yahoo user. 
+
+Using farsight is consistent with using GStreamer, because it implements GInterface. \verb|FsConference| represents a conference that can contain one or more sessions. \verb|FsSession| corresponds to one RTP session and offers a sink and source pad. The sink pad should be connected to either microphone or video camera, generally an audio or video input device. The source pad would be linked to audio or video output device. One session has one media type and one sink pad, but can have more source pads in case of more participants \footnote{one source for each participant}. For audio calls with video there will be two \verb|FsSession| objects each for one type of multimedia. Each session has one or more transmitters. \verb|FsTransmitter| abstracts the network layer. One transmitter serves for one transport method (UDP with ICE, UDP, HTTP tunneling, etc.). Finally there is \verb|FsStream| object that represents a connection to one participant. The streams correspond with source pads in the session.
+
+If used with telepathy, farsight utilizes \verb|StreamedMediaChannel| for signalling. The protocol used for signalling depends on the used connection manager. In case of Gabble Jingle is used and in case of Sofiasip SIP. Farsight first creates a session 
+
+% dynamic codec negotiation - goes through the gstreamer elements and checks what codec we have encoder and decoder for
+% telepathy streamedMediaCall
+
+section{VoIP in Makneto}
+The implementation of VoIP in Makneto is based on KDE Telepathy Call UI \cite{kdeTpCallUI} by George Kiagiadakis. It uses telepathy farsight qt4 bindings to create a \verb|TfChannel|. The telepathy farsight channel uses GLib signals as means of communication with the application. Events the application must check for are creation of a session followed by creation of a stream, channel closure and codec configuration request. Once stream is created more signals need to be connected. These include stream source pad ready, stream closed and resource requested 
 
 % =========================================================================================================================
 % =========================================================================================================================
