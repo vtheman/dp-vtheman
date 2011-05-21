@@ -21,4 +21,5 @@
 \contentsline {section}{\numberline {7.1}GStreamer}{35}{section.7.1}
 \contentsline {section}{\numberline {7.2}Phonon}{37}{section.7.2}
 \contentsline {section}{\numberline {7.3}Farsight}{37}{section.7.3}
-\contentsline {chapter}{\numberline {8}Conclusion}{38}{chapter.8}
+\contentsline {section}{\numberline {7.4}VoIP in Makneto}{38}{section.7.4}
+\contentsline {chapter}{\numberline {8}Conclusion}{39}{chapter.8}

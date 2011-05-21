@@ -678,13 +678,25 @@ This library provides GStreamer elements for multimedia streaming protocols. The
 
 Using farsight is consistent with using GStreamer, because it implements GInterface. \verb|FsConference| represents a conference that can contain one or more sessions. \verb|FsSession| corresponds to one RTP session and offers a sink and source pad. The sink pad should be connected to either microphone or video camera, generally an audio or video input device. The source pad would be linked to audio or video output device. One session has one media type and one sink pad, but can have more source pads in case of more participants \footnote{one source for each participant}. For audio calls with video there will be two \verb|FsSession| objects each for one type of multimedia. Each session has one or more transmitters. \verb|FsTransmitter| abstracts the network layer. One transmitter serves for one transport method (UDP with ICE, UDP, HTTP tunneling, etc.). Finally there is \verb|FsStream| object that represents a connection to one participant. The streams correspond with source pads in the session.
 
-If used with telepathy, farsight utilizes \verb|StreamedMediaChannel| for signalling. The protocol used for signalling depends on the used connection manager. In case of Gabble Jingle is used and in case of Sofiasip SIP. Farsight first creates a session 
+If used with telepathy, farsight utilizes \verb|StreamedMediaChannel| for signalling. The protocol used for signalling depends on the used connection manager. In case of Gabble Jingle is used and SIP in case of Sofiasip. Farsight first creates a session and it's type is established. If there are more than just media types then sessions within this conference are created. Streams are built next. If the client allows user to specify his or her preferred codecs it should be supplied to farsight when it emits \verb|stream-get-codec-config| signal. Once farsight has the preferences it creates the stream. In case of VoIP the streams are bidirectional. At this point farsight negotiates the codecs. It goes through gstreamer plugins and looks for encoding and deconding elements. List of available codecs is sent to the remote machine. With codec negotiation finished the only thing left to is arranging a peer to peer transfer of the data through the stream. This is accomplished by using ICE. First remote candidates followed by local candidates are acquired. Candidate is an IP address and port where the participant might be able to receive data. Local and remote candidates are put in candidate pairs. Thanks to ICE farsight is able to determine whether the peers are on netowork and transfer data locally. When a working and suitable candidate pair is established the streaming begins. Farsight lets the application know by emitting signal \verb|src-pad-added| of the stream object. That means the src pad of the stream is ready to supply data to a prepared GStreamer pipeline. Until this moment all the data transferred went through the signalling protocol. 
 
-% dynamic codec negotiation - goes through the gstreamer elements and checks what codec we have encoder and decoder for
-% telepathy streamedMediaCall
 
-section{VoIP in Makneto}
-The implementation of VoIP in Makneto is based on KDE Telepathy Call UI \cite{kdeTpCallUI} by George Kiagiadakis. It uses telepathy farsight qt4 bindings to create a \verb|TfChannel|. The telepathy farsight channel uses GLib signals as means of communication with the application. Events the application must check for are creation of a session followed by creation of a stream, channel closure and codec configuration request. Once stream is created more signals need to be connected. These include stream source pad ready, stream closed and resource requested 
+\section{VoIP in Makneto}
+The implementation of VoIP in Makneto is based on KDE Telepathy Call UI \cite{kdeTpCallUI} by George Kiagiadakis. It uses telepathy farsight qt4 bindings to create a \verb|TfChannel|. The application communicates with the farsight channel via GLib signals. Events the application checks for are creation of a session followed by creation of a stream, channel closure and codec configuration request. Once stream is created more signals need to be connected. These include stream source pad ready, stream closed and resource requested. By emitting \verb|resource-requested| signal farsight lets the application know that the GStreamer pipelines for processing incoming and outgoing data should be created and put into playing state. 
+
+The GStreamer pipeline used for audio data transmission is in figure \ref{fig:maknetoGstreamerPipeline}. The chain starts with AudioInput representing either Pulse, ALSA or OSS input devices depending on what is available. The volume element is used for adjusting volume of the raw audio input. There is a volume widget available within the backend. Volume is linked to an audio converting element, which converts the raw audio between different formats. The following element handles audio resampling. And the final element represents the RTP stream encapsulated by farsight. 
+
+\begin{figure}[ht]
+	\begin{center}
+	\includegraphics[width=15cm]{fig/makneto-gstreamer-pipeline.pdf}
+	\caption{GStreamer pipeline used for VoIP in Makneto}
+	\label{fig:maknetoGstreamerPipeline}
+\end{center}
+\end{figure}
+
+The receiving pipeline is very similar. The \verb|AudioBin| is used unchanged. The data however flow in the opposite direction. Moreover instead of audio input an audio output must be used. The process of acquiring it is the same.
+
+The tests of VoIP in Makneto have revealed that successful call establishment depends of updated farsight2. Sometimes the call is not successful for no apparent reason. All the neccessary steps finish with no error and yet there is no sound. In one test configuration there is data flowing in only one direction. 
 
 % =========================================================================================================================
 % =========================================================================================================================
