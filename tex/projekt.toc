@@ -19,7 +19,8 @@
 \contentsline {section}{\numberline {6.3}Contact list}{33}{section.6.3}
 \contentsline {chapter}{\numberline {7}VoIP implementation}{35}{chapter.7}
 \contentsline {section}{\numberline {7.1}GStreamer}{35}{section.7.1}
-\contentsline {section}{\numberline {7.2}Phonon}{37}{section.7.2}
-\contentsline {section}{\numberline {7.3}Farsight}{37}{section.7.3}
-\contentsline {section}{\numberline {7.4}VoIP in Makneto}{38}{section.7.4}
-\contentsline {chapter}{\numberline {8}Conclusion}{39}{chapter.8}
+\contentsline {section}{\numberline {7.2}Farsight}{37}{section.7.2}
+\contentsline {section}{\numberline {7.3}VoIP in Makneto}{38}{section.7.3}
+\contentsline {chapter}{\numberline {8}Conclusion}{40}{chapter.8}
+\contentsline {chapter}{\numberline {A}Obsah CD}{44}{appendix.A}
+\contentsline {chapter}{\numberline {B}Dependencies}{45}{appendix.B}

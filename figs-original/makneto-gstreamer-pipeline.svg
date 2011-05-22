@@ -9,26 +9,27 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="800.09003"
+   width="761.09003"
    height="190.36"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 r9760"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="makneto-gstreamer-pipeline.pdf">
   <defs
      id="defs4">
     <marker
        inkscape:stockid="Arrow2Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow2Lend"
-       style="overflow:visible;">
+       style="overflow:visible">
       <path
          id="path4981"
-         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
-         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-         transform="scale(1.1) rotate(180) translate(1,0)" />
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
     </marker>
   </defs>
   <sodipodi:namedview
@@ -67,378 +68,374 @@
      id="layer1"
      transform="translate(0,-862.00221)">
     <rect
-       style="fill:#f4d7e3;fill-opacity:0.68235294000000002;stroke:#000000;stroke-width:0.99627411000000021;stroke-opacity:1"
+       style="fill:#f4d7e3;fill-opacity:0.68235294;stroke:#000000;stroke-width:0.99627411;stroke-opacity:1"
        id="rect3275"
        width="651.43231"
        height="159.28944"
-       x="20.855278"
+       x="2.855278"
        y="881.78894" />
     <rect
        style="fill:#d5ffd5;fill-opacity:0.68235294;stroke:#000000;stroke-width:0.9413287;stroke-opacity:1"
        id="rect3203"
        width="482.30618"
        height="110.27033"
-       x="164.70557"
+       x="146.70557"
        y="920.09192" />
     <rect
        style="fill:#d5f6ff;fill-opacity:0.68235294;stroke:#000000;stroke-width:1.22464097;stroke-opacity:1"
        id="rect2985"
        width="117.76187"
        height="68.784218"
-       x="175.76195"
+       x="157.76195"
        y="950.38745" />
     <rect
        style="fill:#ffeeaa;fill-opacity:0.68235294;stroke:#000000;stroke-width:0.86068815;stroke-opacity:1"
        id="rect2991"
        width="37.695759"
        height="19.090183"
-       x="255.55447"
+       x="237.55447"
        y="989.98108" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="264.57144"
+       x="246.57144"
        y="1005.7908"
        id="text2993"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2995"
-         x="264.57144"
+         x="246.57144"
          y="1005.7908">Src</tspan></text>
     <rect
        style="fill:#ffeeaa;fill-opacity:0.68235294;stroke:#000000;stroke-opacity:1"
        id="rect2997"
        width="37.857143"
        height="19.285715"
-       x="175.71428"
+       x="157.71428"
        y="989.93359" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="180"
+       x="162"
        y="1005.3622"
        id="text2999"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3001"
-         x="180"
+         x="162"
          y="1005.3622">Sink</tspan></text>
     <rect
        style="fill:#d5f6ff;fill-opacity:0.68235294;stroke:#000000;stroke-width:1.22446501;stroke-opacity:1"
        id="rect2985-2"
        width="117.76187"
        height="68.76445"
-       x="348.97617"
+       x="330.97617"
        y="949.93964" />
     <rect
        style="fill:#ffeeaa;fill-opacity:0.68235294;stroke:#000000;stroke-width:0.86068815;stroke-opacity:1"
        id="rect2991-0"
        width="37.695759"
        height="19.090183"
-       x="428.76877"
+       x="410.76877"
        y="989.51349" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="437.78571"
+       x="419.78571"
        y="1005.3231"
        id="text2993-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2995-8"
-         x="437.78571"
+         x="419.78571"
          y="1005.3231">Src</tspan></text>
     <rect
        style="fill:#ffeeaa;fill-opacity:0.68235294;stroke:#000000;stroke-opacity:1"
        id="rect2997-9"
        width="37.857143"
        height="19.285715"
-       x="348.92853"
+       x="330.92853"
        y="989.466" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="353.21426"
+       x="335.21426"
        y="1004.8946"
        id="text2999-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3001-6"
-         x="353.21426"
+         x="335.21426"
          y="1004.8946">Sink</tspan></text>
     <rect
        style="fill:#d5f6ff;fill-opacity:0.68235294;stroke:#000000;stroke-width:1.22432971;stroke-opacity:1"
        id="rect2985-2-6"
        width="117.76187"
        height="68.74926"
-       x="517.54767"
+       x="499.54767"
        y="949.38336" />
     <rect
        style="fill:#ffeeaa;fill-opacity:0.68235294;stroke:#000000;stroke-width:0.86068815;stroke-opacity:1"
        id="rect2991-0-4"
        width="37.695759"
        height="19.090183"
-       x="597.34021"
+       x="579.34021"
        y="988.94202" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="606.35718"
+       x="588.35718"
        y="1004.7517"
        id="text2993-6-9"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2995-8-5"
-         x="606.35718"
+         x="588.35718"
          y="1004.7517">Src</tspan></text>
     <rect
        style="fill:#ffeeaa;fill-opacity:0.68235294;stroke:#000000;stroke-opacity:1"
        id="rect2997-9-0"
        width="37.857143"
        height="19.285715"
-       x="517.5"
+       x="499.5"
        y="988.89447" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="521.78577"
+       x="503.78577"
        y="1004.3231"
        id="text2999-2-4"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3001-6-8"
-         x="521.78577"
+         x="503.78577"
          y="1004.3231">Sink</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="358.57141"
+       x="340.57141"
        y="965.07648"
        id="text3007"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3009"
-         x="358.57141"
+         x="340.57141"
          y="965.07648">AudioConvert</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="521.57147"
+       x="503.57147"
        y="966.07648"
        id="text3003"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3005"
-         x="521.57147"
+         x="503.57147"
          y="966.07648">AudioResample</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="209.28572"
+       x="191.28572"
        y="965.36218"
        id="text3083"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3085"
-         x="209.28572"
+         x="191.28572"
          y="965.36218">Volume</tspan></text>
     <rect
        style="fill:#d5f6ff;fill-opacity:0.68235294;stroke:#000000;stroke-width:1.08538103;stroke-opacity:1"
        id="rect2985-0"
        width="92.529526"
        height="68.763817"
-       x="34.637127"
+       x="16.637127"
        y="951.36884" />
     <rect
        style="fill:#ffeeaa;fill-opacity:0.68235294;stroke:#000000;stroke-width:0.86068815;stroke-opacity:1"
        id="rect2991-8"
        width="37.695759"
        height="19.090183"
-       x="89.197327"
+       x="71.197327"
        y="990.94202" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="98.214287"
+       x="80.214287"
        y="1006.7517"
        id="text2993-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2995-5"
-         x="98.214287"
+         x="80.214287"
          y="1006.7517">Src</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="43.499981"
+       x="25.499981"
        y="966.32312"
        id="text3083-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3085-5"
-         x="43.499981"
+         x="25.499981"
          y="966.32312">AudioInput</tspan></text>
     <rect
        style="fill:#d5f6ff;fill-opacity:0.68235294;stroke:#000000;stroke-width:1.07921982;stroke-opacity:1"
        id="rect2985-0-5"
        width="92.529526"
        height="67.985359"
-       x="685.59241"
+       x="667.59241"
        y="949.71869" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="700.45526"
+       x="682.45526"
        y="965.89447"
        id="text3083-8-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3085-5-5"
-         x="700.45526"
+         x="682.45526"
          y="965.89447">FsStream</tspan></text>
     <rect
        style="fill:#ffeeaa;fill-opacity:0.68235294;stroke:#000000;stroke-opacity:1"
        id="rect2997-9-0-8"
        width="37.857143"
        height="19.285715"
-       x="685.78577"
+       x="667.78577"
        y="988.7193" />
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="688.1059"
+       x="670.1059"
        y="1004.5814"
        id="text2999-2-4-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3001-6-8-8"
-         x="688.1059"
+         x="670.1059"
          y="1004.5814">Sink</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="177.28571"
+       x="159.28571"
        y="940.36218"
        id="text3205"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3207"
-         x="177.28571"
+         x="159.28571"
          y="940.36218">AudioBin (GstBin)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="195.85715"
+       x="177.85715"
        y="979.36218"
        id="text3211"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3213"
-         x="195.85715"
+         x="177.85715"
          y="979.36218"
          style="font-size:12px">(GstElement)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="366.89468"
+       x="348.89468"
        y="977.98694"
        id="text3211-4"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3213-0"
-         x="366.89468"
+         x="348.89468"
          y="977.98694"
          style="font-size:12px">(GstElement)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="537.03754"
+       x="519.03754"
        y="980.27271"
        id="text3211-4-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3213-0-4"
-         x="537.03754"
+         x="519.03754"
          y="980.27271"
          style="font-size:12px">(GstElement)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="694.32324"
+       x="676.32324"
        y="979.55835"
        id="text3211-4-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3213-0-2"
-         x="694.32324"
+         x="676.32324"
          y="979.55835"
          style="font-size:12px">(GstElement)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="42.180393"
+       x="24.180393"
        y="980.41553"
        id="text3211-4-67"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3213-0-5"
-         x="42.180393"
+         x="24.180393"
          y="980.41553"
          style="font-size:12px">(GstElement)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="29.42857"
+       x="11.42857"
        y="901.07648"
        id="text3277"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3279"
-         x="29.42857"
+         x="11.42857"
          y="901.07648">pipeline (GstPipeline)</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="m 126.89309,138.28669 48.82119,-0.5134"
+       d="m 108.89309,1000.2889 48.82119,-0.5134"
        id="path5401"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="3"
        inkscape:connection-start="#rect2991-8"
        inkscape:connection-start-point="d4"
        inkscape:connection-end="#rect2997"
-       inkscape:connection-end-point="d4"
-       transform="translate(0,862.00221)" />
+       inkscape:connection-end-point="d4" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="m 293.25023,137.4398 55.6783,-0.24863"
+       d="m 275.25023,999.44201 55.6783,-0.24863"
        id="path5585"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="3"
        inkscape:connection-start="#rect2991"
        inkscape:connection-start-point="d4"
        inkscape:connection-end="#rect2997-9"
-       inkscape:connection-end-point="d4"
-       transform="translate(0,862.00221)" />
+       inkscape:connection-end-point="d4" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="M 466.46453,136.94575 517.5,136.64621"
+       d="M 448.46453,998.94796 499.5,998.64842"
        id="path5587"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="3"
        inkscape:connection-start="#rect2991-0"
        inkscape:connection-start-point="d4"
        inkscape:connection-end="#rect2997-9-0"
-       inkscape:connection-end-point="d4"
-       transform="translate(0,862.00221)" />
+       inkscape:connection-end-point="d4" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="m 635.03597,136.4583 50.7498,-0.0716"
+       d="m 617.03597,998.46051 50.7498,-0.0716"
        id="path5589"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="3"
        inkscape:connection-start="#rect2991-0-4"
        inkscape:connection-start-point="d4"
        inkscape:connection-end="#rect2997-9-0-8"
-       inkscape:connection-end-point="d4"
-       transform="translate(0,862.00221)" />
+       inkscape:connection-end-point="d4" />
   </g>
 </svg>
