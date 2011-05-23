@@ -12,7 +12,7 @@
 \contentsline {chapter}{\numberline {5}Existing solutions}{23}{chapter.5}
 \contentsline {section}{\numberline {5.1}Applications with whiteboard and VoIP support}{23}{section.5.1}
 \contentsline {section}{\numberline {5.2}Multimedia streaming protocols}{26}{section.5.2}
-\contentsline {section}{\numberline {5.3}VoIP}{27}{section.5.3}
+\contentsline {section}{\numberline {5.3}VoIP}{28}{section.5.3}
 \contentsline {chapter}{\numberline {6}Port to Telepathy}{31}{chapter.6}
 \contentsline {section}{\numberline {6.1}Connection}{31}{section.6.1}
 \contentsline {section}{\numberline {6.2}Whiteboarding}{33}{section.6.2}
@@ -22,5 +22,5 @@
 \contentsline {section}{\numberline {7.2}Farsight}{37}{section.7.2}
 \contentsline {section}{\numberline {7.3}VoIP in Makneto}{38}{section.7.3}
 \contentsline {chapter}{\numberline {8}Conclusion}{40}{chapter.8}
-\contentsline {chapter}{\numberline {A}Obsah CD}{44}{appendix.A}
-\contentsline {chapter}{\numberline {B}Dependencies}{45}{appendix.B}
+\contentsline {chapter}{\numberline {A}Obsah CD}{45}{appendix.A}
+\contentsline {chapter}{\numberline {B}Dependencies}{46}{appendix.B}

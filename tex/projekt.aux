@@ -70,7 +70,7 @@
 \newlabel{lstXmppRoster}{{3.6}{12}{Client-server communication\relax }{lstlisting.3.6}{}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {3.6}Requesting roster from server}{12}{lstlisting.3.6}}
 \newlabel{lstXmppRosterAnswer}{{3.7}{12}{Client-server communication\relax }{lstlisting.3.7}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.7}Roster sent by the server}{12}{lstlisting.3.7}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.7}Roster sent by the~server}{12}{lstlisting.3.7}}
 \citation{xepJignle}
 \citation{googleTalk}
 \citation{xmppBook}
@@ -144,24 +144,28 @@
 \citation{skypeProtocolAnalysis}
 \citation{AIM}
 \citation{wikipediaYahoo}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Telepathy components registered with user session D-Bus.\cite  {skypeProtocolAnalysis}}}{25}{figure.5.1}}
-\newlabel{fig:skypeArchitecture}{{5.1}{25}{Telepathy components registered with user session D-Bus.\cite {skypeProtocolAnalysis}\relax }{figure.5.1}{}}
-\citation{SIPRFC}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Skype architecture \cite  {skypeProtocolAnalysis}.}}{25}{figure.5.1}}
+\newlabel{fig:skypeArchitecture}{{5.1}{25}{Skype architecture \cite {skypeProtocolAnalysis}}{figure.5.1}{}}
+\citation{sipRFC}
+\citation{sipRFC2}
+\citation{sdpRFC}
+\citation{sipRFC}
+\citation{rtpOldRFC}
+\citation{rtpRFC}
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Multimedia streaming protocols}{26}{section.5.2}}
 \newlabel{lstSIPInvite}{{5.1}{26}{SIP\relax }{lstlisting.5.1}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}SIP invite from Alice to Bob}{26}{lstlisting.5.1}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}SIP invite from Alice to Bob \cite  {sipRFC}}{26}{lstlisting.5.1}}
 \citation{rtpBook}
-\citation{sampling-theorem}
 \citation{digitalSpeechBook}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces RTP packet.\cite  {rtpBook}}}{27}{figure.5.2}}
 \newlabel{fig:rtpPacket}{{5.2}{27}{RTP packet.\cite {rtpBook}\relax }{figure.5.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}VoIP}{27}{section.5.3}}
-\citation{voiceCodecs}
+\citation{voipPaper}
 \newlabel{tab:voipCodecs}{{5.3}{28}{VoIP\relax }{section.5.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Voice codecs\cite  {voiceCodecs}}}{28}{table.5.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Voice codecs\cite  {voipPaper}}}{28}{table.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}VoIP}{28}{section.5.3}}
 \citation{ianaAddressSpaceReport}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Typical connection to the internet}}{30}{figure.5.3}}
-\newlabel{fig:nat-diagram}{{5.3}{30}{Typical connection to the internet\relax }{figure.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Typical connection to the~internet}}{30}{figure.5.3}}
+\newlabel{fig:nat-diagram}{{5.3}{30}{Typical connection to the~internet\relax }{figure.5.3}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {6}Port to Telepathy}{31}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -169,7 +173,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {6.1}Connection}{31}{section.6.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Simplified schema of Makneto components}}{32}{figure.6.1}}
 \newlabel{fig:MaknetoArchitectureDiagram}{{6.1}{32}{Simplified schema of Makneto components\relax }{figure.6.1}{}}
-\citation{telepathy-qt4-yell}
+\citation{telepathyQt4Yell}
 \@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Makneto backend class diagram}}{33}{figure.6.2}}
 \newlabel{fig:MaknetoBackendClassDiag}{{6.2}{33}{Makneto backend class diagram\relax }{figure.6.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6.2}Whiteboarding}{33}{section.6.2}}
@@ -182,16 +186,18 @@
 \citation{farsight}
 \citation{gstreamer}
 \citation{phonon}
+\citation{gstreamer}
+\citation{gstreamer}
 \@writefile{toc}{\contentsline {chapter}{\numberline {7}VoIP implementation}{35}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chapter:voip-implementation}{{7}{35}{VoIP implementation\relax }{chapter.7}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7.1}GStreamer}{35}{section.7.1}}
 \citation{farsight}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces GStreamer architecture}}{36}{figure.7.1}}
-\newlabel{fig:gstreamerArchitecture}{{7.1}{36}{GStreamer architecture\relax }{figure.7.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Example of a GStreamer pipeline}}{36}{figure.7.2}}
-\newlabel{fig:gstreamerPipeline}{{7.2}{36}{Example of a GStreamer pipeline\relax }{figure.7.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces GStreamer architecture from \cite  {gstreamer}}}{36}{figure.7.1}}
+\newlabel{fig:gstreamerArchitecture}{{7.1}{36}{GStreamer architecture from \cite {gstreamer}\relax }{figure.7.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Example of a~GStreamer pipeline from \cite  {gstreamer}}}{36}{figure.7.2}}
+\newlabel{fig:gstreamerPipeline}{{7.2}{36}{Example of a~GStreamer pipeline from \cite {gstreamer}\relax }{figure.7.2}{}}
 \citation{kdeTpCallUI}
 \@writefile{toc}{\contentsline {section}{\numberline {7.2}Farsight}{37}{section.7.2}}
 \@writefile{toc}{\contentsline {section}{\numberline {7.3}VoIP in Makneto}{38}{section.7.3}}
@@ -202,50 +208,57 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibstyle{plain}
 \bibdata{literatura}
-\bibcite{gstreamer}{1}
-\bibcite{skypeOutage}{2}
-\bibcite{brosix}{3}
-\bibcite{dbus}{4}
-\bibcite{farsight}{5}
-\bibcite{telepathy}{6}
+\bibcite{skypeOutage}{1}
+\bibcite{brosix}{2}
+\bibcite{dbus}{3}
+\bibcite{farsight}{4}
+\bibcite{telepathy}{5}
+\bibcite{telepathyQt4Yell}{6}
 \bibcite{TPWiki}{7}
-\bibcite{xmpp}{8}
-\bibcite{voipPaper}{9}
-\bibcite{googleTalk}{10}
-\bibcite{SVGWB}{11}
-\bibcite{ianaAddressSpaceReport}{12}
-\bibcite{ICQ}{13}
-\bibcite{SIPRFC}{14}
-\bibcite{STUNRFC}{15}
-\bibcite{STUNRFCNEW}{16}
-\bibcite{xepServiceDiscovery}{17}
-\bibcite{xepCapabilitiesAdvertisement}{18}
-\bibcite{kazaa}{19}
-\bibcite{KDE}{20}
-\bibcite{SVG}{21}
-\bibcite{SVGtiny}{22}
-\bibcite{digitalSpeechBook}{23}
-\bibcite{WindowsLiveMessenger}{24}
-\bibcite{qtBook}{25}
-\bibcite{Qt}{26}
-\bibcite{AIM}{27}
-\bibcite{rtpBook}{28}
-\bibcite{empathyGnome}{29}
-\bibcite{irisWiki}{30}
-\bibcite{xepMUC}{31}
-\bibcite{xmppCoreRFC}{32}
-\bibcite{xmppIMRFC}{33}
-\bibcite{xmppBook}{34}
-\bibcite{skypeProtocolAnalysis}{35}
-\bibcite{xepJignle}{36}
-\bibcite{skype}{37}
-\bibcite{wikipediaSkypeProtocol}{38}
-\bibcite{wikipediaYahoo}{39}
-\bibcite{yahoo}{40}
-\bibcite{makneto}{41}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Obsah CD}{44}{appendix.A}}
+\bibcite{gstreamer}{8}
+\bibcite{xmpp}{9}
+\bibcite{voipPaper}{10}
+\bibcite{googleTalk}{11}
+\bibcite{SVGWB}{12}
+\bibcite{rtpOldRFC}{13}
+\bibcite{rtpRFC}{14}
+\bibcite{ianaAddressSpaceReport}{15}
+\bibcite{ICQ}{16}
+\bibcite{STUNRFC}{17}
+\bibcite{STUNRFCNEW}{18}
+\bibcite{sipRFC2}{19}
+\bibcite{xepServiceDiscovery}{20}
+\bibcite{xepCapabilitiesAdvertisement}{21}
+\bibcite{kazaa}{22}
+\bibcite{KDE}{23}
+\bibcite{kdeTpCallUI}{24}
+\bibcite{digitalSpeechBook}{25}
+\bibcite{sdpRFC}{26}
+\bibcite{sipRFC}{27}
+\bibcite{WindowsLiveMessenger}{28}
+\bibcite{qtBook}{29}
+\bibcite{phonon}{30}
+\bibcite{Qt}{31}
+\bibcite{AIM}{32}
+\bibcite{rtpBook}{33}
+\bibcite{empathyGnome}{34}
+\bibcite{irisWiki}{35}
+\bibcite{xepMUC}{36}
+\bibcite{xmppCoreRFC}{37}
+\bibcite{xmppIMRFC}{38}
+\bibcite{xmppBook}{39}
+\bibcite{skypeProtocolAnalysis}{40}
+\bibcite{xepJignle}{41}
+\bibcite{skype}{42}
+\bibcite{SVG}{43}
+\bibcite{SVGtiny}{44}
+\bibcite{wikipediaSkypeProtocol}{45}
+\bibcite{wikipediaYahoo}{46}
+\bibcite{yahoo}{47}
+\bibcite{makneto}{48}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Obsah CD}{45}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Dependencies}{45}{appendix.B}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Dependencies}{46}{appendix.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}

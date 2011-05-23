@@ -3,52 +3,46 @@ The top-level auxiliary file: projekt.aux
 The style file: plain.bst
 Database file #1: literatura.bib
 Warning--entry type for "makneto" isn't style-file defined
---line 158 of file literatura.bib
-Warning--I didn't find a database entry for "sampling-theorem"
-Warning--I didn't find a database entry for "voiceCodecs"
-Warning--I didn't find a database entry for "telepathy-qt4-yell"
-Warning--I didn't find a database entry for "phonon"
-Warning--I didn't find a database entry for "kdeTpCallUI"
-Warning--to sort, need author or key in gstreamer
-You've used 41 entries,
+--line 176 of file literatura.bib
+You've used 48 entries,
             2118 wiz_defined-function locations,
-            688 strings with 7474 characters,
-and the built_in function-call counts, 8413 in all, are:
-= -- 750
-> -- 292
+            708 strings with 7839 characters,
+and the built_in function-call counts, 9888 in all, are:
+= -- 884
+> -- 347
 < -- 0
-+ -- 127
-- -- 84
-* -- 242
-:= -- 1386
-add.period$ -- 121
-call.type$ -- 41
-change.case$ -- 161
++ -- 150
+- -- 100
+* -- 281
+:= -- 1638
+add.period$ -- 143
+call.type$ -- 48
+change.case$ -- 190
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 307
-empty$ -- 904
-format.name$ -- 84
-if$ -- 1827
+cite$ -- 48
+duplicate$ -- 356
+empty$ -- 1057
+format.name$ -- 100
+if$ -- 2144
 int.to.chr$ -- 0
-int.to.str$ -- 41
+int.to.str$ -- 48
 missing$ -- 8
-newline$ -- 206
-num.names$ -- 80
-pop$ -- 424
+newline$ -- 242
+num.names$ -- 96
+pop$ -- 493
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 146
 quote$ -- 0
-skip$ -- 254
+skip$ -- 300
 stack$ -- 0
-substring$ -- 207
-swap$ -- 41
+substring$ -- 242
+swap$ -- 48
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 156
-warning$ -- 1
-while$ -- 80
-width$ -- 43
-write$ -- 379
-(There were 7 warnings)
+type$ -- 184
+warning$ -- 0
+while$ -- 96
+width$ -- 50
+write$ -- 448
+(There was 1 warning)

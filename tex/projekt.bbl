@@ -1,9 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{gstreamer}
-Gstreamer 0.10 core reference manual, 2008.
-\newblock [online; accessed 10 March 2011].
-
 \bibitem{skypeOutage}
 Terry Brock.
 \newblock Skype outage today.
@@ -29,10 +25,20 @@ Collabora.
 \newblock Telepathy.
 \newblock [online; accessed 12 Nov 2010].
 
+\bibitem{telepathyQt4Yell}
+Collabora.
+\newblock Telepathy qt4 yell.
+\newblock [online; accessed 6 March 2010].
+
 \bibitem{TPWiki}
 Collabora.
 \newblock Telepathy wiki.
 \newblock [online; accessed 18 Nov 2010].
+
+\bibitem{gstreamer}
+Collabora.
+\newblock Gstreamer 0.10 core reference manual, 2008.
+\newblock [online; accessed 10 March 2011].
 
 \bibitem{xmpp}
 XMPP~Standard Foundation.
@@ -53,6 +59,16 @@ Joonas Govenius.
 \newblock Svg whiteboarding, 2006-06-19.
 \newblock [online; accessed 11 December 2010].
 
+\bibitem{rtpOldRFC}
+{H. Schulzrinne et. al}.
+\newblock Rtp: A transport protocol for real-time applications, 1996.
+\newblock [online; accessed 7 January 2011].
+
+\bibitem{rtpRFC}
+{H. Schulzrinne et. al}.
+\newblock Rtp: A transport protocol for real-time applications, 2003.
+\newblock [online; accessed 7 January 2011].
+
 \bibitem{ianaAddressSpaceReport}
 IANA.
 \newblock Iana address space report.
@@ -63,13 +79,8 @@ ICQ.
 \newblock Icq.
 \newblock [online; accessed 29 Dec 2010].
 
-\bibitem{SIPRFC}
-{J. Rosenberg et al.}
-\newblock Sip: Session initialization protocol, 2002.
-\newblock [online; accessed 7 January 2011].
-
 \bibitem{STUNRFC}
-{j. Rosenberg et. al}.
+{J. Rosenberg et. al}.
 \newblock Stun - simple traversal of user datagram protocol (udp) through
   network address translators (nats), 2003.
 \newblock [online; accessed 6 January 2011].
@@ -78,6 +89,11 @@ ICQ.
 {J. Rosenberg et. al}.
 \newblock Session traversal utilities for nat (stun), 2008.
 \newblock [online; accessed 6 January 2011].
+
+\bibitem{sipRFC2}
+{J. Rosenberg et. al}.
+\newblock Sip: Session initiation protocol, June 2002.
+\newblock [online; accessed 9 January 2011].
 
 \bibitem{xepServiceDiscovery}
 {Joe Hildebrand, Peter Millard, Ryan Eatmon, Peter Saint-Andre}.
@@ -99,20 +115,25 @@ KDE.
 \newblock Kde.
 \newblock [online; accessed 3 Dec 2010].
 
-\bibitem{SVG}
-{Kolektiv autorů}.
-\newblock Scalable vector graphics(svg).
-\newblock [online; accessed 18 Dec 2010].
-
-\bibitem{SVGtiny}
-{Kolektiv autorů}.
-\newblock Svg tiny 1.2 specification.
-\newblock [online; accessed 18 Dec 2010].
+\bibitem{kdeTpCallUI}
+George Kiagiadakis.
+\newblock Real-time communication and collaboration/components/call ui.
+\newblock [online; accessed 6 April 2010].
 
 \bibitem{digitalSpeechBook}
 A.~M. Kondoz.
 \newblock {\em Digital Speech}.
 \newblock John Wiley \& Sons Inc., 2004.
+
+\bibitem{sdpRFC}
+{M. Handley et. al}.
+\newblock Sdp: Session description protocol, July 2006.
+\newblock [online; accessed 9 January 2011].
+
+\bibitem{sipRFC}
+{M. Handley et. al}.
+\newblock Sip: Session initiation protocol, March 1999.
+\newblock [online; accessed 9 January 2011].
 
 \bibitem{WindowsLiveMessenger}
 Microsoft.
@@ -123,6 +144,11 @@ Microsoft.
 Daniel Molkentin.
 \newblock {\em The Book of Qt 4}.
 \newblock O'Reilly, July 2007.
+
+\bibitem{phonon}
+Nokia.
+\newblock Phonon module.
+\newblock [online; accessed 7 April 2011].
 
 \bibitem{Qt}
 Nokia.
@@ -185,6 +211,16 @@ Henning~Schulzrinne Salman A.~Baset.
 Skype.com.
 \newblock Skype.
 \newblock [online; accessed 26 Dec 2010].
+
+\bibitem{SVG}
+W3C.
+\newblock Scalable vector graphics(svg).
+\newblock [online; accessed 18 Dec 2010].
+
+\bibitem{SVGtiny}
+W3C.
+\newblock Svg tiny 1.2 specification.
+\newblock [online; accessed 18 Dec 2010].
 
 \bibitem{wikipediaSkypeProtocol}
 Wikipedia.

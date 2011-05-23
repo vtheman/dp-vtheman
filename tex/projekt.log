@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.11.11)  22 MAY 2011 17:33
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.11.11)  23 MAY 2011 11:26
 entering extended mode
  %&-line parsing enabled.
 **projekt
@@ -663,7 +663,7 @@ File: fig/makneto-original.png Graphic file (type png)
 Chapter 3.
 [8
 
-] <fig/XMPP-decentralized-architecture.png, id=266, 1108.14pt x 822.07124pt>
+] <fig/XMPP-decentralized-architecture.png, id=267, 1108.14pt x 822.07124pt>
 File: fig/XMPP-decentralized-architecture.png Graphic file (type png)
 
 <use fig/XMPP-decentralized-architecture.png> [9 <./fig/XMPP-decentralized-arch
@@ -675,28 +675,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11] [12] <fig/xmpp-jingle-flow.png, id=356, 792.9625pt x 988.69376pt>
+[11] [12] <fig/xmpp-jingle-flow.png, id=364, 792.9625pt x 988.69376pt>
 File: fig/xmpp-jingle-flow.png Graphic file (type png)
 
 <use fig/xmpp-jingle-flow.png> [13] [14 <./fig/xmpp-jingle-flow.png (PNG copy)>
 ]
 Chapter 4.
-<fig/telepathy-architecture-overview.png, id=377, 421.575pt x 222.431pt>
+<fig/telepathy-architecture-overview.png, id=385, 421.575pt x 222.431pt>
 File: fig/telepathy-architecture-overview.png Graphic file (type png)
 
 <use fig/telepathy-architecture-overview.png> [15
 
  <./fig/telepathy-architecture-overview.png>] [16]
-<fig/dbus-architecture-names.png, id=398, 256.0767pt x 95.6373pt>
+<fig/dbus-architecture-names.png, id=406, 256.0767pt x 95.6373pt>
 File: fig/dbus-architecture-names.png Graphic file (type png)
 
 <use fig/dbus-architecture-names.png>
-<fig/dbus-architecture-overview.png, id=401, 426.8748pt x 202.1151pt>
+<fig/dbus-architecture-overview.png, id=409, 426.8748pt x 202.1151pt>
 File: fig/dbus-architecture-overview.png Graphic file (type png)
 
 <use fig/dbus-architecture-overview.png> [17 <./fig/dbus-architecture-names.png
 > <./fig/dbus-architecture-overview.png>]
-Overfull \hbox (34.47185pt too wide) in paragraph at lines 331--332
+Overfull \hbox (34.47185pt too wide) in paragraph at lines 328--329
 \IL2/cmr/m/n/10.95 with D-Bus and has an ob-ject path []\IL2/cmtt/m/n/10.95 /or
 g/freedesktop/Telepathy/Account/CM/PROTOCOL/ACCDN\IL2/cmr/m/n/10.95 .
  []
@@ -705,11 +705,11 @@ g/freedesktop/Telepathy/Account/CM/PROTOCOL/ACCDN\IL2/cmr/m/n/10.95 .
 
 pdfTeX warning: pdflatex (file ./fig/telepathy-architecture.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<fig/telepathy-architecture.pdf, id=448, 597.50786pt x 240.9pt>
+<fig/telepathy-architecture.pdf, id=456, 597.50786pt x 240.9pt>
 File: fig/telepathy-architecture.pdf Graphic file (type pdf)
 
 <use fig/telepathy-architecture.pdf>
-<fig/telepathy-components-dbus.png, id=450, 449.68pt x 369.38pt>
+<fig/telepathy-components-dbus.png, id=458, 449.68pt x 369.38pt>
 File: fig/telepathy-components-dbus.png Graphic file (type png)
 
 <use fig/telepathy-components-dbus.png> [21 <./fig/telepathy-architecture.pdf
@@ -720,27 +720,18 @@ pdfTeX warning: pdflatex (file ./fig/telepathy-architecture.pdf): PDF inclusion
 Chapter 5.
 [23
 
-] <fig/skype-architecture.png, id=505, 351.3125pt x 560.0925pt>
+] <fig/skype-architecture.png, id=513, 351.3125pt x 560.0925pt>
 File: fig/skype-architecture.png Graphic file (type png)
 
 <use fig/skype-architecture.png> [24] [25 <./fig/skype-architecture.png>]
-[26] <fig/rtp-packet.png, id=545, 385.44pt x 234.8775pt>
+[26] <fig/rtp-packet.png, id=562, 385.44pt x 234.8775pt>
 File: fig/rtp-packet.png Graphic file (type png)
 
-<use fig/rtp-packet.png>
-
-LaTeX Warning: Citation `sampling-theorem' on page 27 undefined on input line 5
-26.
-
-[27 <./fig/rtp-packet.png (PNG copy)>]
-
-LaTeX Warning: Citation `voiceCodecs' on page 28 undefined on input line 551.
-
-[28]
+<use fig/rtp-packet.png> [27 <./fig/rtp-packet.png (PNG copy)>] [28]
 
 pdfTeX warning: pdflatex (file ./fig/nat-diagram.pdf): PDF inclusion: found PDF
  version <1.5>, but at most version <1.4> allowed
-<fig/nat-diagram.pdf, id=571, 2048.5985pt x 426.79132pt>
+<fig/nat-diagram.pdf, id=592, 2048.5985pt x 426.79132pt>
 File: fig/nat-diagram.pdf Graphic file (type pdf)
 
 <use fig/nat-diagram.pdf> [29] [30 <./fig/nat-diagram.pdf
@@ -753,7 +744,7 @@ Chapter 6.
 
 pdfTeX warning: pdflatex (file ./fig/maknetoArchitecture.pdf): PDF inclusion: f
 ound PDF version <1.5>, but at most version <1.4> allowed
-<fig/maknetoArchitecture.pdf, id=605, 614.295pt x 160.6pt>
+<fig/maknetoArchitecture.pdf, id=626, 614.295pt x 160.6pt>
 File: fig/maknetoArchitecture.pdf Graphic file (type pdf)
 
 <use fig/maknetoArchitecture.pdf> [31
@@ -762,19 +753,14 @@ File: fig/maknetoArchitecture.pdf Graphic file (type pdf)
 
 pdfTeX warning: pdflatex (file ./fig/makneto-backend-class-diag.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<fig/makneto-backend-class-diag.pdf, id=613, 714.06778pt x 187.099pt>
+<fig/makneto-backend-class-diag.pdf, id=634, 714.06778pt x 187.099pt>
 File: fig/makneto-backend-class-diag.pdf Graphic file (type pdf)
 
 <use fig/makneto-backend-class-diag.pdf> [32 <./fig/maknetoArchitecture.pdf
 
 pdfTeX warning: pdflatex (file ./fig/maknetoArchitecture.pdf): PDF inclusion: P
 age Group detected which pdfTeX can't handle. Ignoring it.
->]
-
-LaTeX Warning: Citation `telepathy-qt4-yell' on page 33 undefined on input line
- 623.
-
-[33 <./fig/makneto-backend-class-diag.pdf
+>] [33 <./fig/makneto-backend-class-diag.pdf
 
 pdfTeX warning: pdflatex (file ./fig/makneto-backend-class-diag.pdf): PDF inclu
 sion: Page Group detected which pdfTeX can't handle. Ignoring it.
@@ -782,7 +768,7 @@ sion: Page Group detected which pdfTeX can't handle. Ignoring it.
 
 pdfTeX warning: pdflatex (file ./fig/contact-list-class-diag.pdf): PDF inclusio
 n: found PDF version <1.5>, but at most version <1.4> allowed
-<fig/contact-list-class-diag.pdf, id=659, 554.47153pt x 321.40076pt>
+<fig/contact-list-class-diag.pdf, id=682, 554.47153pt x 321.40076pt>
 File: fig/contact-list-class-diag.pdf Graphic file (type pdf)
 
 <use fig/contact-list-class-diag.pdf> [34 <./fig/contact-list-class-diag.pdf
@@ -791,30 +777,20 @@ pdfTeX warning: pdflatex (file ./fig/contact-list-class-diag.pdf): PDF inclusio
 n: Page Group detected which pdfTeX can't handle. Ignoring it.
 >]
 Chapter 7.
-
-LaTeX Warning: Citation `phonon' on page 35 undefined on input line 643.
-
-
-LaTeX Warning: Citation `phonon' on page 35 undefined on input line 645.
-
-<fig/gstreamer-architecture.png, id=685, 468.56374pt x 363.73253pt>
+<fig/gstreamer-architecture.png, id=710, 468.56374pt x 363.73253pt>
 File: fig/gstreamer-architecture.png Graphic file (type png)
 
 <use fig/gstreamer-architecture.png>
-<fig/gstreamer-pipeline.png, id=688, 635.976pt x 235.279pt>
+<fig/gstreamer-pipeline.png, id=714, 635.976pt x 235.279pt>
 File: fig/gstreamer-pipeline.png Graphic file (type png)
 
 <use fig/gstreamer-pipeline.png> [35
 
-] [36 <./fig/gstreamer-architecture.png> <./fig/gstreamer-pipeline.png>]
-
-LaTeX Warning: Citation `kdeTpCallUI' on page 37 undefined on input line 688.
-
-[37]
+] [36 <./fig/gstreamer-architecture.png> <./fig/gstreamer-pipeline.png>] [37]
 
 pdfTeX warning: pdflatex (file ./fig/makneto-gstreamer-pipeline.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<fig/makneto-gstreamer-pipeline.pdf, id=712, 611.15527pt x 152.85907pt>
+<fig/makneto-gstreamer-pipeline.pdf, id=741, 611.15527pt x 152.85907pt>
 File: fig/makneto-gstreamer-pipeline.pdf Graphic file (type pdf)
 
 <use fig/makneto-gstreamer-pipeline.pdf> [38 <./fig/makneto-gstreamer-pipeline.
@@ -827,38 +803,35 @@ Chapter 8.
 [40
 
 ]
-Overfull \hbox (3.5071pt too wide) in paragraph at lines 729--731
+Overfull \hbox (3.5071pt too wide) in paragraph at lines 723--725
 []\IL2/cmr/m/n/10.95 Finally the chap-ter [][]7[][] ex-plains how was the VoIP 
 func-tion-al-ity im-ple-mented into Makneto.
  []
 
 ) (./projekt.bbl [41] [42
 
-]) (./prilohy.tex [43]
+] [43]) (./prilohy.tex [44]
 Appendix A.
-[44
+[45
 
 ]
 Appendix B.
-) [45
+) [46
 
 ] (./projekt.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 7552 strings out of 256216
- 96235 string characters out of 1917071
- 181765 words of memory out of 1500000
- 10453 multiletter control sequences out of 10000+200000
+ 7563 strings out of 256216
+ 96353 string characters out of 1917071
+ 184111 words of memory out of 1500000
+ 10455 multiletter control sequences out of 10000+200000
  24232 words of font info for 68 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 34i,9n,40p,1727b,1345s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 34i,9n,40p,1727b,1343s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8a.enc}</usr/share/texmf/fonts/type1/b
 luesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/s
 hare/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesk
@@ -870,9 +843,9 @@ onts/type1/public/cs/csr10.pfb></usr/share/texmf/fonts/type1/public/cs/csr6.pfb
 /public/cs/csr9.pfb></usr/share/texmf/fonts/type1/public/cs/csss8.pfb></usr/sha
 re/texmf/fonts/type1/public/cs/csti10.pfb></usr/share/texmf/fonts/type1/public/
 cs/cstt10.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on projekt.pdf (48 pages, 1281906 bytes).
+Output written on projekt.pdf (49 pages, 1337262 bytes).
 PDF statistics:
- 869 PDF objects out of 1000 (max. 8388607)
- 235 named destinations out of 1000 (max. 131072)
+ 905 PDF objects out of 1000 (max. 8388607)
+ 244 named destinations out of 1000 (max. 131072)
  317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
