@@ -6,16 +6,16 @@ Warning--entry type for "makneto" isn't style-file defined
 --line 176 of file literatura.bib
 You've used 48 entries,
             2118 wiz_defined-function locations,
-            708 strings with 7839 characters,
-and the built_in function-call counts, 9888 in all, are:
-= -- 884
+            748 strings with 9767 characters,
+and the built_in function-call counts, 10350 in all, are:
+= -- 1010
 > -- 347
 < -- 0
 + -- 150
 - -- 100
 * -- 281
-:= -- 1638
-add.period$ -- 143
+:= -- 1764
+add.period$ -- 185
 call.type$ -- 48
 change.case$ -- 190
 chr.to.int$ -- 0
@@ -23,17 +23,17 @@ cite$ -- 48
 duplicate$ -- 356
 empty$ -- 1057
 format.name$ -- 100
-if$ -- 2144
+if$ -- 2270
 int.to.chr$ -- 0
 int.to.str$ -- 48
 missing$ -- 8
-newline$ -- 242
+newline$ -- 284
 num.names$ -- 96
-pop$ -- 493
+pop$ -- 451
 preamble$ -- 1
 purify$ -- 146
 quote$ -- 0
-skip$ -- 300
+skip$ -- 258
 stack$ -- 0
 substring$ -- 242
 swap$ -- 48
@@ -44,5 +44,5 @@ type$ -- 184
 warning$ -- 0
 while$ -- 96
 width$ -- 50
-write$ -- 448
+write$ -- 532
 (There was 1 warning)

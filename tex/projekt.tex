@@ -30,7 +30,7 @@
 %zde muzeme vlozit vlastni balicky
 \usepackage{lineno}
 \usepackage{color}
-%definice lstlisting
+%definice lstlistin
 \usepackage{listings}
 
 \def\lstlistingname{Example}
@@ -97,7 +97,7 @@ commentstyle=\color{gray}\upshape
 %---------------------------------------------------------------------------
 \projectinfo{
   %Prace
-  project=SP,            %typ prace BP/SP/DP/DR
+  project=DP,            %typ prace BP/SP/DP/DR
   year=2011,             %rok
   date=\today,           %datum odevzdani
   %Nazev prace
@@ -117,15 +117,15 @@ commentstyle=\color{gray}\upshape
   %bud pomoci nasledujicich parametru nebo pomoci vyhrazenych maker (viz dale)
   %===========================================================================
   %Klicova slova
-  keywords.cs={VoIP, IM, sdílená tabule, XMPP, telepathy}, %klicova slova v ceskem jazyce
-  keywords.en={VoIP, IM, Shared whiteboard, XMPP, telepathy}, %klicova slova v anglickem jazyce
+  keywords.cs={VoIP, IM, sdílená tabule, XMPP, telepathy, RTP, farsight, Makneto, SIP}, %klicova slova v ceskem jazyce
+  keywords.en={VoIP, IM, Shared whiteboard, XMPP, telepathy, RTP, farsight, Makneto, SIP}, %klicova slova v anglickem jazyce
   %Abstract
-  abstract.cs={Práce se zabývá možnostmi přidání funkcionality do existujícího XMPP programu se sdílenou tabulí. Analyzuje možnosti využití současných technologií pro podporu VoIP. Cílem je port klienta na komunikační architekturu telepathy a implementace VoIP.}, % abstrakt v ceskem jazyce
+  abstract.cs={Práce se zabývá možnostmi implementace VoIP do existujícího XMPP programu se sdílenou tabulí. Analyzuje možnosti využití současných technologií pro podporu VoIP. Cílem je nahrazení stávajících komunikačních knihoven klienta za telepathy. Dále také přidání VoIP.}, % abstrakt v ceskem jazyce
   abstract.en={This thesis tackles the issues of implementing a VoIP support into an XMPP based IM application. The state of the art is analyzed to find a suitable technology to base the VoIP on. The work's goal is to port the existing client application to network framework telepathy and implentation of VoIP.}, % abstrakt v anglickem jazyce
   %Prohlaseni
-  declaration={Prohlašuji, že jsem tuto diplomovou práci vypracoval samostatně pod vedením pana inženýra Jozefa Mlícha},
+  declaration={Prohlašuji, že jsem tuto diplomovou práci vypracoval samostatně pod vedením pana inženýra Jozefa Mlícha.},
   %Podekovani (nepovinne)
-  acknowledgment={Děkuji svému vedoucímu Ing.Jozefu Mlíchovi a Ing.Jaroslavu Řezníkovi za odbornou pomoc. Dále bych chtěl poděkovat své přítelkyni a rodině za neomezenou podporu. Zvláště má přítelkyně mi byla neocenitelnou oporou. V neposlední řadě jsem vděčný receptu na pečené žampiony, s kterými jsem přečkal mnoho náročných chvil při studiu. Nejdříve žampiony rovnoměrně nakrájíme, následně naskládáme do zapékací mísy a promícháme s olivovým olejem, protlačeným česnekem, solí  a oreganem a vložíme do trouby. Po upečení je nejlepší směs nechat v lednici uležet. A nakonec děkuji svým přátelům Michalu Čamborovi a Marku Černému za neutuchající morální podporu v průběhu studia. Díky výše zmíněným bude studium příjemnou vzpomínkou.} % nepovinne
+  acknowledgment={Děkuji svému vedoucímu Ing. Jozefu Mlíchovi a Ing. Jaroslavu Řezníkovi za odbornou pomoc. Dále bych chtěl poděkovat své přítelkyni a rodině za neomezenou podporu. Zvláště má přítelkyně mi byla neocenitelnou oporou. V neposlední řadě jsem vděčný receptu na pečené žampiony, s kterými jsem přečkal mnoho náročných chvil při studiu. Nejdříve žampiony rovnoměrně nakrájíme, následně naskládáme do zapékací mísy a promícháme s olivovým olejem, protlačeným česnekem, solí  a oreganem a vložíme do trouby. Po upečení je nejlepší směs nechat v lednici uležet. A nakonec děkuji svým přátelům Michalu Čamborovi a Marku Černému za neutuchající morální podporu v průběhu studia. Díky výše zmíněným bude studium příjemnou vzpomínkou.} % nepovinne
 }
 
 %Abstrakt (cesky, anglicky)

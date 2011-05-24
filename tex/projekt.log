@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.11.11)  23 MAY 2011 11:26
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.11.11)  24 MAY 2011 15:38
 entering extended mode
  %&-line parsing enabled.
 **projekt
@@ -548,14 +548,14 @@ LaTeX Font Info:    Created by CsPsFont utility v.1.0f (C) Z. Wagner, 1998/12/2
 \@vyskartext=\skip47
 \@vyskaobr=\skip48
 
-<fig/vut-zp2.pdf, id=107, 109.40875pt x 109.40875pt>
+<fig/vut-zp2.pdf, id=103, 109.40875pt x 109.40875pt>
 File: fig/vut-zp2.pdf Graphic file (type pdf)
  <use fig/vut-zp2.pdf>
 Overfull \hbox (109.58464pt too wide) in paragraph at lines 154--154
 [][] 
  []
 
-<fig/fit-zp2.pdf, id=108, 120.45pt x 120.45pt>
+<fig/fit-zp2.pdf, id=104, 120.45pt x 120.45pt>
 File: fig/fit-zp2.pdf Graphic file (type pdf)
  <use fig/fit-zp2.pdf>
 Overfull \hbox (109.58464pt too wide) in paragraph at lines 154--154
@@ -609,15 +609,11 @@ page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.4 \chapter
-            {Introduction} [1
+            *{Introduction}\addcontentsline{toc}{chapter}{Introduction}
+[1
 
 
 ]
-Chapter 1.
-LaTeX Font Info:    Try loading font information for IL2+cmss on input line 4.
-(/usr/share/texmf/tex/latex/cslatex/il2cmss.fd
-File: il2cmss.fd 1997/02/13 CsLaTeX font definitions
-)
 Overfull \hbox (2.91277pt too wide) in paragraph at lines 11--12
 []\IL2/cmr/m/n/10.95 At this time there is no us-able IM pro-vid-ing VoIP and s
 hared white-board for GNU/Linux.
@@ -627,111 +623,119 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 
-      [2
+l.19 C
+      hapter~\ref{chapter:telepathy} is about Telepathy communication framew...
+[2
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 \chapter
+l.32 \chapter
              {Makneto}\label{chapter:makneto} [3]
-Chapter 2.
+Chapter 1.
 [4
 
 ]
+LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 46.
+
+ (/usr/share/texmf/tex/latex/cslatex/il2cmtt.fd
+File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
+)
 
 pdfTeX warning: pdflatex (file ./fig/makneto-orig-class-diagram.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<fig/makneto-orig-class-diagram.pdf, id=196, 676.32674pt x 463.53174pt>
+<fig/makneto-orig-class-diagram.pdf, id=194, 676.32674pt x 463.53174pt>
 File: fig/makneto-orig-class-diagram.pdf Graphic file (type pdf)
 
 <use fig/makneto-orig-class-diagram.pdf>
-LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 53.
+<fig/makneto-original.png, id=195, 857.45343pt x 545.03625pt>
+File: fig/makneto-original.png Graphic file (type png)
 
-
-(/usr/share/texmf/tex/latex/cslatex/il2cmtt.fd
-File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
-) [5 <./fig/makneto-orig-class-diagram.pdf
+<use fig/makneto-original.png> [5] [6 <./fig/makneto-orig-class-diagram.pdf
 
 pdfTeX warning: pdflatex (file ./fig/makneto-orig-class-diagram.pdf): PDF inclu
 sion: Page Group detected which pdfTeX can't handle. Ignoring it.
->] <fig/makneto-original.png, id=226, 857.45343pt x 545.03625pt>
-File: fig/makneto-original.png Graphic file (type png)
-
-<use fig/makneto-original.png> [6 <./fig/makneto-original.png>] [7]
-Chapter 3.
+>] [7 <./fig/makneto-original.png>]
+Chapter 2.
 [8
 
-] <fig/XMPP-decentralized-architecture.png, id=267, 1108.14pt x 822.07124pt>
+] <fig/XMPP-decentralized-architecture.png, id=263, 1108.14pt x 822.07124pt>
 File: fig/XMPP-decentralized-architecture.png Graphic file (type png)
 
 <use fig/XMPP-decentralized-architecture.png> [9 <./fig/XMPP-decentralized-arch
-itecture.png (PNG copy)>]
+itecture.png (PNG copy)>] [10] [11] [12]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+pdfTeX warning: pdflatex (file ./fig/jingle-session.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<fig/jingle-session.pdf, id=360, 569.05513pt x 882.03539pt>
+File: fig/jingle-session.pdf Graphic file (type pdf)
 
-[10]
+<use fig/jingle-session.pdf> [13] [14 <./fig/jingle-session.pdf
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11] [12] <fig/xmpp-jingle-flow.png, id=364, 792.9625pt x 988.69376pt>
-File: fig/xmpp-jingle-flow.png Graphic file (type png)
-
-<use fig/xmpp-jingle-flow.png> [13] [14 <./fig/xmpp-jingle-flow.png (PNG copy)>
-]
-Chapter 4.
-<fig/telepathy-architecture-overview.png, id=385, 421.575pt x 222.431pt>
+pdfTeX warning: pdflatex (file ./fig/jingle-session.pdf): PDF inclusion: Page G
+roup detected which pdfTeX can't handle. Ignoring it.
+>]
+Chapter 3.
+<fig/telepathy-architecture-overview.png, id=402, 421.575pt x 222.431pt>
 File: fig/telepathy-architecture-overview.png Graphic file (type png)
 
 <use fig/telepathy-architecture-overview.png> [15
 
  <./fig/telepathy-architecture-overview.png>] [16]
-<fig/dbus-architecture-names.png, id=406, 256.0767pt x 95.6373pt>
+<fig/dbus-architecture-names.png, id=423, 256.0767pt x 95.6373pt>
 File: fig/dbus-architecture-names.png Graphic file (type png)
 
 <use fig/dbus-architecture-names.png>
-<fig/dbus-architecture-overview.png, id=409, 426.8748pt x 202.1151pt>
+<fig/dbus-architecture-overview.png, id=426, 426.8748pt x 202.1151pt>
 File: fig/dbus-architecture-overview.png Graphic file (type png)
 
 <use fig/dbus-architecture-overview.png> [17 <./fig/dbus-architecture-names.png
 > <./fig/dbus-architecture-overview.png>]
-Overfull \hbox (34.47185pt too wide) in paragraph at lines 328--329
-\IL2/cmr/m/n/10.95 with D-Bus and has an ob-ject path []\IL2/cmtt/m/n/10.95 /or
-g/freedesktop/Telepathy/Account/CM/PROTOCOL/ACCDN\IL2/cmr/m/n/10.95 .
+Overfull \hbox (93.16563pt too wide) in paragraph at lines 330--331
+\IL2/cmr/m/n/10.95 and []\IL2/cmtt/m/n/10.95 ACCDN \IL2/cmr/m/n/10.95 is Ac-cou
+nt's Dis-play Name. The Ac-count ob-ject im-ple-ments []\IL2/cmtt/m/n/10.95 org
+.freedesktop.Telepathy.Account
  []
 
 [18] [19] [20]
 
 pdfTeX warning: pdflatex (file ./fig/telepathy-architecture.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<fig/telepathy-architecture.pdf, id=456, 597.50786pt x 240.9pt>
+<fig/telepathy-architecture.pdf, id=472, 597.50786pt x 240.9pt>
 File: fig/telepathy-architecture.pdf Graphic file (type pdf)
 
 <use fig/telepathy-architecture.pdf>
-<fig/telepathy-components-dbus.png, id=458, 449.68pt x 369.38pt>
+<fig/telepathy-components-dbus.png, id=474, 449.68pt x 369.38pt>
 File: fig/telepathy-components-dbus.png Graphic file (type png)
 
 <use fig/telepathy-components-dbus.png> [21 <./fig/telepathy-architecture.pdf
 
 pdfTeX warning: pdflatex (file ./fig/telepathy-architecture.pdf): PDF inclusion
 : Page Group detected which pdfTeX can't handle. Ignoring it.
-> <./fig/telepathy-components-dbus.png>] [22]
-Chapter 5.
+>] [22 <./fig/telepathy-components-dbus.png>]
+Chapter 4.
 [23
 
-] <fig/skype-architecture.png, id=513, 351.3125pt x 560.0925pt>
-File: fig/skype-architecture.png Graphic file (type png)
+]
 
-<use fig/skype-architecture.png> [24] [25 <./fig/skype-architecture.png>]
-[26] <fig/rtp-packet.png, id=562, 385.44pt x 234.8775pt>
+pdfTeX warning: pdflatex (file ./fig/skype-architecture.pdf): PDF inclusion: fo
+und PDF version <1.5>, but at most version <1.4> allowed
+<fig/skype-architecture.pdf, id=529, 329.30226pt x 491.72508pt>
+File: fig/skype-architecture.pdf Graphic file (type pdf)
+
+<use fig/skype-architecture.pdf> [24] [25 <./fig/skype-architecture.pdf
+
+pdfTeX warning: pdflatex (file ./fig/skype-architecture.pdf): PDF inclusion: Pa
+ge Group detected which pdfTeX can't handle. Ignoring it.
+>] [26] <fig/rtp-packet.png, id=587, 385.44pt x 234.8775pt>
 File: fig/rtp-packet.png Graphic file (type png)
 
 <use fig/rtp-packet.png> [27 <./fig/rtp-packet.png (PNG copy)>] [28]
 
 pdfTeX warning: pdflatex (file ./fig/nat-diagram.pdf): PDF inclusion: found PDF
  version <1.5>, but at most version <1.4> allowed
-<fig/nat-diagram.pdf, id=592, 2048.5985pt x 426.79132pt>
+<fig/nat-diagram.pdf, id=617, 2048.5985pt x 426.79132pt>
 File: fig/nat-diagram.pdf Graphic file (type pdf)
 
 <use fig/nat-diagram.pdf> [29] [30 <./fig/nat-diagram.pdf
@@ -739,12 +743,12 @@ File: fig/nat-diagram.pdf Graphic file (type pdf)
 pdfTeX warning: pdflatex (file ./fig/nat-diagram.pdf): PDF inclusion: Page Grou
 p detected which pdfTeX can't handle. Ignoring it.
 >]
-Chapter 6.
+Chapter 5.
 
 
 pdfTeX warning: pdflatex (file ./fig/maknetoArchitecture.pdf): PDF inclusion: f
 ound PDF version <1.5>, but at most version <1.4> allowed
-<fig/maknetoArchitecture.pdf, id=626, 614.295pt x 160.6pt>
+<fig/maknetoArchitecture.pdf, id=651, 614.295pt x 160.6pt>
 File: fig/maknetoArchitecture.pdf Graphic file (type pdf)
 
 <use fig/maknetoArchitecture.pdf> [31
@@ -753,7 +757,7 @@ File: fig/maknetoArchitecture.pdf Graphic file (type pdf)
 
 pdfTeX warning: pdflatex (file ./fig/makneto-backend-class-diag.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<fig/makneto-backend-class-diag.pdf, id=634, 714.06778pt x 187.099pt>
+<fig/makneto-backend-class-diag.pdf, id=658, 714.06778pt x 187.099pt>
 File: fig/makneto-backend-class-diag.pdf Graphic file (type pdf)
 
 <use fig/makneto-backend-class-diag.pdf> [32 <./fig/maknetoArchitecture.pdf
@@ -768,7 +772,7 @@ sion: Page Group detected which pdfTeX can't handle. Ignoring it.
 
 pdfTeX warning: pdflatex (file ./fig/contact-list-class-diag.pdf): PDF inclusio
 n: found PDF version <1.5>, but at most version <1.4> allowed
-<fig/contact-list-class-diag.pdf, id=682, 554.47153pt x 321.40076pt>
+<fig/contact-list-class-diag.pdf, id=706, 554.47153pt x 321.40076pt>
 File: fig/contact-list-class-diag.pdf Graphic file (type pdf)
 
 <use fig/contact-list-class-diag.pdf> [34 <./fig/contact-list-class-diag.pdf
@@ -776,21 +780,33 @@ File: fig/contact-list-class-diag.pdf Graphic file (type pdf)
 pdfTeX warning: pdflatex (file ./fig/contact-list-class-diag.pdf): PDF inclusio
 n: Page Group detected which pdfTeX can't handle. Ignoring it.
 >]
-Chapter 7.
-<fig/gstreamer-architecture.png, id=710, 468.56374pt x 363.73253pt>
+Chapter 6.
+<fig/gstreamer-architecture.png, id=736, 468.56374pt x 363.73253pt>
 File: fig/gstreamer-architecture.png Graphic file (type png)
 
-<use fig/gstreamer-architecture.png>
-<fig/gstreamer-pipeline.png, id=714, 635.976pt x 235.279pt>
+<use fig/gstreamer-architecture.png> [35
+
+]
+<fig/gstreamer-pipeline.png, id=750, 635.976pt x 235.279pt>
 File: fig/gstreamer-pipeline.png Graphic file (type png)
 
-<use fig/gstreamer-pipeline.png> [35
+<use fig/gstreamer-pipeline.png> [36 <./fig/gstreamer-architecture.png> <./fig/
+gstreamer-pipeline.png>]
 
-] [36 <./fig/gstreamer-architecture.png> <./fig/gstreamer-pipeline.png>] [37]
+pdfTeX warning: pdflatex (file ./fig/farsight-diagram.pdf): PDF inclusion: foun
+d PDF version <1.5>, but at most version <1.4> allowed
+<fig/farsight-diagram.pdf, id=761, 358.21387pt x 125.55708pt>
+File: fig/farsight-diagram.pdf Graphic file (type pdf)
+
+<use fig/farsight-diagram.pdf> [37 <./fig/farsight-diagram.pdf
+
+pdfTeX warning: pdflatex (file ./fig/farsight-diagram.pdf): PDF inclusion: Page
+ Group detected which pdfTeX can't handle. Ignoring it.
+>]
 
 pdfTeX warning: pdflatex (file ./fig/makneto-gstreamer-pipeline.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<fig/makneto-gstreamer-pipeline.pdf, id=741, 611.15527pt x 152.85907pt>
+<fig/makneto-gstreamer-pipeline.pdf, id=779, 611.15527pt x 152.85907pt>
 File: fig/makneto-gstreamer-pipeline.pdf Graphic file (type pdf)
 
 <use fig/makneto-gstreamer-pipeline.pdf> [38 <./fig/makneto-gstreamer-pipeline.
@@ -799,23 +815,40 @@ pdf
 pdfTeX warning: pdflatex (file ./fig/makneto-gstreamer-pipeline.pdf): PDF inclu
 sion: Page Group detected which pdfTeX can't handle. Ignoring it.
 >] [39]
-Chapter 8.
-[40
-
-]
-Overfull \hbox (3.5071pt too wide) in paragraph at lines 723--725
-[]\IL2/cmr/m/n/10.95 Finally the chap-ter [][]7[][] ex-plains how was the VoIP 
+Overfull \hbox (3.5071pt too wide) in paragraph at lines 732--734
+[]\IL2/cmr/m/n/10.95 Finally the chap-ter [][]6[][] ex-plains how was the VoIP 
 func-tion-al-ity im-ple-mented into Makneto.
  []
 
-) (./projekt.bbl [41] [42
+[40
 
-] [43]) (./prilohy.tex [44]
-Appendix A.
-[45
+]) (./projekt.bbl [41]
+Overfull \hbox (81.7067pt too wide) in paragraph at lines 35--41
+\IL2/cmtt/m/n/10.95 http://cgit.collabora.com/git/freedesktop.org-mirror/telepa
+thy/telepathy-qt4-yell.git\IL2/cmr/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (6.97375pt too wide) in paragraph at lines 49--55
+\IL2/cmtt/m/n/10.95 http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gs
+treamer/html/\IL2/cmr/m/n/10.95 , 
+ []
+
+[42
 
 ]
-Appendix B.
+Overfull \hbox (18.47113pt too wide) in paragraph at lines 91--96
+\IL2/cmtt/m/n/10.95 http://www.iana.org/assignments/ipv4-address-space/ipv4-add
+ress-space.xml/\IL2/cmr/m/n/10.95 . 
+ []
+
+[43] [44]) (./prilohy.tex [45]
+Appendix A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--10
+
+ []
+
 ) [46
 
 ] (./projekt.aux)
@@ -825,13 +858,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 7563 strings out of 256216
- 96353 string characters out of 1917071
- 184111 words of memory out of 1500000
- 10455 multiletter control sequences out of 10000+200000
- 24232 words of font info for 68 fonts, out of 1200000 for 2000
+ 7552 strings out of 256216
+ 95975 string characters out of 1917071
+ 177246 words of memory out of 1500000
+ 10445 multiletter control sequences out of 10000+200000
+ 23694 words of font info for 67 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 34i,9n,40p,1727b,1343s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 34i,9n,40p,1722b,1337s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8a.enc}</usr/share/texmf/fonts/type1/b
 luesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/s
 hare/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesk
@@ -840,12 +873,12 @@ mf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cs/cs
 bx10.pfb></usr/share/texmf/fonts/type1/public/cs/csbx12.pfb></usr/share/texmf/f
 onts/type1/public/cs/csr10.pfb></usr/share/texmf/fonts/type1/public/cs/csr6.pfb
 ></usr/share/texmf/fonts/type1/public/cs/csr8.pfb></usr/share/texmf/fonts/type1
-/public/cs/csr9.pfb></usr/share/texmf/fonts/type1/public/cs/csss8.pfb></usr/sha
-re/texmf/fonts/type1/public/cs/csti10.pfb></usr/share/texmf/fonts/type1/public/
-cs/cstt10.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on projekt.pdf (49 pages, 1337262 bytes).
+/public/cs/csr9.pfb></usr/share/texmf/fonts/type1/public/cs/csti10.pfb></usr/sh
+are/texmf/fonts/type1/public/cs/cstt10.pfb></usr/share/texmf/fonts/type1/urw/he
+lvetic/uhvr8a.pfb>
+Output written on projekt.pdf (49 pages, 1145575 bytes).
 PDF statistics:
- 905 PDF objects out of 1000 (max. 8388607)
- 244 named destinations out of 1000 (max. 131072)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 940 PDF objects out of 1000 (max. 8388607)
+ 246 named destinations out of 1000 (max. 131072)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,26 +1,25 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
-\contentsline {chapter}{\numberline {2}Makneto}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Current architecture}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Motivation for porting and adding VoIP support}{6}{section.2.2}
-\contentsline {chapter}{\numberline {3}XMPP}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}XMPP protocol}{8}{section.3.1}
-\contentsline {section}{\numberline {3.2}Jingle}{13}{section.3.2}
-\contentsline {chapter}{\numberline {4}Telepathy}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Telepathy architecture}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Empathy}{22}{section.4.2}
-\contentsline {chapter}{\numberline {5}Existing solutions}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Applications with whiteboard and VoIP support}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Multimedia streaming protocols}{26}{section.5.2}
-\contentsline {section}{\numberline {5.3}VoIP}{28}{section.5.3}
-\contentsline {chapter}{\numberline {6}Port to Telepathy}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Connection}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Whiteboarding}{33}{section.6.2}
-\contentsline {section}{\numberline {6.3}Contact list}{33}{section.6.3}
-\contentsline {chapter}{\numberline {7}VoIP implementation}{35}{chapter.7}
-\contentsline {section}{\numberline {7.1}GStreamer}{35}{section.7.1}
-\contentsline {section}{\numberline {7.2}Farsight}{37}{section.7.2}
-\contentsline {section}{\numberline {7.3}VoIP in Makneto}{38}{section.7.3}
-\contentsline {chapter}{\numberline {8}Conclusion}{40}{chapter.8}
-\contentsline {chapter}{\numberline {A}Obsah CD}{45}{appendix.A}
-\contentsline {chapter}{\numberline {B}Dependencies}{46}{appendix.B}
+\contentsline {chapter}{Introduction}{2}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Makneto}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Current architecture}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Motivation for porting and adding VoIP support}{5}{section.1.2}
+\contentsline {chapter}{\numberline {2}XMPP}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}XMPP protocol}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Jingle}{13}{section.2.2}
+\contentsline {chapter}{\numberline {3}Telepathy}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Telepathy architecture}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}Empathy}{21}{section.3.2}
+\contentsline {chapter}{\numberline {4}Existing solutions}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Applications with whiteboard and VoIP support}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Multimedia streaming protocols}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}VoIP}{28}{section.4.3}
+\contentsline {chapter}{\numberline {5}Port to Telepathy}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Connection}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Whiteboarding}{33}{section.5.2}
+\contentsline {section}{\numberline {5.3}Contact list}{33}{section.5.3}
+\contentsline {chapter}{\numberline {6}VoIP implementation}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}GStreamer}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}Farsight}{37}{section.6.2}
+\contentsline {section}{\numberline {6.3}VoIP in Makneto}{38}{section.6.3}
+\contentsline {chapter}{Conclusion}{40}{chapter*.23}
+\contentsline {chapter}{\numberline {A}CD Content}{46}{appendix.A}
